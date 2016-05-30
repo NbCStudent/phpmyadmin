@@ -4,7 +4,7 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     <div class="page-header">
-                        <img class="logoPhpmyadmin" src="Asset/img/logoPhpmyadmin.png">
+                        <img class="logoPhpmyadmin" src="Asset/img/logoPhpmyadmin.png" alt="logoPhpmyadmin">
                     </div>
                     <div class="col-md-3">
                         <div class="jumbotron">

@@ -7,7 +7,7 @@
  */
 session_start();
 //session_destroy();
-//require_once ('tools/dbTools.php');
+//require_once ('Model/dbTools.php');
 require_once ('Includes/config.php');
 require_once ('Libs/smarty-3.1.29/libs/Smarty.class.php');
 // On instancie Smarty

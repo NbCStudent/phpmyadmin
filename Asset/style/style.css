@@ -1,5 +1,7 @@
+/* Head */
+
 .interface {
-	margin-top: 5%;
+	margin-top: 2%;
 }
 
 .logoPhpmyadmin {
@@ -10,13 +12,17 @@
     margin-right: auto;
 }
 
+/* Jumbotron */
+
 .titleJumbotron {
 	text-align: center;
 }
 
-.bodyJumbotron {
-
+.jumbotron p {
+	font-size: 12px;
 }
+
+/* Tables */
 
 .tableView {
 	overflow-x: auto;
@@ -44,6 +50,6 @@
 }
 
 .table2, .tbody2, .td2 {
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 8%;
+	padding-right: 8%;
 }
