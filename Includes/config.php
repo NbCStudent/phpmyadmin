@@ -6,4 +6,5 @@
  * Time: 13:58
  */
 
-$legalaction = array("home" => 'home');
+$legalActions = array('home' => 'home');
+echo "blop";

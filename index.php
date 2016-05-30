@@ -7,9 +7,9 @@
  */
 session_start();
 //session_destroy();
-require_once ('tools/dbTools.php');
+//require_once ('tools/dbTools.php');
 require_once ('Includes/config.php');
-require_once ('Libs/smarty-3.1.29/libs/smarty/Smarty.class.php');
+require_once ('Libs/smarty-3.1.29/libs/Smarty.class.php');
 // On instancie Smarty
 $Smarty = new Smarty();
 if (empty($_SESSION['id_user'])) { // Verif si utilisateur est connectée
@@ -30,11 +30,11 @@ else{
     $action = 'home';
 }
 //dbConnect($dbConfig);
-if (file_exists('controllers/'.$legalActions[$action].'Controller.php')) {
-    include 'controllers/'.$legalActions[$action].'Controller.php';
+if (file_exists('Controlleur/'.$legalActions[$action].'Controlleur.php')) {
+    include 'Controlleur/'.$legalActions[$action].'Controlleur.php';
 }else{
     die('404');
 }
-$Smarty->display('views/header.tpl');
-$Smarty->display('views/templates/'.$template.'.tpl');
-$Smarty->display('views/footer.tpl');
+$Smarty->display("Views/views/header.tpl");
+$Smarty->display('Views/views/templates/'.$template.'.tpl');
+$Smarty->display('Views/views/footer.tpl');
