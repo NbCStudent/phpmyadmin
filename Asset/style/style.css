@@ -10,7 +10,15 @@
     margin-right: auto;
 }
 
+.titleJumbotron {
+	text-align: center;
+}
+
 .tableView {
+	overflow-x: auto;
+}
+
+.tableView2 {
 	overflow-x: auto;
 }
 
