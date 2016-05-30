@@ -4,7 +4,7 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     <div class="page-header">
-                        <img class="logoPhpmyadmin" src="Asset/img/logoPhpmyadmin.png">
+                        <img class="logoPhpmyadmin" src="Asset/img/logoPhpmyadmin.png" alt="logoPhpmyadmin">
                     </div>
                     <div class="col-md-3">
                         <div class="jumbotron">
@@ -15,7 +15,7 @@
                                 <i class="fa fa-book" aria-hidden="true"></i>
                                 <i class="fa fa-repeat" aria-hidden="true"></i>
                             </p>
-                            <p>
+                            <p class="bodyJumbotron">
                                 Nouvelle base de données<br>
                                 etna_test<br>
                                 information<br>

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-05-30 16:45:26
+/* Smarty version 3.1.29, created on 2016-05-30 20:14:56
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_574c52069e4fe2_78497079',
+  'unifunc' => 'content_574c8320f0a589_19703039',
   'file_dependency' => 
   array (
     'd4ef5b8459706ef752e8b9e716a2e89ed3814e2c' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/home.tpl',
-      1 => 1464619525,
+      1 => 1464632095,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_574c52069e4fe2_78497079 ($_smarty_tpl) {
+function content_574c8320f0a589_19703039 ($_smarty_tpl) {
 ?>
 <div class="container interface">
     <div class="row">
@@ -27,7 +27,7 @@ function content_574c52069e4fe2_78497079 ($_smarty_tpl) {
             <div class="panel panel-default">
                 <div class="panel-body">
                     <div class="page-header">
-                        <img class="logoPhpmyadmin" src="Asset/img/logoPhpmyadmin.png">
+                        <img class="logoPhpmyadmin" src="Asset/img/logoPhpmyadmin.png" alt="logoPhpmyadmin">
                     </div>
                     <div class="col-md-3">
                         <div class="jumbotron">
@@ -38,7 +38,7 @@ function content_574c52069e4fe2_78497079 ($_smarty_tpl) {
                                 <i class="fa fa-book" aria-hidden="true"></i>
                                 <i class="fa fa-repeat" aria-hidden="true"></i>
                             </p>
-                            <p>
+                            <p class="bodyJumbotron">
                                 Nouvelle base de données<br>
                                 etna_test<br>
                                 information<br>
