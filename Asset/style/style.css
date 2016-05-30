@@ -1,0 +1,11 @@
+.interface {
+	margin-top: 5%;
+}
+
+.logoPhpmyadmin {
+	width: 20%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
