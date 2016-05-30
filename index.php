@@ -29,7 +29,7 @@ else{
     // L'action par default est a null
     $action = 'home';
 }
-dbConnect($dbConfig);
+//dbConnect($dbConfig);
 if (file_exists('controllers/'.$legalActions[$action].'Controller.php')) {
     include 'controllers/'.$legalActions[$action].'Controller.php';
 }else{

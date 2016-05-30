@@ -6,3 +6,4 @@
  * Time: 13:58
  */
 
+$legalaction = array("home" => 'home');
