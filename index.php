@@ -9,7 +9,7 @@ session_start();
 //session_destroy();
 require_once ('tools/dbTools.php');
 require_once ('Includes/config.php');
-require_once ('libs/smarty/Smarty.class.php');
+require_once ('Libs/smarty-3.1.29/libs/smarty/Smarty.class.php');
 // On instancie Smarty
 $Smarty = new Smarty();
 if (empty($_SESSION['id_user'])) { // Verif si utilisateur est connectée
