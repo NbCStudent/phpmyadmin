@@ -15,7 +15,7 @@
                                 <i class="fa fa-book" aria-hidden="true"></i>
                                 <i class="fa fa-repeat" aria-hidden="true"></i>
                             </p>
-                            <p>
+                            <p class="bodyJumbotron">
                                 Nouvelle base de données<br>
                                 etna_test<br>
                                 information<br>
