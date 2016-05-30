@@ -7,4 +7,3 @@
  */
 
 $legalActions = array('home' => 'home');
-echo "blop";
