@@ -20,6 +20,15 @@
                                 {foreach $dbnames as $dbname}
                                     {$dbname}<br>
                                 {/foreach}
+<<<<<<< HEAD
+=======
+                                <!--etna_test<br>
+                                information<br>
+                                mysql<br>
+                                open_classroom<br>
+                                performance<br>
+                                SCC<br>-->
+>>>>>>> 28f68e3c7317f45fa39745e0fb4af7da6eb306c0
                             </p>
                         </div>
                     </div>
