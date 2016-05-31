@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-05-31 15:56:18
+/* Smarty version 3.1.29, created on 2016-05-31 16:26:23
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_574d9802433449_06095806',
+  'unifunc' => 'content_574d9f0fbb76e9_83763153',
   'file_dependency' => 
   array (
     'd4ef5b8459706ef752e8b9e716a2e89ed3814e2c' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/home.tpl',
-      1 => 1464702976,
+      1 => 1464704781,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_574d9802433449_06095806 ($_smarty_tpl) {
+function content_574d9f0fbb76e9_83763153 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
 ?>
 <div class="container interface">
@@ -75,7 +75,7 @@ $_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_item;
                                             <div class="tableView">
                                                 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_1159450131574d980242ebc9_06602517',
+  0 => 'block_2139586230574d9f0fbae8a7_60998886',
   1 => false,
   3 => 0,
   2 => 0,
@@ -164,8 +164,8 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
         </div>
     </div>
 </div><?php }
-/* {block 'tableBody'}  file:Views/views/templates/home.tpl */
-function block_1159450131574d980242ebc9_06602517($_smarty_tpl, $_blockParentStack) {
+/* {block 'tableBody'}  file:./home.tpl */
+function block_2139586230574d9f0fbae8a7_60998886($_smarty_tpl, $_blockParentStack) {
 ?>
 
                                                 <!--<table class="table1">

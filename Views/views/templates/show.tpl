@@ -1,7 +1,6 @@
-{extends file='home.tpl'}
-
+{extends file ="./home.tpl"}
 {block name="tableBody"}
     {foreach $dbcol as $col}
-        {$col}<br>
+        {$col}
     {/foreach}
 {/block}

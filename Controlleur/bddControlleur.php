@@ -7,11 +7,9 @@ if (isset($action) && $action == 'showDB' && isset($_GET['db']) && !empty($_GET[
     $result = $sql->fetchAll(PDO::FETCH_COLUMN);
     $Smarty->assign('dbnames',$result);
     $dbname = $_GET['db'];
-    var_dump($dbname);
     /*$db = dbConnect($dbname);*/
-    $sql = $db->query("SELECT table_name FROM TABLES WHERE TABLE_NAME = $dbname");
+    $sql = $db->query("SELECT TABLE_NAME FROM TABLES WHERE TABLE_SCHEMA = '".$dbname."'");
     $result2 = $sql->fetchAll(PDO::FETCH_COLUMN);
-    var_dump($result2);
     $Smarty->assign('dbcol',$result2);
     $template = "show";
 }
