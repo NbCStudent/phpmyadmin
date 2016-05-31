@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-05-30 16:47:48
+/* Smarty version 3.1.29, created on 2016-05-31 12:09:33
   from "/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_574c5294857134_13701330',
+  'unifunc' => 'content_574d62dda73883_43922917',
   'file_dependency' => 
   array (
     '1dc4f5a59a61af276cb727ec0da60c297bc9b4a3' => 
     array (
       0 => '/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/home.tpl',
-      1 => 1464619659,
+      1 => 1464689368,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_574c5294857134_13701330 ($_smarty_tpl) {
+function content_574d62dda73883_43922917 ($_smarty_tpl) {
 ?>
 <div class="container interface">
     <div class="row">
@@ -27,7 +27,7 @@ function content_574c5294857134_13701330 ($_smarty_tpl) {
             <div class="panel panel-default">
                 <div class="panel-body">
                     <div class="page-header">
-                        <img class="logoPhpmyadmin" src="Asset/img/logoPhpmyadmin.png">
+                        <img class="logoPhpmyadmin" src="Asset/img/logoPhpmyadmin.png" alt="logoPhpmyadmin">
                     </div>
                     <div class="col-md-3">
                         <div class="jumbotron">
@@ -38,14 +38,35 @@ function content_574c5294857134_13701330 ($_smarty_tpl) {
                                 <i class="fa fa-book" aria-hidden="true"></i>
                                 <i class="fa fa-repeat" aria-hidden="true"></i>
                             </p>
-                            <p>
+                            <p class="bodyJumbotron">
                                 Nouvelle base de données<br>
-                                etna_test<br>
+                                <?php
+$_from = $_smarty_tpl->tpl_vars['dbnames']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_dbname_0_saved_item = isset($_smarty_tpl->tpl_vars['dbname']) ? $_smarty_tpl->tpl_vars['dbname'] : false;
+$_smarty_tpl->tpl_vars['dbname'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['dbname']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['dbname']->value) {
+$_smarty_tpl->tpl_vars['dbname']->_loop = true;
+$__foreach_dbname_0_saved_local_item = $_smarty_tpl->tpl_vars['dbname'];
+?>
+                                    <?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+<br>
+                                <?php
+$_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_local_item;
+}
+if ($__foreach_dbname_0_saved_item) {
+$_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_item;
+}
+?>
+                                <!--etna_test<br>
                                 information<br>
                                 mysql<br>
                                 open_classroom<br>
                                 performance<br>
-                                SCC<br>
+                                SCC<br>-->
                             </p>
                         </div>
                     </div>
@@ -56,108 +77,108 @@ function content_574c5294857134_13701330 ($_smarty_tpl) {
                                     <div class="panel panel-default">
                                         <div class="panel-body">
                                             <div class="tableView">
-                                                <table>
-                                                    <thead>
-                                                    <tr>
-                                                        <th></th>
-                                                        <th>#</th>
-                                                        <th>Nom</th>
-                                                        <th>Type</th>
-                                                        <th>Interclassement</th>
-                                                        <th>Attributs</th>
-                                                        <th>Null</th>
-                                                        <th>Défaut</th>
-                                                        <th>Extra</th>
-                                                        <th>Action</th>
-                                                    </tr>
+                                                <table class="table1">
+                                                    <thead class="thead1">
+                                                        <tr class="tr1">
+                                                            <th class="th1"></th>
+                                                            <th class="th1">#</th>
+                                                            <th class="th1">Nom</th>
+                                                            <th class="th1">Type</th>
+                                                            <th class="th1">Interclassement</th>
+                                                            <th class="th1">Attributs</th>
+                                                            <th class="th1">Null</th>
+                                                            <th class="th1">Défaut</th>
+                                                            <th class="th1">Extra</th>
+                                                            <th class="th1">Action</th>
+                                                        </tr>
                                                     </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>February</td>
-                                                        <td>$80</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>February</td>
-                                                        <td>$80</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>February</td>
-                                                        <td>$80</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                    </tr>
+                                                    <tbody class="tbody1">
+                                                        <tr class="tr1">
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                        </tr>
+                                                        <tr class="tr1">
+                                                            <td class="td1">February</td>
+                                                            <td class="td1">$80</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                        </tr>
+                                                        <tr class="tr1">
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                        </tr>
+                                                        <tr class="tr1">
+                                                            <td class="td1">February</td>
+                                                            <td class="td1">$80</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                        </tr>
+                                                        <tr class="tr1">
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                        </tr>
+                                                        <tr class="tr1">
+                                                            <td class="td1">February</td>
+                                                            <td class="td1">$80</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                        </tr>
                                                     </tbody>
                                                     <tfoot>
-                                                    <tr>
-                                                        <td>Sum</td>
-                                                        <td>$180</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                        <td>January</td>
-                                                        <td>$100</td>
-                                                    </tr>
+                                                        <tr class="tr1">
+                                                            <td class="td1">Sum</td>
+                                                            <td class="td1">$180</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                            <td class="td1">January</td>
+                                                            <td class="td1">$100</td>
+                                                        </tr>
                                                     </tfoot>
                                                 </table>
                                             </div>
@@ -168,65 +189,65 @@ function content_574c5294857134_13701330 ($_smarty_tpl) {
                                     <div class="panel panel-default">
                                         <div class="panel-body">
                                             <div class="tableView2">
-                                                <table class="table1">
-                                                    <thead class="thead1">
-                                                    <tr class="tr1">
-                                                        <th class="th1"></th>
-                                                        <th class="th1">#</th>
-                                                        <th class="th1">Nom</th>
-                                                        <th class="th1">Type</th>
+                                                <table class="table2">
+                                                    <thead class="thead2">
+                                                    <tr class="tr2">
+                                                        <th class="th2"></th>
+                                                        <th class="th2">#</th>
+                                                        <th class="th2">Nom</th>
+                                                        <th class="th2">Type</th>
                                                     </tr>
                                                     </thead>
-                                                    <tbody class="tbody1">
-                                                    <tr class="tr1">
-                                                        <td class="td1">January</td>
-                                                        <td class="td1">$100</td>
-                                                        <td class="td1">January</td>
-                                                        <td class="td1">$100</td>
+                                                    <tbody class="tbody2">
+                                                    <tr class="tr2">
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
                                                     </tr>
-                                                    <tr class="tr1">
-                                                        <td class="td1">February</td>
-                                                        <td class="td1">$80</td>
-                                                        <td class="td1">January</td>
-                                                        <td class="td1">$100</td>
+                                                    <tr class="tr2">
+                                                        <td class="td2">February</td>
+                                                        <td class="td2">$80</td>
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
                                                     </tr>
-                                                    <tr class="tr1">
-                                                        <td class="td1">January</td>
-                                                        <td class="td1">$100</td>
-                                                        <td class="td1">January</td>
-                                                        <td class="td1">$100</td>
+                                                    <tr class="tr2">
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
                                                     </tr>
-                                                    <tr class="tr1">
-                                                        <td class="td1">February</td>
-                                                        <td class="td1">$80</td>
-                                                        <td class="td1">January</td>
-                                                        <td class="td1">$100</td>
+                                                    <tr class="tr2">
+                                                        <td class="td2">February</td>
+                                                        <td class="td2">$80</td>
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
                                                     </tr>
-                                                    <tr class="tr1">
-                                                        <td class="td1">January</td>
-                                                        <td class="td1">$100</td>
-                                                        <td class="td1">January</td>
-                                                        <td class="td1">$100</td>
+                                                    <tr class="tr2">
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
                                                     </tr>
-                                                    <tr class="tr1">
-                                                        <td class="td1">January</td>
-                                                        <td class="td1">$100</td>
-                                                        <td class="td1">January</td>
-                                                        <td class="td1">$100</td>
+                                                    <tr class="tr2">
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
                                                     </tr>
-                                                    <tr class="tr1">
-                                                        <td class="td1">January</td>
-                                                        <td class="td1">$100</td>
-                                                        <td class="td1">January</td>
-                                                        <td class="td1">$100</td>
+                                                    <tr class="tr2">
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
                                                     </tr>
                                                     </tbody>
-                                                    <tfoot class="tfoot1">
-                                                    <tr class="tr1">
-                                                        <td class="td1">Sum</td>
-                                                        <td class="td1">$180</td>
-                                                        <td class="td1">January</td>
-                                                        <td class="td1">$100</td>
+                                                    <tfoot class="tfoot2">
+                                                    <tr class="tr2">
+                                                        <td class="td2">Sum</td>
+                                                        <td class="td2">$180</td>
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
                                                     </tr>
                                                     </tfoot>
                                                 </table>

@@ -10,6 +10,7 @@ session_start();
 require_once ('Model/dbTools.php');
 require_once ('Includes/config.php');
 require_once ('Libs/smarty-3.1.29/libs/Smarty.class.php');
+
 // On instancie Smarty
 $Smarty = new Smarty();
 /*

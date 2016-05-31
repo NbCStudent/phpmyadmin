@@ -7,10 +7,10 @@
  */
 
 if (isset($action) && $action == 'home') {
-    //$bddname = "information_schema";
-    //$bdd = dbConnect($dbConfig,$bddname);
-    //var_dump($bdd);
-    //$reponse = $bdd->query("SELECT `TABLE_SCHEMA` FROM `TABLES` GROUP BY `TABLE_SCHEMA`");
-    //$Smarty->assign('dbname',$reponse);
+    $bddname = "information_schema";
+    $db = dbConnect($bddname);
+    $sql = $db->query('SELECT table_schema FROM TABLES GROUP BY table_schema');
+    $result = $sql->fetchAll(PDO::FETCH_COLUMN);
+    $Smarty->assign('dbnames',$result);
     $template = "home";
 }

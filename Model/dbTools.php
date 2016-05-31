@@ -7,9 +7,16 @@
  */
 
 
-function dbConnect($dbConfig,$bddname)
+function dbConnect($bddname)
 {
-    var_dump($dbConfig);
-    $bdd = new PDO("mysql:host=".$dbConfig["host"].";dbname=".$bddname.",".$dbConfig["user"].",".$dbConfig["password"]);
-    return $bdd;
+    $dsn = "mysql:dbname=$bddname;host=127.0.0.1";
+    $user = 'root';
+    $password = 'root';
+
+    try {
+        $dbh = new PDO($dsn, $user, $password);
+    } catch (PDOException $e) {
+        echo 'Connexion échouée : ' . $e->getMessage();
+    }
+    return ($dbh);
 }
