@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: theo
- * Date: 30/05/16
- * Time: 14:18
- */
+
 session_start();
 //session_destroy();
 require_once ('Model/dbTools.php');

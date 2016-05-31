@@ -20,12 +20,6 @@
                                 {foreach $dbnames as $dbname}
                                     <a href="index.php?action=showDB&db={$dbname}">{$dbname}</a><br>
                                 {/foreach}
-                                <!--etna_test<br>
-                                information<br>
-                                mysql<br>
-                                open_classroom<br>
-                                performance<br>
-                                SCC<br>-->
                             </p>
                         </div>
                     </div>
@@ -36,7 +30,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-body">
                                             <div class="tableView">
-                                                <table class="table1">
+                                                {block name="tableBody"}
+                                                <!--<table class="table1">
                                                     <thead class="thead1">
                                                         <tr class="tr1">
                                                             <th class="th1"></th>
@@ -139,7 +134,8 @@
                                                             <td class="td1">$100</td>
                                                         </tr>
                                                     </tfoot>
-                                                </table>
+                                                </table>-->
+                                                {/block}
                                             </div>
                                         </div>
                                     </div>
@@ -148,7 +144,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-body">
                                             <div class="tableView2">
-                                                <table class="table2">
+                                                <!--<table class="table2">
                                                     <thead class="thead2">
                                                     <tr class="tr2">
                                                         <th class="th2"></th>
@@ -209,7 +205,7 @@
                                                         <td class="td2">$100</td>
                                                     </tr>
                                                     </tfoot>
-                                                </table>
+                                                </table>-->
                                             </div>
                                         </div>
                                     </div>

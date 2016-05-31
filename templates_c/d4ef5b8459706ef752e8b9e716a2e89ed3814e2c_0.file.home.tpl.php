@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-05-30 20:14:56
+/* Smarty version 3.1.29, created on 2016-05-31 16:26:23
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_574c8320f0a589_19703039',
+  'unifunc' => 'content_574d9f0fbb76e9_83763153',
   'file_dependency' => 
   array (
     'd4ef5b8459706ef752e8b9e716a2e89ed3814e2c' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/home.tpl',
-      1 => 1464632095,
+      1 => 1464704781,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,8 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_574c8320f0a589_19703039 ($_smarty_tpl) {
+function content_574d9f0fbb76e9_83763153 ($_smarty_tpl) {
+$_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
 ?>
 <div class="container interface">
     <div class="row">
@@ -40,12 +41,28 @@ function content_574c8320f0a589_19703039 ($_smarty_tpl) {
                             </p>
                             <p class="bodyJumbotron">
                                 Nouvelle base de données<br>
-                                etna_test<br>
-                                information<br>
-                                mysql<br>
-                                open_classroom<br>
-                                performance<br>
-                                SCC<br>
+                                <?php
+$_from = $_smarty_tpl->tpl_vars['dbnames']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_dbname_0_saved_item = isset($_smarty_tpl->tpl_vars['dbname']) ? $_smarty_tpl->tpl_vars['dbname'] : false;
+$_smarty_tpl->tpl_vars['dbname'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['dbname']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['dbname']->value) {
+$_smarty_tpl->tpl_vars['dbname']->_loop = true;
+$__foreach_dbname_0_saved_local_item = $_smarty_tpl->tpl_vars['dbname'];
+?>
+                                    <a href="index.php?action=showDB&db=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+"><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+</a><br>
+                                <?php
+$_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_local_item;
+}
+if ($__foreach_dbname_0_saved_item) {
+$_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_item;
+}
+?>
                             </p>
                         </div>
                     </div>
@@ -56,7 +73,102 @@ function content_574c8320f0a589_19703039 ($_smarty_tpl) {
                                     <div class="panel panel-default">
                                         <div class="panel-body">
                                             <div class="tableView">
-                                                <table class="table1">
+                                                <?php 
+$_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
+  0 => 'block_2139586230574d9f0fbae8a7_60998886',
+  1 => false,
+  3 => 0,
+  2 => 0,
+));
+?>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="tableView2">
+                                                <!--<table class="table2">
+                                                    <thead class="thead2">
+                                                    <tr class="tr2">
+                                                        <th class="th2"></th>
+                                                        <th class="th2">#</th>
+                                                        <th class="th2">Nom</th>
+                                                        <th class="th2">Type</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="tbody2">
+                                                    <tr class="tr2">
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                    </tr>
+                                                    <tr class="tr2">
+                                                        <td class="td2">February</td>
+                                                        <td class="td2">$80</td>
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                    </tr>
+                                                    <tr class="tr2">
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                    </tr>
+                                                    <tr class="tr2">
+                                                        <td class="td2">February</td>
+                                                        <td class="td2">$80</td>
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                    </tr>
+                                                    <tr class="tr2">
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                    </tr>
+                                                    <tr class="tr2">
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                    </tr>
+                                                    <tr class="tr2">
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                    </tr>
+                                                    </tbody>
+                                                    <tfoot class="tfoot2">
+                                                    <tr class="tr2">
+                                                        <td class="td2">Sum</td>
+                                                        <td class="td2">$180</td>
+                                                        <td class="td2">January</td>
+                                                        <td class="td2">$100</td>
+                                                    </tr>
+                                                    </tfoot>
+                                                </table>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><?php }
+/* {block 'tableBody'}  file:./home.tpl */
+function block_2139586230574d9f0fbae8a7_60998886($_smarty_tpl, $_blockParentStack) {
+?>
+
+                                                <!--<table class="table1">
                                                     <thead class="thead1">
                                                         <tr class="tr1">
                                                             <th class="th1"></th>
@@ -159,87 +271,8 @@ function content_574c8320f0a589_19703039 ($_smarty_tpl) {
                                                             <td class="td1">$100</td>
                                                         </tr>
                                                     </tfoot>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="panel panel-default">
-                                        <div class="panel-body">
-                                            <div class="tableView2">
-                                                <table class="table2">
-                                                    <thead class="thead2">
-                                                    <tr class="tr2">
-                                                        <th class="th2"></th>
-                                                        <th class="th2">#</th>
-                                                        <th class="th2">Nom</th>
-                                                        <th class="th2">Type</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody class="tbody2">
-                                                    <tr class="tr2">
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                    </tr>
-                                                    <tr class="tr2">
-                                                        <td class="td2">February</td>
-                                                        <td class="td2">$80</td>
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                    </tr>
-                                                    <tr class="tr2">
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                    </tr>
-                                                    <tr class="tr2">
-                                                        <td class="td2">February</td>
-                                                        <td class="td2">$80</td>
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                    </tr>
-                                                    <tr class="tr2">
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                    </tr>
-                                                    <tr class="tr2">
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                    </tr>
-                                                    <tr class="tr2">
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                    </tr>
-                                                    </tbody>
-                                                    <tfoot class="tfoot2">
-                                                    <tr class="tr2">
-                                                        <td class="td2">Sum</td>
-                                                        <td class="td2">$180</td>
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                    </tr>
-                                                    </tfoot>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div><?php }
+                                                </table>-->
+                                                <?php
+}
+/* {/block 'tableBody'} */
 }
