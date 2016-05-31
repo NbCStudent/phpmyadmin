@@ -7,5 +7,10 @@
  */
 
 if (isset($action) && $action == 'home') {
+    //$bddname = "information_schema";
+    //$bdd = dbConnect($dbConfig,$bddname);
+    //var_dump($bdd);
+    //$reponse = $bdd->query("SELECT `TABLE_SCHEMA` FROM `TABLES` GROUP BY `TABLE_SCHEMA`");
+    //$Smarty->assign('dbname',$reponse);
     $template = "home";
 }
