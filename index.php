@@ -7,17 +7,12 @@
  */
 session_start();
 //session_destroy();
-//require_once ('Model/dbTools.php');
+require_once ('Model/dbTools.php');
 require_once ('Includes/config.php');
 require_once ('Libs/smarty-3.1.29/libs/Smarty.class.php');
+
 // On instancie Smarty
 $Smarty = new Smarty();
-if (empty($_SESSION['id_user'])) { // Verif si utilisateur est connectée
-    $is_connected = false;
-}
-else{
-    $is_connected = true;
-}
 /*
 **	Définition des differentes actions possibles
 **	sur une page
@@ -29,7 +24,6 @@ else{
     // L'action par default est a null
     $action = 'home';
 }
-//dbConnect($dbConfig);
 if (file_exists('Controlleur/'.$legalActions[$action].'Controlleur.php')) {
     include 'Controlleur/'.$legalActions[$action].'Controlleur.php';
 }else{
