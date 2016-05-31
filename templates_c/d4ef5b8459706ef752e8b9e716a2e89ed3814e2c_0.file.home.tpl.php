@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-05-30 20:14:56
+/* Smarty version 3.1.29, created on 2016-05-31 13:24:00
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_574c8320f0a589_19703039',
+  'unifunc' => 'content_574d74507e9654_20697829',
   'file_dependency' => 
   array (
     'd4ef5b8459706ef752e8b9e716a2e89ed3814e2c' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/home.tpl',
-      1 => 1464632095,
+      1 => 1464693839,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_574c8320f0a589_19703039 ($_smarty_tpl) {
+function content_574d74507e9654_20697829 ($_smarty_tpl) {
 ?>
 <div class="container interface">
     <div class="row">
@@ -40,12 +40,27 @@ function content_574c8320f0a589_19703039 ($_smarty_tpl) {
                             </p>
                             <p class="bodyJumbotron">
                                 Nouvelle base de données<br>
-                                etna_test<br>
-                                information<br>
-                                mysql<br>
-                                open_classroom<br>
-                                performance<br>
-                                SCC<br>
+                                <?php
+$_from = $_smarty_tpl->tpl_vars['dbnames']->value;
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$__foreach_dbname_0_saved_item = isset($_smarty_tpl->tpl_vars['dbname']) ? $_smarty_tpl->tpl_vars['dbname'] : false;
+$_smarty_tpl->tpl_vars['dbname'] = new Smarty_Variable();
+$_smarty_tpl->tpl_vars['dbname']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['dbname']->value) {
+$_smarty_tpl->tpl_vars['dbname']->_loop = true;
+$__foreach_dbname_0_saved_local_item = $_smarty_tpl->tpl_vars['dbname'];
+?>
+                                    <?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+<br>
+                                <?php
+$_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_local_item;
+}
+if ($__foreach_dbname_0_saved_item) {
+$_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_item;
+}
+?>
                             </p>
                         </div>
                     </div>
