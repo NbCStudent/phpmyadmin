@@ -18,7 +18,7 @@
                             <p class="bodyJumbotron">
                                 Nouvelle base de données<br>
                                 {foreach $dbnames as $dbname}
-                                    {$dbname}<br>
+                                    <a href="index.php?action=showDB&db={$dbname}">{$dbname}</a><br>
                                 {/foreach}
                                 <!--etna_test<br>
                                 information<br>
