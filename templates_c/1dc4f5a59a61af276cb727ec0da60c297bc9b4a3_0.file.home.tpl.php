@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-05-31 12:09:33
+/* Smarty version 3.1.29, created on 2016-05-31 14:09:56
   from "/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_574d62dda73883_43922917',
+  'unifunc' => 'content_574d7f14697495_15183869',
   'file_dependency' => 
   array (
     '1dc4f5a59a61af276cb727ec0da60c297bc9b4a3' => 
     array (
       0 => '/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/home.tpl',
-      1 => 1464689368,
+      1 => 1464696585,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_574d62dda73883_43922917 ($_smarty_tpl) {
+function content_574d7f14697495_15183869 ($_smarty_tpl) {
 ?>
 <div class="container interface">
     <div class="row">
@@ -52,8 +52,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['dbname']->value) {
 $_smarty_tpl->tpl_vars['dbname']->_loop = true;
 $__foreach_dbname_0_saved_local_item = $_smarty_tpl->tpl_vars['dbname'];
 ?>
-                                    <?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
-<br>
+                                    <a href="index.php?action=showDB&db=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+"><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+</a><br>
                                 <?php
 $_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_local_item;
 }
