@@ -17,12 +17,15 @@
                             </p>
                             <p class="bodyJumbotron">
                                 Nouvelle base de données<br>
-                                etna_test<br>
+                                {foreach $dbnames as $dbname}
+                                    {$dbname}<br>
+                                {/foreach}
+                                <!--etna_test<br>
                                 information<br>
                                 mysql<br>
                                 open_classroom<br>
                                 performance<br>
-                                SCC<br>
+                                SCC<br>-->
                             </p>
                         </div>
                     </div>
