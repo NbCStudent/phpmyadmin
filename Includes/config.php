@@ -1,6 +1,7 @@
 <?php
 
-$legalActions = array('home' => 'home');
+$legalActions = array('home' => 'home',
+                    'showDB' => 'bdd');
 
 $dbConfig = array(
     'host' => 'localhost',
