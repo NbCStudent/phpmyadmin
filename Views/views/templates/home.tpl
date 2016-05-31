@@ -10,10 +10,10 @@
                         <div class="jumbotron">
                             <h3 class="titleJumbotron">Accueil</h3>
                             <p class="titleJumbotron">
-                                <i class="fa fa-home" aria-hidden="true"></i>
-                                <i class="fa fa-question" aria-hidden="true"></i>
-                                <i class="fa fa-book" aria-hidden="true"></i>
-                                <i class="fa fa-repeat" aria-hidden="true"></i>
+                                <a href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                <a href="/phpMyAdmin/doc/html/index.html"><i class="fa fa-question" aria-hidden="true"></a></i>
+                                <a href="http://dev.mysql.com/doc/refman/5.5/en/"><i class="fa fa-book" aria-hidden="true"></a></i>
+                                <a href="#"><i class="fa fa-repeat" aria-hidden="true"></a></i>
                             </p>
                             <p class="bodyJumbotron">
                                 Nouvelle base de données<br>
