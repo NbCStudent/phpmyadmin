@@ -33,7 +33,7 @@
                 <td class="th1"><b></b></td>
                 <td class="th1"><b>InnoDB</b></td>
                 <td class="th1"><b>ut8-unicode_ci</b></td>
-                <td class="th1"><b>Tables</b></td>
+                <td class="th1"><b></b></td>
                 <td class="th1"><b>Tables</b></td>
             </tr>
         </tfoot>

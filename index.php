@@ -9,14 +9,14 @@ require_once ('Libs/smarty-3.1.29/libs/Smarty.class.php');
 // On instancie Smarty
 $Smarty = new Smarty();
 /*
-**	Définition des differentes actions possibles
+**	Définition des différentes actions possibles
 **	sur une page
 */
 if (!empty($_GET['action']) && array_key_exists($_GET['action'], $legalActions)) {
     $action = $_GET['action'];
 }
 else{
-    // L'action par default est a null
+    // L'action par default est à null
     $action = 'home';
 }
 if (file_exists('Controlleur/'.$legalActions[$action].'Controlleur.php')) {
