@@ -2,7 +2,7 @@
 
 function dbConnect($bddname)
 {
-    $dsn = "mysql:host=localhost;dbname=$bddname;charset=utf8";
+    $dsn = "mysql:host=127.0.0.1;dbname=$bddname;charset=utf8";
     $user = 'root';
     $password = 'root';
 
@@ -24,6 +24,7 @@ function GetTableDB($db,$dbname)
     $sql = $db->query("SELECT TABLE_NAME FROM TABLES WHERE TABLE_SCHEMA = '".$dbname."'");
     $result = $sql->fetchAll(PDO::FETCH_COLUMN);
     return ($result);
+<<<<<<< HEAD
 }
 function AddNewDB($cr, $dbname)
 {
@@ -125,3 +126,6 @@ function AddNewDB()
 
     $conn = null;
 }*/
+=======
+}
+>>>>>>> f3a6a0897f1bce5317c346ae3cb03e2a0bdb5108
