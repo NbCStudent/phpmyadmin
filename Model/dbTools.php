@@ -2,7 +2,7 @@
 
 function dbConnect($bddname)
 {
-    $dsn = "mysql:host=127.0.0.1;dbname=$bddname;charset=utf8";
+    $dsn = "mysql:host=localhost;dbname=$bddname;charset=utf8";
     $user = 'root';
     $password = 'root';
 
