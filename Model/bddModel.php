@@ -1,6 +1,5 @@
 <?php
 
-<<<<<<< HEAD
 function GetAllDB($co)
 {
     $sql = $co->query('SHOW DATABASES');
@@ -18,5 +17,3 @@ function deleteBDD($db,$dbname)
   $sql = $db->query("DROP DATABASE $dbname");
   return ($sql);
 }
-=======
->>>>>>> abbd90f0f0beb3495781dc4a176c880170d2676d
