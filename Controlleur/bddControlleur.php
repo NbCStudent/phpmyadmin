@@ -5,9 +5,11 @@ if (isset($action) && $action == 'showDB' && isset($_GET['db']) && !empty($_GET[
     $result = GetAllDB($db);
     $dbname = $_GET['db'];
     $result2 = GetTableDB($db,$dbname);
+    $statsdb = GetStatsDB($db,$dbname);
     $Smarty->assign(array('dbcol'=>$result2,
                     'dbname'=>$_GET['db'],
-                    'dbnames' => $result));
+                    'dbnames' => $result,
+                    'dbstat' => $statsdb));
     $template = "show";
 }
 elseif (isset($action) && $action == 'addDB') {
