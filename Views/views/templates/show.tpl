@@ -1,5 +1,29 @@
 {extends file ="./home.tpl"}
 {block name="tableBody"}
+    <h4>Base de donnée : {$dbname}</h4>
+    <button id="btn_drop" class="btn btn-danger" data-toggle="modal" data-target="#alert_drop_bdd_comfirm"><i class="glyphicon glyphicon-remove"></i>&nbsp;Suprimer</button>
+    <br>
+    <!-- Modal -->
+    <div id="alert_drop_bdd_comfirm" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Confirmation Suppression Base de donnée : {$dbname}</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Confirmation suppression:&nbsp;</p>
+                    <a href="index.php?action=deleteBDD&db_name={$dbname}" class="btn btn-success">Valider</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {if $dbcol}
     <table>
         <thead>
             <tr>
@@ -38,4 +62,13 @@
             </tr>
         </tfoot>
     </table>
+        {else}
+            Ajouter une table :
+            <form action="index.php?action=addTable" method="post">
+                <label for="tablename">Nom : </label>
+                <input type="text" name="tablename">
+                <input type="hidden" name="DBname" value="{$dbname}">
+                <input type="submit" value="valider">
+            </form>
+    {/if}
 {/block}
