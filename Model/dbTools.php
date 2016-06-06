@@ -2,7 +2,7 @@
 
 function dbConnect($bddname)
 {
-    $dsn = "mysql:host=localhost;dbname=$bddname;charset=utf8";
+    $dsn = "mysql:host=127.0.0.1;dbname=$bddname;charset=utf8";
     $user = 'root';
     $password = 'root';
 
@@ -29,4 +29,10 @@ function deleteBDD($db,$dbname)
 {
   $sql = $db->query("DROP DATABASE $dbname");
   return ($sql);
+}
+function GetStatsDB($db,$dbname)
+{
+  $sql = $db->query("SELECT COUNT(TABLE_NAME) as nb_table,SUM(DATA_LENGTH) as sum_length,MIN(CREATE_TIME) as create_time FROM TABLES WHERE TABLE_SCHEMA ='".$dbname."'");
+  $result = $sql->fetchAll(PDO::FETCH_ASSOC);
+  return ($result);
 }
