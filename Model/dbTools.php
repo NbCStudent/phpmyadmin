@@ -21,8 +21,8 @@ function GetAllDB($co)
 }
 function GetTableDB($db,$dbname)
 {
-    $sql = $db->query("SELECT TABLE_NAME FROM TABLES WHERE TABLE_SCHEMA = '" . $dbname . "'");
-    $result = $sql->fetchAll(PDO::FETCH_COLUMN);
+    $sql = $db->query("SELECT TABLE_NAME,DATA_LENGTH,CREATE_TIME,TABLE_ROWS,TABLE_TYPE,TABLE_COLLATION FROM TABLES WHERE TABLE_SCHEMA = '" . $dbname . "'");
+    $result = $sql->fetchAll();
     return ($result);
 }
 function deleteBDD($db,$dbname)
