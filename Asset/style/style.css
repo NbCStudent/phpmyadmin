@@ -54,3 +54,6 @@
 	padding-left: 8px;
 	padding-right: 8px;
 }
+.alert_drop_confirm {
+	display: none;
+}
