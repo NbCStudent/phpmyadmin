@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-06 11:24:24
+/* Smarty version 3.1.29, created on 2016-06-06 13:55:36
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/show.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57554148290663_11015331',
+  'unifunc' => 'content_575564b81aed01_44190714',
   'file_dependency' => 
   array (
     '34435ec0758a1885f19bc84983d1ce9b17917fc2' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/show.tpl',
-      1 => 1465205063,
+      1 => 1465214134,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:./home.tpl' => 1,
   ),
 ),false)) {
-function content_57554148290663_11015331 ($_smarty_tpl) {
+function content_575564b81aed01_44190714 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_354588642575541482706b0_78794068',
+  0 => 'block_1626262907575564b818baa6_73590207',
   1 => false,
   3 => 0,
   2 => 0,
@@ -37,7 +37,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:./home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'tableBody'}  file:Views/views/templates/show.tpl */
-function block_354588642575541482706b0_78794068($_smarty_tpl, $_blockParentStack) {
+function block_1626262907575564b818baa6_73590207($_smarty_tpl, $_blockParentStack) {
 ?>
 
     <div class="col-md-12">
@@ -79,7 +79,6 @@ function block_354588642575541482706b0_78794068($_smarty_tpl, $_blockParentStack
                 <th class="th1">Type</th>
                 <th class="th1">Collation</th>
                 <th class="th1">Size</th>
-                <th class="th1">Loss</th>
             </tr>
         </thead>
         <tbody>
@@ -96,15 +95,21 @@ $_smarty_tpl->tpl_vars['col']->_loop = true;
 $__foreach_col_0_saved_local_item = $_smarty_tpl->tpl_vars['col'];
 ?>
                     <tr>
-                        <td class="td1"><?php echo $_smarty_tpl->tpl_vars['col']->value;?>
+                        <td class="td1"><?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_NAME'];?>
 </td>
-                        <td class="td1"><span class="btn btn-default btnTable">Display</span></td>
+                        <td class="td1"><a href="index.php?action=showTable&dbname=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+&tableName=<?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_NAME'];?>
+"
+                                           class="btn btn-default btnTable">Display</a></td>
                         <td class="td1"><span class="btn btn-default btnTable">Erase</span></td>
-                        <td class="td1"></td>
-                        <td class="td1"></td>
-                        <td class="td1"></td>
-                        <td class="td1"></td>
-                        <td class="td1"></td>
+                        <td class="td1"><?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_ROWS'];?>
+</td>
+                        <td class="td1"><?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_TYPE'];?>
+</td>
+                        <td class="td1"><?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_COLLATION'];?>
+</td>
+                        <td class="td1"><?php echo $_smarty_tpl->tpl_vars['col']->value['DATA_LENGTH'];?>
+</td>
                     </tr>
                 <?php
 $_smarty_tpl->tpl_vars['col'] = $__foreach_col_0_saved_local_item;
@@ -117,17 +122,16 @@ $_smarty_tpl->tpl_vars['col'] = $__foreach_col_0_saved_item;
         <tfoot>
             <tr>
                 <td class="th1"><b>Tables</b></td>
-                <td class="th1" colspan="2"><b>Sum</b></td>
-                <td class="th1"><b></b></td>
-                <td class="th1"><b>InnoDB</b></td>
-                <td class="th1"><b>ut8-unicode_ci</b></td>
-                <td class="th1"><b></b></td>
-                <td class="th1"><b>Tables</b></td>
+                <td class="th1" colspan="2"><b>Action</b></td>
+                <td class="th1"><b>Lines</b></td>
+                <td class="th1"><b>Type</b></td>
+                <td class="th1"><b>Collation</b></td>
+                <td class="th1"><b>Size</b></td>
             </tr>
         </tfoot>
     </table>
-        <?php } else { ?>
-        <br><br>
+<?php }?>
+        <br>
         <form action="index.php?action=addTable" method="post">
             <div class="col-md-12">
                 <label for="tableName">Ajouter une table :</label>
@@ -143,7 +147,7 @@ $_smarty_tpl->tpl_vars['col'] = $__foreach_col_0_saved_item;
                 <button type="submit" class="btn btnConfirm">Valider</button>
             </div>
         </form>
-    <?php }
+<?php
 }
 /* {/block 'tableBody'} */
 }
