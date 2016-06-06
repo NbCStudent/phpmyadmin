@@ -23,7 +23,6 @@
 
         </div>
     </div>
-    {if $dbcol}
     <table>
         <thead>
             <tr>
@@ -62,7 +61,6 @@
             </tr>
         </tfoot>
     </table>
-        {else}
             Ajouter une table :
             <form action="index.php?action=addTable" method="post">
                 <label for="tablename">Nom : </label>
@@ -70,5 +68,4 @@
                 <input type="hidden" name="DBname" value="{$dbname}">
                 <input type="submit" value="valider">
             </form>
-    {/if}
 {/block}
