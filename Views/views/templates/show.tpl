@@ -3,8 +3,10 @@
     <div class="col-md-12">
         <h4>Base de donnée : {$dbname}</h4>
     </div>
-    <div class="col-md-12">
-      <button id="aff_stat" class="btn btn-success" data-toggle="modal" data-target="#alert_aff_stat_bdd">Afficher Statistique</button>
+    <div class="col-md-3">
+        <button id="aff_stat" class="btn btnConfirm" data-toggle="modal" data-target="#alert_aff_stat_bdd">Afficher Statistique</button>
+    </div>
+    <div class="col-md-9">
         <button id="btn_drop" class="btn btn-danger btnErase" data-toggle="modal" data-target="#alert_drop_bdd_comfirm">
             &nbsp;Supprimer</button>
     </div>
@@ -37,9 +39,22 @@
                     <h4 class="modal-title">Statistique la base {$dbname}</h4>
                 </div>
                 <div class="modal-body">
-                    <p><h6>Nombre de Table: </h6>{$dbstat.0.nb_table}</p>
-                    <p>Espace m&eacute;moire: </p>{$dbstat.0.sum_length} &nbsp;&nbsp;
-                    <p>Date de cr&eacute;ation: </p> {$dbstat.0.create_time}
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="th1">Nombre de tables</th>
+                                <th class="th1">Espace mémoire</th>
+                                <th class="th1">Date de création</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td1">{$dbstat.0.nb_table}</td>
+                                <td class="td1">{$dbstat.0.sum_length}</td>
+                                <td class="td1">{$dbstat.0.create_time}</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btnConfirm" data-dismiss="modal">Annuler</button>
