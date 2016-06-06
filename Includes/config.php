@@ -2,7 +2,10 @@
 
 $legalActions = array('home' => 'home',
                     'showDB' => 'bdd',
-                    'addDB' => 'bdd');
+                    'addDB' => 'bdd',
+                    'checkAddDB' => 'bdd',
+                    'addTable' => 'bdd',
+                    'deleteBDD' => 'bdd');
 
 $dbConfig = array(
     'host' => 'localhost',
