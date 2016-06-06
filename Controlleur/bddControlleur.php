@@ -31,7 +31,7 @@ elseif (isset($action) && $action == 'addTable'){
     $tableName = htmlspecialchars($_POST['tablename']);
     $db = dbConnect();
     $result = GetAllDB($db);
-    $add = addTable($tableName);
+    //$add = addTable($tableName);
     $Smarty->assign(array('dbnames'=>$result,
                         'dbname' => $_POST['DBname'],
                         'tableName' => $tableName));

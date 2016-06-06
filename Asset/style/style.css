@@ -1,7 +1,8 @@
-/* Head */
+/* Home */
 
 .interface {
 	margin-top: 2%;
+	width: 100%;
 }
 
 .logoPhpmyadmin {
@@ -56,4 +57,46 @@
 }
 .alert_drop_confirm {
 	display: none;
+}
+
+/* add DB */
+
+.btnConfirm {
+	color: #ffffff;
+	background-color: rgba(52,54,66,1);
+	border-color: rgba(52,54,66,1);
+}
+
+.btnConfirm:hover {
+	color: #ffffff;
+	background-color: #4e5162;
+	border-color: #4e5162;
+	outline:none !important;
+}
+
+.btnConfirm:focus {
+	color: #ffffff;
+	background-color: #4e5162;
+	border-color: #4e5162;
+	outline:none !important;
+}
+
+.btnConfirm:active {
+	color: #ffffff;
+	background-color: #4e5162;
+	border-color: #4e5162;
+	outline:none !important;
+}
+
+.btnConfirm:active:focus {
+	color: #ffffff;
+	background-color: #4e5162;
+	border-color: #4e5162;
+	outline:none !important;
+}
+
+/* add table */
+
+.btnErase {
+	margin-bottom: 2%;
 }

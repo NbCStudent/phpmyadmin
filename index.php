@@ -27,4 +27,3 @@ if (file_exists('Controlleur/'.$legalActions[$action].'Controlleur.php')) {
 $Smarty->display("Views/views/header.tpl");
 $Smarty->display('Views/views/templates/'.$template.'.tpl');
 $Smarty->display('Views/views/footer.tpl');
-

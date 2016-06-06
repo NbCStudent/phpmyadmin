@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-05-31 19:44:33
+/* Smarty version 3.1.29, created on 2016-06-06 10:27:30
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/header.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_574dcd81507541_79890883',
+  'unifunc' => 'content_575533f2948cb2_20966522',
   'file_dependency' => 
   array (
     '64abc57ffd4f99d64264e3c2ac1182d83616b0f4' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/header.tpl',
-      1 => 1464716668,
+      1 => 1465200739,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_574dcd81507541_79890883 ($_smarty_tpl) {
+function content_575533f2948cb2_20966522 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -31,6 +31,5 @@ function content_574dcd81507541_79890883 ($_smarty_tpl) {
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
         <link rel="stylesheet" href="Asset/style/style.css">
     </head>
-
     <body><?php }
 }

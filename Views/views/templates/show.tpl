@@ -1,7 +1,12 @@
 {extends file ="./home.tpl"}
 {block name="tableBody"}
-    <h4>Base de donnée : {$dbname}</h4>
-    <button id="btn_drop" class="btn btn-danger" data-toggle="modal" data-target="#alert_drop_bdd_comfirm"><i class="glyphicon glyphicon-remove"></i>&nbsp;Suprimer</button>
+    <div class="col-md-12">
+        <h4>Base de donnée : {$dbname}</h4>
+    </div>
+    <div class="col-md-12">
+        <button id="btn_drop" class="btn btn-danger btnErase" data-toggle="modal" data-target="#alert_drop_bdd_comfirm">
+            &nbsp;Supprimer</button>
+    </div>
     <br>
     <!-- Modal -->
     <div id="alert_drop_bdd_comfirm" class="modal fade" role="dialog">
@@ -10,14 +15,12 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Confirmation Suppression Base de donnée : {$dbname}</h4>
+                    <h4 class="modal-title">Voulez-vous réellement supprimer la base {$dbname} ?</h4>
                 </div>
                 <div class="modal-body">
-                    <p>Confirmation suppression:&nbsp;</p>
-                    <a href="index.php?action=deleteBDD&db_name={$dbname}" class="btn btn-success">Valider</a>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <!--<p>Confirmation suppression:&nbsp;</p>-->
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+                    <a href="index.php?action=deleteBDD&db_name={$dbname}" class="btn btnConfirm">Confirmer</a>
                 </div>
             </div>
 
@@ -63,12 +66,20 @@
         </tfoot>
     </table>
         {else}
-            Ajouter une table :
-            <form action="index.php?action=addTable" method="post">
-                <label for="tablename">Nom : </label>
-                <input type="text" name="tablename">
-                <input type="hidden" name="DBname" value="{$dbname}">
-                <input type="submit" value="valider">
-            </form>
+        <br><br>
+        <form action="index.php?action=addTable" method="post">
+            <div class="col-md-12">
+                <label for="tableName">Ajouter une table :</label>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <input type="text" name="tableName" class="form-control" placeholder="Donnez-lui un nom">
+                    <input type="hidden" name="DBname" value="{$dbname}">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <button type="submit" class="btn btnConfirm">Valider</button>
+            </div>
+        </form>
     {/if}
 {/block}
