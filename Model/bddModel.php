@@ -8,7 +8,7 @@ function GetAllDB($co)
 }
 function GetTableDB($db,$dbname)
 {
-    $sql = $db->query("SELECT TABLE_NAME FROM TABLES WHERE TABLE_SCHEMA = '" . $dbname . "'");
+    $sql = $db->query("SELECT TABLE_NAME,DATA_LENGTH,CREATE_TIME FROM TABLES WHERE TABLE_SCHEMA = '" . $dbname . "'");
     $result = $sql->fetchAll(PDO::FETCH_COLUMN);
     return ($result);
 }

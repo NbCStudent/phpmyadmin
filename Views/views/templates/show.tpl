@@ -23,6 +23,7 @@
 
         </div>
     </div>
+    {if $dbcol}
     <table>
         <thead>
             <tr>
@@ -32,35 +33,33 @@
                 <th class="th1">Type</th>
                 <th class="th1">Collation</th>
                 <th class="th1">Size</th>
-                <th class="th1">Loss</th>
             </tr>
         </thead>
         <tbody>
                 {foreach $dbcol as $col}
                     <tr>
-                        <td class="td1">{$col}</td>
+                        <td class="td1">{$col.TABLE_NAME}</td>
                         <td class="td1"><span class="btn btn-default btnTable">Display</span></td>
                         <td class="td1"><span class="btn btn-default btnTable">Erase</span></td>
-                        <td class="td1"></td>
-                        <td class="td1"></td>
-                        <td class="td1"></td>
-                        <td class="td1"></td>
-                        <td class="td1"></td>
+                        <td class="td1">{$col.TABLE_ROWS}</td>
+                        <td class="td1">{$col.TABLE_TYPE}</td>
+                        <td class="td1">{$col.TABLE_COLLATION}</td>
+                        <td class="td1">{$col.DATA_LENGTH}</td>
                     </tr>
                 {/foreach}
         </tbody>
         <tfoot>
             <tr>
                 <td class="th1"><b>Tables</b></td>
-                <td class="th1" colspan="2"><b>Sum</b></td>
-                <td class="th1"><b></b></td>
-                <td class="th1"><b>InnoDB</b></td>
-                <td class="th1"><b>ut8-unicode_ci</b></td>
-                <td class="th1"><b></b></td>
-                <td class="th1"><b>Tables</b></td>
+                <td class="th1" colspan="2"><b>Action</b></td>
+                <td class="th1"><b>Lines</b></td>
+                <td class="th1"><b>Type</b></td>
+                <td class="th1"><b>Collation</b></td>
+                <td class="th1"><b>Size</b></td>
             </tr>
         </tfoot>
     </table>
+  {/if}
             Ajouter une table :
             <form action="index.php?action=addTable" method="post">
                 <label for="tablename">Nom : </label>
