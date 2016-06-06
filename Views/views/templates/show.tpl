@@ -42,7 +42,8 @@
                 {foreach $dbcol as $col}
                     <tr>
                         <td class="td1">{$col.TABLE_NAME}</td>
-                        <td class="td1"><span class="btn btn-default btnTable">Display</span></td>
+                        <td class="td1"><a href="index.php?action=showTable&dbname={$dbname}&tableName={$col.TABLE_NAME}"
+                                           class="btn btn-default btnTable">Display</a></td>
                         <td class="td1"><span class="btn btn-default btnTable">Erase</span></td>
                         <td class="td1">{$col.TABLE_ROWS}</td>
                         <td class="td1">{$col.TABLE_TYPE}</td>
