@@ -30,7 +30,8 @@
                                     <div class="panel panel-default">
                                         <div class="panel-body">
                                             <div class="tableView">
-                                                {block name="tableBody"}{/block}
+                                                {block name="tableBody"}
+                                                {/block}
                                             </div>
                                         </div>
                                     </div>

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-03 14:11:45
+/* Smarty version 3.1.29, created on 2016-06-06 16:40:30
   from "/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57517401ae3183_45432460',
+  'unifunc' => 'content_57558b5eadd379_57238498',
   'file_dependency' => 
   array (
     '1dc4f5a59a61af276cb727ec0da60c297bc9b4a3' => 
     array (
       0 => '/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/home.tpl',
-      1 => 1464955798,
+      1 => 1465224028,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57517401ae3183_45432460 ($_smarty_tpl) {
+function content_57558b5eadd379_57238498 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
 ?>
 <div class="container interface">
@@ -75,7 +75,7 @@ $_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_item;
                                             <div class="tableView">
                                                 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_72269091457517401adf456_43309778',
+  0 => 'block_7102247757558b5ead8385_01792176',
   1 => false,
   3 => 0,
   2 => 0,
@@ -95,8 +95,11 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
     </div>
 </div>
 <?php }
-/* {block 'tableBody'}  file:./home.tpl */
-function block_72269091457517401adf456_43309778($_smarty_tpl, $_blockParentStack) {
+/* {block 'tableBody'}  file:Views/views/templates/home.tpl */
+function block_7102247757558b5ead8385_01792176($_smarty_tpl, $_blockParentStack) {
+?>
+
+                                                <?php
 }
 /* {/block 'tableBody'} */
 }
