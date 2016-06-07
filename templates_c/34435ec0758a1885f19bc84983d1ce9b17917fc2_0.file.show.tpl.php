@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-06 13:55:36
+/* Smarty version 3.1.29, created on 2016-06-07 14:29:41
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/show.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_575564b81aed01_44190714',
+  'unifunc' => 'content_5756be35d3c5b9_69921490',
   'file_dependency' => 
   array (
     '34435ec0758a1885f19bc84983d1ce9b17917fc2' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/show.tpl',
-      1 => 1465214134,
+      1 => 1465302580,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:./home.tpl' => 1,
   ),
 ),false)) {
-function content_575564b81aed01_44190714 ($_smarty_tpl) {
+function content_5756be35d3c5b9_69921490 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_1626262907575564b818baa6_73590207',
+  0 => 'block_19731422035756be35d08a15_99275177',
   1 => false,
   3 => 0,
   2 => 0,
@@ -37,27 +37,30 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:./home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'tableBody'}  file:Views/views/templates/show.tpl */
-function block_1626262907575564b818baa6_73590207($_smarty_tpl, $_blockParentStack) {
+function block_19731422035756be35d08a15_99275177($_smarty_tpl, $_blockParentStack) {
 ?>
 
-    <div class="col-md-12">
-        <h4>Base de donnée : <?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
-</h4>
+    <div class="col-md-12 informationTitle">
+        <h4>Database : <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+</b></h4>
     </div>
-    <div class="col-md-12">
+    <div class="col-md-3 informationButton">
+        <button id="aff_stat" class="btn btnConfirm" data-toggle="modal" data-target="#alert_aff_stat_bdd">Display statistics</button>
+    </div>
+    <div class="col-md-9">
         <button id="btn_drop" class="btn btn-danger btnErase" data-toggle="modal" data-target="#alert_drop_bdd_comfirm">
-            &nbsp;Supprimer</button>
+            &nbsp;Erase</button>
     </div>
     <br>
-    <!-- Modal -->
+    <!-- Modal Confirmation Drop BDD -->
     <div id="alert_drop_bdd_comfirm" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Voulez-vous réellement supprimer la base <?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
- ?</h4>
+                    <h4 class="modal-title">Voulez-vous réellement supprimer la base <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+</b> ?</h4>
                 </div>
                 <div class="modal-body">
                     <!--<p>Confirmation suppression:&nbsp;</p>-->
@@ -66,9 +69,47 @@ function block_1626262907575564b818baa6_73590207($_smarty_tpl, $_blockParentStac
 " class="btn btnConfirm">Confirmer</a>
                 </div>
             </div>
-
         </div>
     </div>
+
+    <!-- Modal Aff stat BDD -->
+    <div id="alert_aff_stat_bdd" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Some informations on : <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+</b></h4>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="th1">Number of tables</th>
+                                <th class="th1">Memory spacce</th>
+                                <th class="th1">Creation date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td1"><?php echo $_smarty_tpl->tpl_vars['dbstat']->value[0]['nb_table'];?>
+</td>
+                                <td class="td1"><?php echo $_smarty_tpl->tpl_vars['dbstat']->value[0]['sum_length'];?>
+</td>
+                                <td class="td1"><?php echo $_smarty_tpl->tpl_vars['dbstat']->value[0]['create_time'];?>
+</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btnConfirm" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <?php if ($_smarty_tpl->tpl_vars['dbcol']->value) {?>
     <table>
         <thead>
@@ -101,7 +142,9 @@ $__foreach_col_0_saved_local_item = $_smarty_tpl->tpl_vars['col'];
 &tableName=<?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_NAME'];?>
 "
                                            class="btn btn-default btnTable">Display</a></td>
-                        <td class="td1"><span class="btn btn-default btnTable">Erase</span></td>
+                        <td class="td1"><a href="index.php?action=deleteTable=<?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_NAME'];?>
+&dbname=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+" class="btn btn-default btnTable">Erase</a></td>
                         <td class="td1"><?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_ROWS'];?>
 </td>
                         <td class="td1"><?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_TYPE'];?>
@@ -121,7 +164,7 @@ $_smarty_tpl->tpl_vars['col'] = $__foreach_col_0_saved_item;
         </tbody>
         <tfoot>
             <tr>
-                <td class="th1"><b>Tables</b></td>
+                <td class="th1"><b>Table</b></td>
                 <td class="th1" colspan="2"><b>Action</b></td>
                 <td class="th1"><b>Lines</b></td>
                 <td class="th1"><b>Type</b></td>
@@ -133,18 +176,18 @@ $_smarty_tpl->tpl_vars['col'] = $__foreach_col_0_saved_item;
 <?php }?>
         <br>
         <form action="index.php?action=addTable" method="post">
-            <div class="col-md-12">
-                <label for="tableName">Ajouter une table :</label>
+            <div class="col-md-12 informationAddTable">
+                <label for="tableName">Add one table :</label>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <input type="text" name="tableName" class="form-control" placeholder="Donnez-lui un nom">
+                    <input type="text" name="tableName" class="form-control" placeholder="Name it">
                     <input type="hidden" name="DBname" value="<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
 ">
                 </div>
             </div>
             <div class="col-md-6">
-                <button type="submit" class="btn btnConfirm">Valider</button>
+                <button type="submit" class="btn btnConfirm">Confirm</button>
             </div>
         </form>
 <?php
