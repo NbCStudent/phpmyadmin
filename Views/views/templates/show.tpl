@@ -3,10 +3,15 @@
     <div class="col-md-12 informationTitle">
         <h4>Database : <b>{$dbname}</b></h4>
     </div>
+<<<<<<< HEAD
     <div class="col-md-3 informationButton">
         <button id="aff_stat" class="btn btnConfirm" data-toggle="modal" data-target="#alert_aff_stat_bdd">Display statistics</button>
     </div>
     <div class="col-md-9">
+=======
+    <div class="col-md-12">
+      <button id="aff_stat" class="btn btn-success" data-toggle="modal" data-target="#alert_aff_stat_bdd">Afficher Statistique</button>
+>>>>>>> 389df69004aa52e668341dc0877998f04b2f9f42
         <button id="btn_drop" class="btn btn-danger btnErase" data-toggle="modal" data-target="#alert_drop_bdd_comfirm">
             &nbsp;Erase</button>
     </div>
@@ -36,6 +41,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
+<<<<<<< HEAD
                     <h4 class="modal-title">Some informations on : <b>{$dbname}</b></h4>
                 </div>
                 <div class="modal-body">
@@ -58,6 +64,17 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btnConfirm" data-dismiss="modal">Cancel</button>
+=======
+                    <h4 class="modal-title">Statistique la base {$dbname}</h4>
+                </div>
+                <div class="modal-body">
+                    <p><h6>Nombre de Table: </h6>{$dbstat.0.nb_table}</p>
+                    <p>Espace m&eacute;moire: </p>{$dbstat.0.sum_length} &nbsp;&nbsp;
+                    <p>Date de cr&eacute;ation: </p> {$dbstat.0.create_time}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btnConfirm" data-dismiss="modal">Annuler</button>
+>>>>>>> 389df69004aa52e668341dc0877998f04b2f9f42
                 </div>
             </div>
         </div>

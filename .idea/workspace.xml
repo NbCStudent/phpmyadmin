@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50b3390a-9030-4ffe-9bea-f44b27d0980f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Views/views/templates/login.tpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asset/style/style.css" afterPath="$PROJECT_DIR$/Asset/style/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controlleur/tableControlleur.php" afterPath="$PROJECT_DIR$/Controlleur/tableControlleur.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Includes/config.php" afterPath="$PROJECT_DIR$/Includes/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Model/tableModel.php" afterPath="$PROJECT_DIR$/Model/tableModel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/views/header.tpl" afterPath="$PROJECT_DIR$/Views/views/header.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/views/templates/add.tpl" afterPath="$PROJECT_DIR$/Views/views/templates/add.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/views/templates/addTable.tpl" afterPath="$PROJECT_DIR$/Views/views/templates/addTable.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/views/templates/home.tpl" afterPath="$PROJECT_DIR$/Views/views/templates/home.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/views/templates/show.tpl" afterPath="$PROJECT_DIR$/Views/views/templates/show.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/34435ec0758a1885f19bc84983d1ce9b17917fc2_0.file.show.tpl.php" afterPath="$PROJECT_DIR$/templates_c/34435ec0758a1885f19bc84983d1ce9b17917fc2_0.file.show.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/6383407c2dcf7b67db11e28177b033aec59e750c_0.file.add.tpl.php" afterPath="$PROJECT_DIR$/templates_c/6383407c2dcf7b67db11e28177b033aec59e750c_0.file.add.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/64abc57ffd4f99d64264e3c2ac1182d83616b0f4_0.file.header.tpl.php" afterPath="$PROJECT_DIR$/templates_c/64abc57ffd4f99d64264e3c2ac1182d83616b0f4_0.file.header.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/89455eebdbc10a18bb52170dfb59e0e5a9bd5bb0_0.file.addTable.tpl.php" afterPath="$PROJECT_DIR$/templates_c/89455eebdbc10a18bb52170dfb59e0e5a9bd5bb0_0.file.addTable.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/d4ef5b8459706ef752e8b9e716a2e89ed3814e2c_0.file.home.tpl.php" afterPath="$PROJECT_DIR$/templates_c/d4ef5b8459706ef752e8b9e716a2e89ed3814e2c_0.file.home.tpl.php" />
     </list>
     <ignored path="phpmyadmin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -319,12 +304,12 @@
       <option name="presentableId" value="Default" />
       <updated>1464608688912</updated>
       <workItem from="1464608690283" duration="47094000" />
-      <workItem from="1465194550360" duration="34743000" />
+      <workItem from="1465194550360" duration="34875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81837000" />
+    <option name="totallyTimeSpent" value="81969000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -337,7 +322,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="44" y="23" width="1236" height="777" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17001675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -345,7 +330,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23357664" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23357664" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
