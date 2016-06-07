@@ -1,12 +1,27 @@
+/* --------- Whole platform --------- */
+
+* {
+    font-family: 'Raleway';
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('//fonts.googleapis.com/css?family=Raleway');
+}
+
 /* --------- Home --------- */
 
+body {
+	background-color: #f9f9fb;
+}
+
 .interface {
-	margin-top: 2%;
+	margin-top: 1.2%;
 	width: 100%;
 }
 
 .interfaceColor {
-	background-color: #fff6e9;
+	background-color: #fff5e6;
 }
 
 .logoPhpmyadmin {
@@ -25,7 +40,7 @@
 /* --------- Jumbotron --------- */
 
 .jumbotronColor {
-	background-color: #f9f9fb;
+	background-color: #eeeef6;
 	border: 1px solid #dddddd;
 }
 
@@ -38,7 +53,7 @@
 }
 
 .jumbotron p {
-	font-size: 14px;
+	font-size: 13px;
 }
 
 .linkJumbotron {
@@ -63,6 +78,20 @@
 
 .informationColor {
 	background-color: #f9f9fb;
+}
+
+.informationMessage {
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.informationTitle {
+	margin-bottom: 2%;
+}
+
+.informationButton {
+	margin-bottom: 3%;
 }
 
 .tableView {
@@ -137,7 +166,7 @@
 
 .btnErase {
 	margin-bottom: 2%;
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #ffa011;
 	border-color: #ffa011;
 }
@@ -168,4 +197,10 @@
 	background-color: #fbb243;
 	border-color: #fbb243;
 	outline:none !important;
+}
+
+/* --------- add Table --------- */
+
+.titleAddTable {
+	margin-bottom: 2%;
 }

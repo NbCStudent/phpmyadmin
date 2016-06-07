@@ -8,7 +8,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="jumbotron jumbotronColor">
-                            <h3 class="titleJumbotron">Accueil</h3>
+                            <h3 class="titleJumbotron">Toolbox</h3>
                             <p class="titleJumbotron">
                                 <a href="index.php"><i class="fa fa-home fa-lg iconJumbotron" aria-hidden="true"></i></a>
                                 <a href="/phpMyAdmin/doc/html/index.html"><i class="fa fa-question fa-lg iconJumbotron" aria-hidden="true"></a></i>
@@ -16,7 +16,7 @@
                                 <a href="#" id="page_refresh"><i class="fa fa-repeat fa-lg iconJumbotron" aria-hidden="true"></a></i>
                             </p>
                             <p class="bodyJumbotron">
-                                <a class="linkJumbotron" href="index.php?action=addDB"><b>Nouvelle base de données</b></a><br>
+                                <a class="linkJumbotron" href="index.php?action=addDB"><b>Create new database</b></a><br>
                                 {foreach $dbnames as $dbname}
                                     <a class="linkJumbotron" href="index.php?action=showDB&db={$dbname}"><b>{$dbname}</b></a><br>
                                 {/foreach}
@@ -27,7 +27,9 @@
                         <div class="panel panel-default informationColor">
                             <div class="panel-body">
                                 <div class="tableView">
-                                    {block name="tableBody"}{/block}
+                                    {block name="tableBody"}
+                                        <h1 class="informationMessage">WELCOME !<h1>
+                                    {/block}
                                 </div>
                             </div>
                         </div>

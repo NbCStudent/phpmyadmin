@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-06 22:08:46
+/* Smarty version 3.1.29, created on 2016-06-07 14:00:45
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5755d84e49db92_12052082',
+  'unifunc' => 'content_5756b76d0545f1_71485343',
   'file_dependency' => 
   array (
     'd4ef5b8459706ef752e8b9e716a2e89ed3814e2c' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/home.tpl',
-      1 => 1465243724,
+      1 => 1465300843,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5755d84e49db92_12052082 ($_smarty_tpl) {
+function content_5756b76d0545f1_71485343 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
 ?>
 <div class="container interface">
@@ -32,7 +32,7 @@ $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
                     </div>
                     <div class="col-md-3">
                         <div class="jumbotron jumbotronColor">
-                            <h3 class="titleJumbotron">Accueil</h3>
+                            <h3 class="titleJumbotron">Toolbox</h3>
                             <p class="titleJumbotron">
                                 <a href="index.php"><i class="fa fa-home fa-lg iconJumbotron" aria-hidden="true"></i></a>
                                 <a href="/phpMyAdmin/doc/html/index.html"><i class="fa fa-question fa-lg iconJumbotron" aria-hidden="true"></a></i>
@@ -40,7 +40,7 @@ $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
                                 <a href="#" id="page_refresh"><i class="fa fa-repeat fa-lg iconJumbotron" aria-hidden="true"></a></i>
                             </p>
                             <p class="bodyJumbotron">
-                                <a class="linkJumbotron" href="index.php?action=addDB"><b>Nouvelle base de données</b></a><br>
+                                <a class="linkJumbotron" href="index.php?action=addDB"><b>Create new database</b></a><br>
                                 <?php
 $_from = $_smarty_tpl->tpl_vars['dbnames']->value;
 if (!is_array($_from) && !is_object($_from)) {
@@ -72,7 +72,7 @@ $_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_item;
                                 <div class="tableView">
                                     <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_11710136085755d84e49afc2_62927671',
+  0 => 'block_2031556355756b76d04ef47_55131934',
   1 => false,
   3 => 0,
   2 => 0,
@@ -90,7 +90,11 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 </div>
 <?php }
 /* {block 'tableBody'}  file:./home.tpl */
-function block_11710136085755d84e49afc2_62927671($_smarty_tpl, $_blockParentStack) {
+function block_2031556355756b76d04ef47_55131934($_smarty_tpl, $_blockParentStack) {
+?>
+
+                                        <h1 class="informationMessage">WELCOME !<h1>
+                                    <?php
 }
 /* {/block 'tableBody'} */
 }

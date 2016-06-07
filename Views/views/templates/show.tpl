@@ -1,14 +1,14 @@
 {extends file ="./home.tpl"}
 {block name="tableBody"}
-    <div class="col-md-12">
-        <h4>Base de donnée : {$dbname}</h4>
+    <div class="col-md-12 informationTitle">
+        <h4>Database : <b>{$dbname}</b></h4>
     </div>
-    <div class="col-md-3">
-        <button id="aff_stat" class="btn btnConfirm" data-toggle="modal" data-target="#alert_aff_stat_bdd">Afficher Statistique</button>
+    <div class="col-md-3 informationButton">
+        <button id="aff_stat" class="btn btnConfirm" data-toggle="modal" data-target="#alert_aff_stat_bdd">Display statistics</button>
     </div>
     <div class="col-md-9">
         <button id="btn_drop" class="btn btn-danger btnErase" data-toggle="modal" data-target="#alert_drop_bdd_comfirm">
-            &nbsp;Supprimer</button>
+            &nbsp;Erase</button>
     </div>
     <br>
     <!-- Modal Confirmation Drop BDD -->
@@ -18,7 +18,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Voulez-vous réellement supprimer la base {$dbname} ?</h4>
+                    <h4 class="modal-title">Voulez-vous réellement supprimer la base <b>{$dbname}</b> ?</h4>
                 </div>
                 <div class="modal-body">
                     <!--<p>Confirmation suppression:&nbsp;</p>-->
@@ -36,15 +36,15 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Statistique la base {$dbname}</h4>
+                    <h4 class="modal-title">Some informations on : <b>{$dbname}</b></h4>
                 </div>
                 <div class="modal-body">
                     <table>
                         <thead>
                             <tr>
-                                <th class="th1">Nombre de tables</th>
-                                <th class="th1">Espace mémoire</th>
-                                <th class="th1">Date de création</th>
+                                <th class="th1">Number of tables</th>
+                                <th class="th1">Memory spacce</th>
+                                <th class="th1">Creation date</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -57,7 +57,7 @@
                     </table>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btnConfirm" data-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btnConfirm" data-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>
@@ -81,7 +81,7 @@
                         <td class="td1">{$col.TABLE_NAME}</td>
                         <td class="td1"><a href="index.php?action=showTable&dbname={$dbname}&tableName={$col.TABLE_NAME}"
                                            class="btn btn-default btnTable">Display</a></td>
-                        <td class="td1"><span class="btn btn-default btnTable">Erase</span></td>
+                        <td class="td1"><a href="index.php?action=deleteTable={$col.TABLE_NAME}&dbname={$dbname}" class="btn btn-default btnTable">Erase</a></td>
                         <td class="td1">{$col.TABLE_ROWS}</td>
                         <td class="td1">{$col.TABLE_TYPE}</td>
                         <td class="td1">{$col.TABLE_COLLATION}</td>
@@ -91,7 +91,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td class="th1"><b>Tables</b></td>
+                <td class="th1"><b>Table</b></td>
                 <td class="th1" colspan="2"><b>Action</b></td>
                 <td class="th1"><b>Lines</b></td>
                 <td class="th1"><b>Type</b></td>
@@ -103,17 +103,17 @@
 {/if}
         <br>
         <form action="index.php?action=addTable" method="post">
-            <div class="col-md-12">
-                <label for="tableName">Ajouter une table :</label>
+            <div class="col-md-12 informationAddTable">
+                <label for="tableName">Add one table :</label>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <input type="text" name="tableName" class="form-control" placeholder="Donnez-lui un nom">
+                    <input type="text" name="tableName" class="form-control" placeholder="Name it">
                     <input type="hidden" name="DBname" value="{$dbname}">
                 </div>
             </div>
             <div class="col-md-6">
-                <button type="submit" class="btn btnConfirm">Valider</button>
+                <button type="submit" class="btn btnConfirm">Confirm</button>
             </div>
         </form>
 {/block}
