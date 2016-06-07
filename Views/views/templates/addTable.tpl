@@ -25,7 +25,7 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <select class="form-control" id="sel1">
-                        <option>INT</option>
+                        <option>Int</option>
                         <option>Varchar</option>
                         <option>Date</option>
                         <option>Text</option>

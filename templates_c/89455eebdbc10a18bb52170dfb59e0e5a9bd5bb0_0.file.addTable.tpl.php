@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-07 13:58:58
+/* Smarty version 3.1.29, created on 2016-06-07 14:51:41
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/addTable.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5756b702ea9e01_23645111',
+  'unifunc' => 'content_5756c35d685503_61274098',
   'file_dependency' => 
   array (
     '89455eebdbc10a18bb52170dfb59e0e5a9bd5bb0' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/addTable.tpl',
-      1 => 1465300736,
+      1 => 1465303898,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:./home.tpl' => 1,
   ),
 ),false)) {
-function content_5756b702ea9e01_23645111 ($_smarty_tpl) {
+function content_5756c35d685503_61274098 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_14163420915756b702e8e338_58966947',
+  0 => 'block_2880464215756c35d6737e5_31620238',
   1 => false,
   3 => 0,
   2 => 0,
@@ -37,7 +37,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:./home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'tableBody'}  file:Views/views/templates/addTable.tpl */
-function block_14163420915756b702e8e338_58966947($_smarty_tpl, $_blockParentStack) {
+function block_2880464215756c35d6737e5_31620238($_smarty_tpl, $_blockParentStack) {
 ?>
 
     <div class="col-md-6 titleAddTable">
@@ -67,7 +67,7 @@ function block_14163420915756b702e8e338_58966947($_smarty_tpl, $_blockParentStac
             <div class="col-md-4">
                 <div class="form-group">
                     <select class="form-control" id="sel1">
-                        <option>INT</option>
+                        <option>Int</option>
                         <option>Varchar</option>
                         <option>Date</option>
                         <option>Text</option>

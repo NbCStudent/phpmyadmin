@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-07 14:29:41
+/* Smarty version 3.1.29, created on 2016-06-07 15:11:17
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/show.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5756be35d3c5b9_69921490',
+  'unifunc' => 'content_5756c7f594cf72_27987167',
   'file_dependency' => 
   array (
     '34435ec0758a1885f19bc84983d1ce9b17917fc2' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/show.tpl',
-      1 => 1465302580,
+      1 => 1465305076,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:./home.tpl' => 1,
   ),
 ),false)) {
-function content_5756be35d3c5b9_69921490 ($_smarty_tpl) {
+function content_5756c7f594cf72_27987167 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_19731422035756be35d08a15_99275177',
+  0 => 'block_18820972365756c7f590fa48_36104471',
   1 => false,
   3 => 0,
   2 => 0,
@@ -37,7 +37,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:./home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'tableBody'}  file:Views/views/templates/show.tpl */
-function block_19731422035756be35d08a15_99275177($_smarty_tpl, $_blockParentStack) {
+function block_18820972365756c7f590fa48_36104471($_smarty_tpl, $_blockParentStack) {
 ?>
 
     <div class="col-md-12 informationTitle">
@@ -56,15 +56,15 @@ function block_19731422035756be35d08a15_99275177($_smarty_tpl, $_blockParentStac
     <div id="alert_drop_bdd_comfirm" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content modalColor">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Voulez-vous réellement supprimer la base <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+                    <h4 class="modal-title">Do you really want to erase <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
 </b> ?</h4>
                 </div>
                 <div class="modal-body">
                     <!--<p>Confirmation suppression:&nbsp;</p>-->
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
                     <a href="index.php?action=deleteBDD&db_name=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
 " class="btn btnConfirm">Confirmer</a>
                 </div>
@@ -76,7 +76,7 @@ function block_19731422035756be35d08a15_99275177($_smarty_tpl, $_blockParentStac
     <div id="alert_aff_stat_bdd" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content modalColor">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Some informations on : <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>

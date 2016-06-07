@@ -15,14 +15,14 @@
     <div id="alert_drop_bdd_comfirm" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content modalColor">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Voulez-vous réellement supprimer la base <b>{$dbname}</b> ?</h4>
+                    <h4 class="modal-title">Do you really want to erase <b>{$dbname}</b> ?</h4>
                 </div>
                 <div class="modal-body">
                     <!--<p>Confirmation suppression:&nbsp;</p>-->
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
                     <a href="index.php?action=deleteBDD&db_name={$dbname}" class="btn btnConfirm">Confirmer</a>
                 </div>
             </div>
@@ -33,7 +33,7 @@
     <div id="alert_aff_stat_bdd" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content modalColor">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Some informations on : <b>{$dbname}</b></h4>
