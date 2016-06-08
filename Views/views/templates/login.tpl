@@ -1,5 +1,3 @@
-{extends file ="./home.tpl"}
-
 <div class="bodyLogin">
     <div class="modal show modalLogin" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
