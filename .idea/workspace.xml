@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="50b3390a-9030-4ffe-9bea-f44b27d0980f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Asset/style/style.css" afterPath="$PROJECT_DIR$/Asset/style/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/views/templates/404.tpl" afterPath="$PROJECT_DIR$/Views/views/templates/404.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/b9011c0be4d6c0c47b9ded1a14846e04b973ffeb_0.file.404.tpl.php" afterPath="$PROJECT_DIR$/templates_c/b9011c0be4d6c0c47b9ded1a14846e04b973ffeb_0.file.404.tpl.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Views/views/templates/home.tpl" afterPath="$PROJECT_DIR$/Views/views/templates/home.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates_c/d4ef5b8459706ef752e8b9e716a2e89ed3814e2c_0.file.home.tpl.php" afterPath="$PROJECT_DIR$/templates_c/d4ef5b8459706ef752e8b9e716a2e89ed3814e2c_0.file.home.tpl.php" />
     </list>
     <ignored path="phpmyadmin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,11 +36,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Views/views/templates/home.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Asset/style/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+            <state relative-caret-position="240">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,9 +95,9 @@
         <option value="$PROJECT_DIR$/Model/dbTools.php" />
         <option value="$PROJECT_DIR$/Controlleur/userControlleur.php" />
         <option value="$PROJECT_DIR$/Controlleur/homeControlleur.php" />
-        <option value="$PROJECT_DIR$/Views/views/templates/home.tpl" />
         <option value="$PROJECT_DIR$/Views/views/templates/404.tpl" />
         <option value="$PROJECT_DIR$/Asset/style/style.css" />
+        <option value="$PROJECT_DIR$/Views/views/templates/home.tpl" />
       </list>
     </option>
   </component>
@@ -302,12 +311,12 @@
       <option name="presentableId" value="Default" />
       <updated>1464608688912</updated>
       <workItem from="1464608690283" duration="47094000" />
-      <workItem from="1465194550360" duration="46742000" />
+      <workItem from="1465194550360" duration="47214000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93836000" />
+    <option name="totallyTimeSpent" value="94308000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -511,14 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/views/templates/home.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/userModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -533,14 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/views/templates/login.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -566,8 +559,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Asset/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        <state relative-caret-position="240">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/views/templates/login.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/views/templates/home.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding />
         </state>
       </provider>

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-08 14:02:32
+/* Smarty version 3.1.29, created on 2016-06-08 14:24:02
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_575809585414f3_98008410',
+  'unifunc' => 'content_57580e62419bf7_13051744',
   'file_dependency' => 
   array (
     'd4ef5b8459706ef752e8b9e716a2e89ed3814e2c' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/home.tpl',
-      1 => 1465387350,
+      1 => 1465388632,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_575809585414f3_98008410 ($_smarty_tpl) {
+function content_57580e62419bf7_13051744 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
 ?>
 <div class="container interface">
@@ -35,7 +35,7 @@ $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
                             <h3 class="titleJumbotron">Toolbox</h3>
                             <p class="titleJumbotron">
                                 <a href="index.php"><i class="fa fa-home fa-lg iconJumbotron" aria-hidden="true"></i></a>
-                                <a href="/phpMyAdmin/doc/html/index.html"><i class="fa fa-question fa-lg iconJumbotron" aria-hidden="true"></a></i>
+                                <a href="https://docs.phpmyadmin.net/en/latest/"><i class="fa fa-question fa-lg iconJumbotron" aria-hidden="true"></a></i>
                                 <a href="http://dev.mysql.com/doc/refman/5.5/en/"><i class="fa fa-book fa-lg iconJumbotron" aria-hidden="true"></a></i>
                                 <a href="#" id="page_refresh"><i class="fa fa-repeat fa-lg iconJumbotron" aria-hidden="true"></a></i>
                             </p>
@@ -73,7 +73,7 @@ $_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_item;
                                 <div class="tableView">
                                     <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_5364661135758095853ce69_05260771',
+  0 => 'block_96154533757580e62414682_77338890',
   1 => false,
   3 => 0,
   2 => 0,
@@ -90,8 +90,8 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
     </div>
 </div>
 <?php }
-/* {block 'tableBody'}  file:Views/views/templates/home.tpl */
-function block_5364661135758095853ce69_05260771($_smarty_tpl, $_blockParentStack) {
+/* {block 'tableBody'}  file:./home.tpl */
+function block_96154533757580e62414682_77338890($_smarty_tpl, $_blockParentStack) {
 ?>
 
                                         <h1 class="informationMessage">WELCOME <?php echo $_smarty_tpl->tpl_vars['userName']->value;?>

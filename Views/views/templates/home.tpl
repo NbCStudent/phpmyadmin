@@ -11,7 +11,7 @@
                             <h3 class="titleJumbotron">Toolbox</h3>
                             <p class="titleJumbotron">
                                 <a href="index.php"><i class="fa fa-home fa-lg iconJumbotron" aria-hidden="true"></i></a>
-                                <a href="/phpMyAdmin/doc/html/index.html"><i class="fa fa-question fa-lg iconJumbotron" aria-hidden="true"></a></i>
+                                <a href="https://docs.phpmyadmin.net/en/latest/"><i class="fa fa-question fa-lg iconJumbotron" aria-hidden="true"></a></i>
                                 <a href="http://dev.mysql.com/doc/refman/5.5/en/"><i class="fa fa-book fa-lg iconJumbotron" aria-hidden="true"></a></i>
                                 <a href="#" id="page_refresh"><i class="fa fa-repeat fa-lg iconJumbotron" aria-hidden="true"></a></i>
                             </p>
