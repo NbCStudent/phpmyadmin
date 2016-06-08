@@ -4,10 +4,11 @@ $legalActions = array('home' => 'home',
                     'showDB' => 'bdd',
                     'addDB' => 'bdd',
                     'checkAddDB' => 'bdd',
-                    'addTable' => 'bdd',
+                    'addTable' => 'table',
                     'deleteBDD' => 'bdd',
                     'showTable' => 'table',
                     'deleteTable' => 'table',
                     'login' => 'user',
                     'checklogin' => 'user',
-                    'logout' => 'user');
+                    'logout' => 'user',
+                    'checkaddTable' => 'table');

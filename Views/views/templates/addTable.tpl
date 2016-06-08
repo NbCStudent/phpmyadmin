@@ -7,7 +7,7 @@
         <h3>Table : {$tableName}</h3>
     </div>
     <div class="col-md-12">
-        <form action="index.php?action=addTable" method="post">
+        <form action="index.php?action=checkaddTable" method="post">
             <div class="col-md-4">
                 <label for="newColumn">Column :</label>
             </div>
@@ -24,7 +24,7 @@
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <select class="form-control" id="sel1">
+                    <select class="form-control" id="sel1" name='type'>
                         <option>Int</option>
                         <option>Varchar</option>
                         <option>Date</option>
