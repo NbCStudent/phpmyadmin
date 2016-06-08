@@ -29,7 +29,7 @@
                                 <div class="col-md-12">
                                 <div class="tableView">
                                     {block name="tableBody"}
-                                        <h1 class="informationMessage">WELCOME !<h1>
+                                        <h1 class="informationMessage">WELCOME ! {$userName}<h1>
                                     {/block}
                                 </div>
                             </div>

@@ -9,7 +9,8 @@ $legalActions = array('home' => 'home',
                     'showTable' => 'table',
                     'deleteTable' => 'table',
                     'login' => 'user',
-                    'checklogin' => 'user');
+                    'checklogin' => 'user',
+                    'logout' => 'user');
 
 $dbConfig = array(
     'host' => 'localhost',
