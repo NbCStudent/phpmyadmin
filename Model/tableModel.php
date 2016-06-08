@@ -8,6 +8,11 @@ function showTable($db,$tableName,$dbName)
 }
 function deleteTable($db,$tableName)
 {
-    $sql = $db->query("DROP DATABASE $tableName");
+    $sql = $db->query("DROP TABLE $tableName");
+    return ($sql);
+}
+function addTable($db,$tableName)
+{
+    $sql = $db->query("CREATE TABLE $tableName");
     return ($sql);
 }

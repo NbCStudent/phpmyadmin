@@ -9,7 +9,8 @@ if (isset($action) && $action == 'showTable' && !empty($_GET['tableName']) && !e
         $allDB = GetAllDB($db);
         $result = showTable($db,$tableName,$dbName);
         $Smarty->assign(array('dbnames'=>$allDB,
-                            'tableName'=>$result));
+                            'tableResult'=>$result,
+                                'tableName' => $tableName));
         $template = "showTable";
 }
 elseif (isset($action) && $action == 'deleteTable' && !empty($_GET['tableName'])) {

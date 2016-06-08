@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-06 16:23:12
+/* Smarty version 3.1.29, created on 2016-06-08 10:09:18
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/showTable.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57558750d699c5_93729583',
+  'unifunc' => 'content_5757d2ae04a574_26950745',
   'file_dependency' => 
   array (
     '69ff727fd0eb5cba5884ca060f2b5b30c565b490' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/showTable.tpl',
-      1 => 1465222991,
+      1 => 1465373356,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:./home.tpl' => 1,
   ),
 ),false)) {
-function content_57558750d699c5_93729583 ($_smarty_tpl) {
+function content_5757d2ae04a574_26950745 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_56236793557558750d46283_90228470',
+  0 => 'block_20910759335757d2ae007348_13524129',
   1 => false,
   3 => 0,
   2 => 0,
@@ -35,14 +35,18 @@ $_smarty_tpl->ext->_inheritance->endChild($_smarty_tpl);
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:./home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'tableBody'}  file:Views/views/templates/showTable.tpl */
-function block_56236793557558750d46283_90228470($_smarty_tpl, $_blockParentStack) {
+function block_20910759335757d2ae007348_13524129($_smarty_tpl, $_blockParentStack) {
 ?>
 
+    <div class="col-md-12 informationTitle">
+        <h4>Table : <b><?php echo $_smarty_tpl->tpl_vars['tableName']->value;?>
+</b></h4>
+    </div>
     <table>
         <thead>
             <tr>
                 <?php
-$_from = $_smarty_tpl->tpl_vars['tableName']->value;
+$_from = $_smarty_tpl->tpl_vars['tableResult']->value;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
 }
@@ -100,7 +104,7 @@ $_smarty_tpl->tpl_vars['key'] = $__foreach_tab_0_saved_key;
         </thead>
         <tbody>
             <?php
-$_from = $_smarty_tpl->tpl_vars['tableName']->value;
+$_from = $_smarty_tpl->tpl_vars['tableResult']->value;
 if (!is_array($_from) && !is_object($_from)) {
 settype($_from, 'array');
 }
