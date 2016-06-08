@@ -5,6 +5,7 @@
 if(isset($action) && $action == "login")
 {
   if ($is_connected == true) {
+    $db = dbConnect();
     $result = GetAllDB($db);
     $Smarty->assign(array('dbnames' => $result,
                     'userName' => $_SESSION['User']));
