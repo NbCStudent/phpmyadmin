@@ -47,3 +47,6 @@ elseif (isset($action) && $action == 'deleteBDD' && !empty($_GET['db_name'])){
     $Smarty->assign('dbnames',$allDB);
     $template = "home";
 }
+else {
+  $template = "404";
+}
