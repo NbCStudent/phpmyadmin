@@ -15,7 +15,8 @@ if (isset($action) && $action == 'showTable' && !empty($_GET['tableName']) && !e
 }
 elseif (isset($action) && $action == 'deleteTable' && !empty($_GET['tableName'])) {
         $tableName = $_GET['tableName'];
-        $db = dbConnect();
+        $dbname = $_GET['dbname'];
+        $db = dbConnect($dbname);
         $allDB = GetAllDB($db);
         $remove = deleteTable($db,$tableName);
         $Smarty->assign(array('dbnames'=>$allDB,
