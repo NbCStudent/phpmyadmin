@@ -11,17 +11,24 @@
 
 /* --------- Login --------- */
 
+<<<<<<< HEAD
 .bodyLogin {
 	margin: 0;
 	padding: 0;
 	background: url("Asset/img/loginOjpg") no-repeat center fixed;
-	opacity: 0.8;
-	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
-	background-size: cover; /* version standardisée */
-}
-
+=======
 .modalLogin {
 	margin-top: 10%;
+>>>>>>> 4f7c1d55d78090cb4f7ce33f77b5cbbb3f359766
+	opacity: 0.8;
+}
+
+img.imgLogin {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+	opacity: 0.8;
 }
 
 /* --------- Home --------- */
@@ -44,7 +51,7 @@ body {
 	height: auto;
 	display: block;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 	padding-bottom: 1%;
 }
 

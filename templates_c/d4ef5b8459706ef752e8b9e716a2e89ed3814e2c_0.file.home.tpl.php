@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-07 14:00:45
+/* Smarty version 3.1.29, created on 2016-06-08 10:28:52
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5756b76d0545f1_71485343',
+  'unifunc' => 'content_5757d744a28104_52109704',
   'file_dependency' => 
   array (
     'd4ef5b8459706ef752e8b9e716a2e89ed3814e2c' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/home.tpl',
-      1 => 1465300843,
+      1 => 1465374481,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5756b76d0545f1_71485343 ($_smarty_tpl) {
+function content_5757d744a28104_52109704 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
 ?>
 <div class="container interface">
@@ -69,10 +69,11 @@ $_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_item;
                     <div class="col-md-9">
                         <div class="panel panel-default informationColor">
                             <div class="panel-body">
+                                <div class="col-md-12">
                                 <div class="tableView">
                                     <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_2031556355756b76d04ef47_55131934',
+  0 => 'block_6698527365757d744a225f2_20772838',
   1 => false,
   3 => 0,
   2 => 0,
@@ -90,7 +91,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 </div>
 <?php }
 /* {block 'tableBody'}  file:./home.tpl */
-function block_2031556355756b76d04ef47_55131934($_smarty_tpl, $_blockParentStack) {
+function block_6698527365757d744a225f2_20772838($_smarty_tpl, $_blockParentStack) {
 ?>
 
                                         <h1 class="informationMessage">WELCOME !<h1>
