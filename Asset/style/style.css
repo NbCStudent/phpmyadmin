@@ -24,6 +24,17 @@ img.imgLogin {
 	opacity: 0.8;
 }
 
+/* --------- Error --------- */
+
+.positionError {
+	margin-top: 28%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	position: relative;
+}
+
 /* --------- Home --------- */
 
 body {
