@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-07 15:31:27
+/* Smarty version 3.1.29, created on 2016-06-08 10:52:55
   from "/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/show.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5756ccaf7afa90_77939548',
+  'unifunc' => 'content_5757dce7060462_22264013',
   'file_dependency' => 
   array (
     '42287445ecb0e0c5cd278bea14972301e4395c1a' => 
     array (
       0 => '/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/show.tpl',
-      1 => 1465306137,
+      1 => 1465374188,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:./home.tpl' => 1,
   ),
 ),false)) {
-function content_5756ccaf7afa90_77939548 ($_smarty_tpl) {
+function content_5757dce7060462_22264013 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_15297280675756ccaf6f6ce1_80980395',
+  0 => 'block_10661559555757dce6aadff4_52880002',
   1 => false,
   3 => 0,
   2 => 0,
@@ -37,7 +37,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:./home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'tableBody'}  file:Views/views/templates/show.tpl */
-function block_15297280675756ccaf6f6ce1_80980395($_smarty_tpl, $_blockParentStack) {
+function block_10661559555757dce6aadff4_52880002($_smarty_tpl, $_blockParentStack) {
 ?>
 
     <div class="col-md-12 informationTitle">
@@ -141,10 +141,10 @@ $__foreach_col_0_saved_local_item = $_smarty_tpl->tpl_vars['col'];
                         <td class="td1"><a href="index.php?action=showTable&dbname=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
 &tableName=<?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_NAME'];?>
 "
-                                           class="btn btn-default btnTable">Display</a></td>
+                                           class="btn btn-default btnDisplayTable">Display</a></td>
                         <td class="td1"><a href="index.php?action=deleteTable=<?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_NAME'];?>
 &dbname=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
-" class="btn btn-default btnTable">Erase</a></td>
+" class="btn btn-default btnEraseTable">Erase</a></td>
                         <td class="td1"><?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_ROWS'];?>
 </td>
                         <td class="td1"><?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_TYPE'];?>
