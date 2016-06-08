@@ -26,6 +26,7 @@
                     <div class="col-md-9">
                         <div class="panel panel-default informationColor">
                             <div class="panel-body">
+                                <div class="col-md-12">
                                 <div class="tableView">
                                     {block name="tableBody"}
                                         <h1 class="informationMessage">WELCOME !<h1>

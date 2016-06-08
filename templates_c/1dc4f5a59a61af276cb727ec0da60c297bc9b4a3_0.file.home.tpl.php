@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-03 14:11:45
+/* Smarty version 3.1.29, created on 2016-06-07 15:30:54
   from "/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57517401ae3183_45432460',
+  'unifunc' => 'content_5756cc8ed77fc7_27279570',
   'file_dependency' => 
   array (
     '1dc4f5a59a61af276cb727ec0da60c297bc9b4a3' => 
     array (
       0 => '/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/home.tpl',
-      1 => 1464955798,
+      1 => 1465306253,
       2 => 'file',
     ),
   ),
@@ -19,28 +19,28 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57517401ae3183_45432460 ($_smarty_tpl) {
+function content_5756cc8ed77fc7_27279570 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
 ?>
 <div class="container interface">
     <div class="row">
         <div class="col-lg-12">
-            <div class="panel panel-default">
+            <div class="panel panel-default interfaceColor">
                 <div class="panel-body">
                     <div class="page-header">
-                        <a href="index.php"><img class="logoPhpmyadmin" src="Asset/img/logoPhpmyadmin.png" alt="logoPhpmyadmin"></a>
+                        <a href="index.php"><img class="logoPhpmyadmin" src="Asset/img/logoPhpmyadmin2.png" alt="logoPhpmyadmin"></a>
                     </div>
                     <div class="col-md-3">
-                        <div class="jumbotron">
-                            <h3 class="titleJumbotron">Accueil</h3>
+                        <div class="jumbotron jumbotronColor">
+                            <h3 class="titleJumbotron">Toolbox</h3>
                             <p class="titleJumbotron">
-                                <a href="index.php"><i class="fa fa-home" aria-hidden="true"></i></a>
-                                <a href="/phpMyAdmin/doc/html/index.html"><i class="fa fa-question" aria-hidden="true"></a></i>
-                                <a href="http://dev.mysql.com/doc/refman/5.5/en/"><i class="fa fa-book" aria-hidden="true"></a></i>
-                                <a href="#" id="page_refresh"><i class="fa fa-repeat" aria-hidden="true"></a></i>
+                                <a href="index.php"><i class="fa fa-home fa-lg iconJumbotron" aria-hidden="true"></i></a>
+                                <a href="/phpMyAdmin/doc/html/index.html"><i class="fa fa-question fa-lg iconJumbotron" aria-hidden="true"></a></i>
+                                <a href="http://dev.mysql.com/doc/refman/5.5/en/"><i class="fa fa-book fa-lg iconJumbotron" aria-hidden="true"></a></i>
+                                <a href="#" id="page_refresh"><i class="fa fa-repeat fa-lg iconJumbotron" aria-hidden="true"></a></i>
                             </p>
                             <p class="bodyJumbotron">
-                                <a href="index.php?action=addDB">Nouvelle base de données</a><br>
+                                <a class="linkJumbotron" href="index.php?action=addDB"><b>Create new database</b></a><br>
                                 <?php
 $_from = $_smarty_tpl->tpl_vars['dbnames']->value;
 if (!is_array($_from) && !is_object($_from)) {
@@ -53,9 +53,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['dbname']->value) {
 $_smarty_tpl->tpl_vars['dbname']->_loop = true;
 $__foreach_dbname_0_saved_local_item = $_smarty_tpl->tpl_vars['dbname'];
 ?>
-                                    <a href="index.php?action=showDB&db=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
-"><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
-</a><br>
+                                    <a class="linkJumbotron" href="index.php?action=showDB&db=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+"><b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+</b></a><br>
                                 <?php
 $_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_local_item;
 }
@@ -67,25 +67,20 @@ $_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_item;
                         </div>
                     </div>
                     <div class="col-md-9">
-                        <div class="panel panel-default">
+                        <div class="panel panel-default informationColor">
                             <div class="panel-body">
                                 <div class="col-md-12">
-                                    <div class="panel panel-default">
-                                        <div class="panel-body">
-                                            <div class="tableView">
-                                                <?php 
+                                <div class="tableView">
+                                    <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_72269091457517401adf456_43309778',
+  0 => 'block_13406128825756cc8ed6fcc4_56583721',
   1 => false,
   3 => 0,
   2 => 0,
 ));
 ?>
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -95,8 +90,12 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
     </div>
 </div>
 <?php }
-/* {block 'tableBody'}  file:./home.tpl */
-function block_72269091457517401adf456_43309778($_smarty_tpl, $_blockParentStack) {
+/* {block 'tableBody'}  file:Views/views/templates/home.tpl */
+function block_13406128825756cc8ed6fcc4_56583721($_smarty_tpl, $_blockParentStack) {
+?>
+
+                                        <h1 class="informationMessage">WELCOME !<h1>
+                                    <?php
 }
 /* {/block 'tableBody'} */
 }
