@@ -11,9 +11,3 @@ $legalActions = array('home' => 'home',
                     'login' => 'user',
                     'checklogin' => 'user',
                     'logout' => 'user');
-
-$dbConfig = array(
-    'host' => 'localhost',
-    'user' => 'root',
-    'password' => 'root'
-);
