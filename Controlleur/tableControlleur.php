@@ -15,21 +15,13 @@ if (isset($action) && $action == 'showTable' && !empty($_GET['tableName']) && !e
 }
 elseif (isset($action) && $action == 'deleteTable' && !empty($_GET['tableName'])) {
         $tableName = $_GET['tableName'];
-        $db = dbConnect();
+        $dbname = $_GET['dbname'];
+        $db = dbConnect($dbname);
         $allDB = GetAllDB($db);
         $remove = deleteTable($db,$tableName);
         $Smarty->assign(array('dbnames'=>$allDB,
             'tableName'=>$result));
         $template = "showTable";
-}
-
-elseif (isset($action) && $action == 'deleteBDD' && !empty($_GET['db_name'])){
-        $bddname = $_GET['db_name'];
-        $db = dbConnect();
-        $remove = deleteBDD($db,$bddname);
-        $allDB = GetAllDB($db);
-        $Smarty->assign('dbnames',$allDB);
-        $template = "home";
 }
 else {
   $template = "404";

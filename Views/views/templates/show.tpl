@@ -81,7 +81,7 @@
                         <td class="td1">{$col.TABLE_NAME}</td>
                         <td class="td1"><a href="index.php?action=showTable&dbname={$dbname}&tableName={$col.TABLE_NAME}"
                                            class="btn btn-default btnDisplayTable">Display</a></td>
-                        <td class="td1"><a href="index.php?action=deleteTable={$col.TABLE_NAME}&dbname={$dbname}" class="btn btn-default btnEraseTable">Erase</a></td>
+                        <td class="td1"><a href="index.php?action=deleteTable&tableName={$col.TABLE_NAME}&dbname={$dbname}" class="btn btn-default btnEraseTable">Erase</a></td>
                         <td class="td1">{$col.TABLE_ROWS}</td>
                         <td class="td1">{$col.TABLE_TYPE}</td>
                         <td class="td1">{$col.TABLE_COLLATION}</td>

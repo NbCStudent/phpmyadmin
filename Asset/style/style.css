@@ -58,6 +58,11 @@ body {
 	background-color: #fff5e6;
 }
 
+.deconnectButton {
+	padding-right: 3%;
+	color: #7272a1;
+}
+
 .logoPhpmyadmin {
 	width: 30%;
 	height: auto;
