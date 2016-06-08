@@ -22,15 +22,6 @@ elseif (isset($action) && $action == 'deleteTable' && !empty($_GET['tableName'])
             'tableName'=>$result));
         $template = "showTable";
 }
-
-elseif (isset($action) && $action == 'deleteBDD' && !empty($_GET['db_name'])){
-        $bddname = $_GET['db_name'];
-        $db = dbConnect();
-        $remove = deleteBDD($db,$bddname);
-        $allDB = GetAllDB($db);
-        $Smarty->assign('dbnames',$allDB);
-        $template = "home";
-}
 else {
   $template = "404";
 }
