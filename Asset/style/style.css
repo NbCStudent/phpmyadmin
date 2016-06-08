@@ -11,8 +11,15 @@
 
 /* --------- Login --------- */
 
+<<<<<<< HEAD
 .modalLogin {
 	margin-top: 10%;
+=======
+.bodyLogin {
+	margin: 0;
+	padding: 0;
+	background: url('Asset/img/loginO.jpg') no-repeat center fixed;
+>>>>>>> f07e53a62aa8292461ee5fe382f41af4c51c40c0
 	opacity: 0.8;
 }
 
