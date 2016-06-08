@@ -1,3 +1,26 @@
+<?php
+/* Smarty version 3.1.29, created on 2016-06-08 11:04:39
+  from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/login.tpl" */
+
+if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
+  'has_nocache_code' => false,
+  'version' => '3.1.29',
+  'unifunc' => 'content_5757dfa7abcd80_92068122',
+  'file_dependency' => 
+  array (
+    'c19d158a60690b33fbf923ef755fdd7485357c7e' => 
+    array (
+      0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/login.tpl',
+      1 => 1465376676,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5757dfa7abcd80_92068122 ($_smarty_tpl) {
+?>
 <div class="imgLogin">
     <img src="Asset/img/loginO.jpg" class="imgLogin">
         <div class="modal show modalLogin" tabindex="-1" role="dialog" aria-hidden="true">
@@ -23,3 +46,5 @@
             </div>
         </div>
 </div>
+<?php }
+}
