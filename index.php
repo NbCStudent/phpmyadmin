@@ -27,18 +27,21 @@ else{
   if (!empty($_GET['action']) && $_GET['action'] == "checklogin") {
     $action = "checklogin";
   }
-  elseif (empty($_GET['action']) && $is_connected != false) {
+  elseif (empty($_GET['action']) && $is_connected == true) {
     $action = 'home';
   }
-  else {
+  elseif (empty($_GET['action']) && $is_connected == false){
       // L'action par default est à login
       $action = 'login';
+  }
+  else {
+    $template = "404";
   }
 }
 if (file_exists('Controlleur/'.$legalActions[$action].'Controlleur.php')) {
     include 'Controlleur/'.$legalActions[$action].'Controlleur.php';
 }else{
-    die('404');
+    $template = "404";
 }
 $Smarty->display("Views/views/header.tpl");
 $Smarty->display('Views/views/templates/'.$template.'.tpl');
