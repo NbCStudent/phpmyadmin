@@ -17,7 +17,7 @@ if (!empty($_GET['action']) && array_key_exists($_GET['action'], $legalActions))
 }
 else{
     // L'action par default est à null
-    $action = 'home';
+    $action = 'login';
 }
 if (file_exists('Controlleur/'.$legalActions[$action].'Controlleur.php')) {
     include 'Controlleur/'.$legalActions[$action].'Controlleur.php';
