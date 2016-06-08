@@ -7,3 +7,9 @@ if (isset($action) && $action == 'home') {
                     'userName' => $_SESSION['User']));
     $template = "home";
 }
+<<<<<<< HEAD
+=======
+else {
+  $template = "404";
+}
+>>>>>>> d689aff1f3b2aa74e8a1d6b7225ee216db5c8dd8

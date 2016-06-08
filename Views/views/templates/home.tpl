@@ -29,7 +29,11 @@
                                 <div class="col-md-12">
                                 <div class="tableView">
                                     {block name="tableBody"}
+<<<<<<< HEAD
                                         <h1 class="informationMessage">WELCOME {$userName} !<h1>
+=======
+                                        <h1 class="informationMessage">WELCOME ! {$userName}<h1>
+>>>>>>> d689aff1f3b2aa74e8a1d6b7225ee216db5c8dd8
                                     {/block}
                                 </div>
                             </div>
