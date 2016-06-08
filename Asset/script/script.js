@@ -1,3 +1,6 @@
+/**
+ * Created by theo on 02/06/16.
+ */
 /* --------- Refresh Page --------- */
 
 $(document).ready(function() {

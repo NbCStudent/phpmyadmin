@@ -1,10 +1,9 @@
 <?php
 
 if (isset($action) && $action == 'home') {
-    $bddname = "information_schema";
-    $db = dbConnect($bddname);
+    $db = dbConnect();
     $result = GetAllDB($db);
-    $Smarty->assign('dbnames',$result);
+    $Smarty->assign(array('dbnames' => $result,
+                    'userName' => $_SESSION['User']));
     $template = "home";
 }
-
