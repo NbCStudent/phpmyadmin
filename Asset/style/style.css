@@ -118,12 +118,82 @@ body {
 	padding-bottom: 5px;
 }
 
-.btnTable {
+.btnDisplayTable {
 	padding-top: 0.5px;
 	padding-bottom: 0.5px;
 	padding-left: 8px;
 	padding-right: 8px;
+	color: #ffffff;
+	background-color: #7272a1;
+	border-color: #7272a1;
 }
+
+.btnDisplayTable:hover {
+	color: #ffffff;
+	background-color: #8888b2;
+	border-color: #8888b2;
+	outline:none !important;
+}
+
+.btnDisplayTable:focus {
+	color: #ffffff;
+	background-color: #8888b2;
+	border-color: #8888b2;
+	outline:none !important;
+}
+
+.btnDisplayTable:active {
+	color: #ffffff;
+	background-color: #8888b2;
+	border-color: #8888b2;
+	outline:none !important;
+}
+
+.btnDisplayTable:active:focus {
+	color: #ffffff;
+	background-color: #8888b2;
+	border-color: #8888b2;
+	outline:none !important;
+}
+
+.btnEraseTable {
+	padding-top: 0.5px;
+	padding-bottom: 0.5px;
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #f9f9fb;
+	background-color: #ffa011;
+	border-color: #ffa011;
+}
+
+.btnEraseTable:hover {
+	color: #ffffff;
+	background-color: #fbb243;
+	border-color: #fbb243;
+	outline:none !important;
+}
+
+.btnEraseTable:focus {
+	color: #ffffff;
+	background-color: #fbb243;
+	border-color: #fbb243;
+	outline:none !important;
+}
+
+.btnEraseTable:active {
+	color: #ffffff;
+	background-color: #fbb243;
+	border-color: #fbb243;
+	outline:none !important;
+}
+
+.btnEraseTable:active:focus {
+	color: #ffffff;
+	background-color: #fbb243;
+	border-color: #fbb243;
+	outline:none !important;
+}
+
 .alert_drop_confirm {
 	display: none;
 }
