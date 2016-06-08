@@ -27,12 +27,20 @@ img.imgLogin {
 /* --------- Error --------- */
 
 .positionError {
-	margin-top: 28%;
+	margin-top: 23%;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 	text-align: center;
 	position: relative;
+}
+
+.titleError {
+	font-size: 80px;
+}
+
+.paragraphError {
+	font-size: 40px;
 }
 
 /* --------- Home --------- */
