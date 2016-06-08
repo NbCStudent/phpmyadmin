@@ -1,9 +1,12 @@
 {extends file ="./home.tpl"}
 {block name="tableBody"}
+    <div class="col-md-12 informationTitle">
+        <h4>Table : <b>{$tableName}</b></h4>
+    </div>
     <table>
         <thead>
             <tr>
-                {foreach $tableName as $tab key=key}
+                {foreach $tableResult as $tab key=key}
                     {foreach $tab as $test key=key1}
                         {if {$key} == 0}
                             <th class="th1">{$key1}</th>
@@ -13,7 +16,7 @@
             </tr>
         </thead>
         <tbody>
-            {foreach $tableName as $tab key=key}
+            {foreach $tableResult as $tab key=key}
                 <tr>
                     {foreach $tab as $test key=key1}
                         <td class="td1">{$test}</td>
