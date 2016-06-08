@@ -6,7 +6,7 @@ require_once ('Model/dbTools.php');
 require_once ('Includes/config.php');
 require_once ('Libs/smarty-3.1.29/libs/Smarty.class.php');
 
-if (empty($_SESSION['id_user'])) { // Verif si utilisateur est connectée
+if (empty($_SESSION['User'])) { // Verif si utilisateur est connectée
 	$is_connected = false;
 }
 else{
@@ -27,7 +27,7 @@ else{
   if (!empty($_GET['action']) && $_GET['action'] == "checklogin") {
     $action = "checklogin";
   }
-  elseif (empty($_GET['action']) && $is_connected = true) {
+  elseif (empty($_GET['action']) && $is_connected != false) {
     $action = 'home';
   }
   else {

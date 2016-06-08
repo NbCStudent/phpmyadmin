@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-07 15:30:54
+/* Smarty version 3.1.29, created on 2016-06-08 13:32:57
   from "/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5756cc8ed77fc7_27279570',
+  'unifunc' => 'content_575802693040a8_59274449',
   'file_dependency' => 
   array (
     '1dc4f5a59a61af276cb727ec0da60c297bc9b4a3' => 
     array (
       0 => '/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/home.tpl',
-      1 => 1465306253,
+      1 => 1465385573,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5756cc8ed77fc7_27279570 ($_smarty_tpl) {
+function content_575802693040a8_59274449 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
 ?>
 <div class="container interface">
@@ -73,7 +73,7 @@ $_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_item;
                                 <div class="tableView">
                                     <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_13406128825756cc8ed6fcc4_56583721',
+  0 => 'block_1211919912575802692fe400_97781898',
   1 => false,
   3 => 0,
   2 => 0,
@@ -91,10 +91,11 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 </div>
 <?php }
 /* {block 'tableBody'}  file:Views/views/templates/home.tpl */
-function block_13406128825756cc8ed6fcc4_56583721($_smarty_tpl, $_blockParentStack) {
+function block_1211919912575802692fe400_97781898($_smarty_tpl, $_blockParentStack) {
 ?>
 
-                                        <h1 class="informationMessage">WELCOME !<h1>
+                                        <h1 class="informationMessage">WELCOME ! <?php echo $_smarty_tpl->tpl_vars['userName']->value;?>
+<h1>
                                     <?php
 }
 /* {/block 'tableBody'} */
