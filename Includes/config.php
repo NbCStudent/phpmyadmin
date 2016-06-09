@@ -9,9 +9,10 @@ $legalActions = array('home' => 'home',
                     'addTable' => 'table',
                     'deleteBDD' => 'bdd',
                     'showTable' => 'table',
-                    'deleteTable' => 'table',
+                    'deleteTable'=> 'table',
                     'login' => 'user',
                     'checklogin' => 'user',
                     'logout' => 'user',
                     'checkaddTable' => 'table',
-                    'renameDB'=>'bdd');
+                    'renameDB' => 'bdd',
+                    'userQuery' => 'user');

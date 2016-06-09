@@ -18,7 +18,6 @@ if(isset($action) && $action == "login")
   }
 }
 elseif (isset($action) && $action == "checklogin" && !empty($_POST)) {
-
   $db = dbConnect("mysql");
   $Login = checklogin($db,$_POST['_username'],$_POST['_password']);
   if($Login == true)
@@ -38,4 +37,13 @@ elseif (isset($action) && $action == "logout") {
 }
 else {
   $template = "404";
+}
+
+if (isset($action) && $action == "userQuery" && !empty($_POST)) {
+  if () {
+    $db = dbConnect();
+    $result = GetAllDB($db);
+
+    $template = "textArea";
+  }
 }

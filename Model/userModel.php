@@ -19,3 +19,8 @@ function logout()
   unset($_SESSION['User']);
 	session_destroy();
 }
+
+function userQuery()
+{
+  
+}
