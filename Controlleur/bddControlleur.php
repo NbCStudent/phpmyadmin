@@ -18,27 +18,6 @@ elseif (isset($action) && $action == 'addDB') {
     $Smarty->assign('dbnames',$result);
     $template = "add";
 }
-elseif (isset($action) && $action == 'checkAddDB' && isset($_POST['newDB']) && !empty($_POST['newDB'])){
-    $newname = $_POST['newDB'];
-    $db = dbConnect("information_schema");
-    $query = $db->query("CREATE DATABASE $newname");
-    $result = GetAllDB($db);
-    $result2 = GetTableDB($db,$newname);
-    $Smarty->assign(array('dbcol'=>$result2,
-                        'dbname'=>$newname,
-                        'dbnames' => $result));
-    $template = "show";
-}
-elseif (isset($action) && $action == 'addTable'){
-    $tableName = htmlspecialchars($_POST['tablename']);
-    $db = dbConnect();
-    $result = GetAllDB($db);
-    //$add = addTable($tableName);
-    $Smarty->assign(array('dbnames'=>$result,
-                        'dbname' => $_POST['DBname'],
-                        'tableName' => $tableName));
-    $template ="addTable";
-}
 elseif (isset($action) && $action == 'deleteBDD' && !empty($_GET['db_name'])){
     $bddname = $_GET['db_name'];
     $db = dbConnect();
@@ -46,6 +25,13 @@ elseif (isset($action) && $action == 'deleteBDD' && !empty($_GET['db_name'])){
     $allDB = GetAllDB($db);
     $Smarty->assign('dbnames',$allDB);
     $template = "home";
+}
+elseif (isset($action) && $action == "renameDB" && !empty($_POST)) {
+  $newname = htmlspecialchars($_POST["newdb"]);
+  $db = array('oldname' => $_POST['olddb'],
+              'newname' => $newname);
+  $result = renameDB($db);
+  var_dump($result);
 }
 else {
   $template = "404";
