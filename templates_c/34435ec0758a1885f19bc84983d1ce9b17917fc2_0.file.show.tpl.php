@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-09 15:43:59
+/* Smarty version 3.1.29, created on 2016-06-09 19:40:51
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/show.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5759729f7e8038_00688358',
+  'unifunc' => 'content_5759aa237055a5_37793740',
   'file_dependency' => 
   array (
     '34435ec0758a1885f19bc84983d1ce9b17917fc2' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/show.tpl',
-      1 => 1465479836,
+      1 => 1465494050,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:./home.tpl' => 1,
   ),
 ),false)) {
-function content_5759729f7e8038_00688358 ($_smarty_tpl) {
+function content_5759aa237055a5_37793740 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_15483117385759729f7ac426_92925652',
+  0 => 'block_3474461345759aa236d2fe3_75064256',
   1 => false,
   3 => 0,
   2 => 0,
@@ -37,37 +37,48 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:./home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'tableBody'}  file:Views/views/templates/show.tpl */
-function block_15483117385759729f7ac426_92925652($_smarty_tpl, $_blockParentStack) {
+function block_3474461345759aa236d2fe3_75064256($_smarty_tpl, $_blockParentStack) {
 ?>
+
+
+    <!-- Show Databases Page -->
+
+    <!-- Display the database name -->
 
     <div class="col-md-12 informationTitle">
         <h4>Database : <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
 </b></h4>
         <a href="#null"  id="previousPage"><i class="fa fa-arrow-left fa-lg returnButton" aria-hidden="true"> </i></a>
     </div>
+
+    <!-- Display the database statistics -->
+
     <div class="col-md-3 informationButton">
         <button id="aff_stat" class="btn btnConfirm" data-toggle="modal" data-target="#alert_aff_stat_bdd">Display statistics</button>
     </div>
+
+    <!-- Rename the database name -->
+
     <div class="col-md-3 informationButton">
         <button id="aff_stat" class="btn btnConfirm" data-toggle="modal" data-target="#alert_rename_bdd">Rename</button>
     </div>
+
+    <!-- Erase the database -->
+
     <button id="btn_drop" class="btn btn-danger btnErase btnEraseDB" data-toggle="modal" data-target="#alert_drop_bdd_comfirm">&nbsp;Erase</button>
     <br>
 
-    <!-- Modal Confirmation Drop BDD -->
+    <!-- Modal to confirm the database drop -->
+
     <div id="alert_drop_bdd_comfirm" class="modal fade" role="dialog">
         <div class="modal-dialog">
-            <!-- Modal content-->
             <div class="modal-content modalColor">
                 <div class="modal-header">
-                    <button type="button" class="close crossButton" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Do you really want to erase <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
 </b> ?</h4>
                 </div>
                 <div class="modal-footer">
-                    <!--<p>Confirmation suppression:&nbsp;</p>-->
                     <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
-
                     <a href="index.php?action=deleteBDD&db_name=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
 " class="btn btnConfirm">Confirm</a>
                 </div>
@@ -75,18 +86,16 @@ function block_15483117385759729f7ac426_92925652($_smarty_tpl, $_blockParentStac
         </div>
     </div>
 
-    <!-- Modal Confirmation Drop Table -->
+    <!-- Modal to confirm the table drop -->
+
     <div id="alert_drop_table_comfirm" class="modal fade" role="dialog">
         <div class="modal-dialog">
-            <!-- Modal content-->
             <div class="modal-content modalColor">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Do you really want to erase <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
 </b> ?</h4>
                 </div>
-                <div class="modal-body">
-                    <!--<p>Confirmation suppression:&nbsp;</p>-->
+                <div class="modal-footer">
                     <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
                     <a href="#" class="btn btnConfirm" onclick="displayData('');">Confirm</a>
                 </div>
@@ -94,17 +103,19 @@ function block_15483117385759729f7ac426_92925652($_smarty_tpl, $_blockParentStac
         </div>
     </div>
 
-    <!-- Modal Rename BDD -->
+    <!-- Modal to rename the database -->
+
     <div id="alert_rename_bdd" class="modal fade" role="dialog">
         <div class="modal-dialog">
-            <!-- Modal content-->
             <div class="modal-content modalColor">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Do you really want to rename <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
 </b> ?</h4>
                 </div>
                 <div class="modal-body">
+
+                    <!-- Form -->
+
                     <form class="form-group" action="index.php?action=renameDB" method="post">
                             <label for="newdb">New name :</label>
                             <input type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
@@ -121,13 +132,15 @@ function block_15483117385759729f7ac426_92925652($_smarty_tpl, $_blockParentStac
         </div>
     </div>
 
-    <!-- Modal Display stat DB -->
+    <!-- Modal to display the database statistics -->
+
     <div id="alert_aff_stat_bdd" class="modal fade" role="dialog">
         <div class="modal-dialog">
+
             <!-- Modal content-->
+
             <div class="modal-content modalColor">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Some informations on : <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
 </b></h4>
                 </div>
@@ -159,6 +172,8 @@ function block_15483117385759729f7ac426_92925652($_smarty_tpl, $_blockParentStac
         </div>
     </div>
 
+    <!-- Table -->
+
     <?php if ($_smarty_tpl->tpl_vars['dbcol']->value) {?>
     <table>
         <thead>
@@ -172,6 +187,9 @@ function block_15483117385759729f7ac426_92925652($_smarty_tpl, $_blockParentStac
             </tr>
         </thead>
         <tbody>
+
+                <!-- Display the tables name -->
+
                 <?php
 $_from = $_smarty_tpl->tpl_vars['dbcol']->value;
 if (!is_array($_from) && !is_object($_from)) {
@@ -223,37 +241,24 @@ $_smarty_tpl->tpl_vars['col'] = $__foreach_col_0_saved_item;
     </table>
 <?php }?>
         <br>
-        <form action="index.php?action=addTable" method="post">
-            <div class="col-md-12 informationAddTable">
-                <label for="tableName">Add one table :</label>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input type="text" name="tableName" class="form-control" placeholder="Name it">
-                    <input type="hidden" name="DBname" value="<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+
+    <!-- Add Table Form -->
+
+    <form action="index.php?action=addTable" method="post">
+        <div class="col-md-12 informationAddTable">
+            <label for="tableName">Add one table :</label>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <input type="text" name="tableName" class="form-control" placeholder="Name it">
+                <input type="hidden" name="DBname" value="<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
 ">
-                </div>
             </div>
-            <div class="col-md-6">
-                <button type="submit" class="btn btnConfirm">Confirm</button>
-            </div>
-        </form>
-<!--
-        <table border="0" cellspacing="5" cellpadding="5">
-            <tr>
-                <td>
-                    <a href="#" class="reviewLink">View Reviews</a>
-                    <div class="displayData">
-                        <span class="title">Book Title 2</span>
-                        <span class="isbn">516AHGN1515</span>
-                        <span class="pubdata">1999-05-08</span>
-                        <span class="price">$25.00</span>
-                    </div>
-                </td>
-                <td>Book Title 2</td>
-            </tr>
-        </table>
-        -->
+        </div>
+        <div class="col-md-6">
+            <button type="submit" class="btn btnConfirm">Confirm</button>
+        </div>
+    </form>
 <?php
 }
 /* {/block 'tableBody'} */

@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-09 11:28:38
+/* Smarty version 3.1.29, created on 2016-06-09 19:38:34
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/showTable.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_575936c6a36b33_48997129',
+  'unifunc' => 'content_5759a99acb2c13_51497324',
   'file_dependency' => 
   array (
     '69ff727fd0eb5cba5884ca060f2b5b30c565b490' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/showTable.tpl',
-      1 => 1465464511,
+      1 => 1465489107,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:./home.tpl' => 1,
   ),
 ),false)) {
-function content_575936c6a36b33_48997129 ($_smarty_tpl) {
+function content_5759a99acb2c13_51497324 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_1445565728575936c6a03734_32135278',
+  0 => 'block_11087092285759a99ac86028_32653697',
   1 => false,
   3 => 0,
   2 => 0,
@@ -35,17 +35,28 @@ $_smarty_tpl->ext->_inheritance->endChild($_smarty_tpl);
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:./home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'tableBody'}  file:Views/views/templates/showTable.tpl */
-function block_1445565728575936c6a03734_32135278($_smarty_tpl, $_blockParentStack) {
+function block_11087092285759a99ac86028_32653697($_smarty_tpl, $_blockParentStack) {
 ?>
+
+
+    <!-- Show Table Page -->
+
+    <!-- Display the table name -->
 
     <div class="col-md-12 informationTitle">
         <h4>Table : <b><?php echo $_smarty_tpl->tpl_vars['tableName']->value;?>
 </b></h4>
         <a href="#null"  id="previousPage"><i class="fa fa-arrow-left fa-lg returnButton" aria-hidden="true"> </i></a>
     </div>
+
+    <!-- Table -->
+
     <table>
         <thead>
             <tr>
+
+                <!-- Display the columns name -->
+
                 <?php
 $_from = $_smarty_tpl->tpl_vars['tableResult']->value;
 if (!is_array($_from) && !is_object($_from)) {
@@ -104,6 +115,9 @@ $_smarty_tpl->tpl_vars['key'] = $__foreach_tab_0_saved_key;
             </tr>
         </thead>
         <tbody>
+
+            <!-- Display the table content -->
+
             <?php
 $_from = $_smarty_tpl->tpl_vars['tableResult']->value;
 if (!is_array($_from) && !is_object($_from)) {

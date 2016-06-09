@@ -33,7 +33,6 @@
         <div class="modal-dialog">
             <div class="modal-content modalColor">
                 <div class="modal-header">
-                    <button type="button" class="close crossButton" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Do you really want to erase <b>{$dbname}</b> ?</h4>
                 </div>
                 <div class="modal-footer">
@@ -50,10 +49,9 @@
         <div class="modal-dialog">
             <div class="modal-content modalColor">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Do you really want to erase <b>{$dbname}</b> ?</h4>
                 </div>
-                <div class="modal-body">
+                <div class="modal-footer">
                     <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
                     <a href="#" class="btn btnConfirm" onclick="displayData('');">Confirm</a>
                 </div>
@@ -67,7 +65,6 @@
         <div class="modal-dialog">
             <div class="modal-content modalColor">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Do you really want to rename <b>{$dbname}</b> ?</h4>
                 </div>
                 <div class="modal-body">
@@ -79,7 +76,7 @@
                             <input type="hidden" value="{$dbname}" name="olddb">
                             <input type="text" name="newdb" class="form-control" placeholder="Name it">
                         <br>
-                            <input type="submit" class="btn btn-default btnConfirm" type="submit" value="Confirm">
+                            <input class="btn btn-default btnConfirm" type="submit" value="Confirm">
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -98,7 +95,6 @@
 
             <div class="modal-content modalColor">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Some informations on : <b>{$dbname}</b></h4>
                 </div>
                 <div class="modal-body">
