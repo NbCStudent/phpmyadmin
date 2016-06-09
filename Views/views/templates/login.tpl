@@ -1,3 +1,4 @@
+<!-- Login Page -->
 
 <div class="imgLogin">
     <img src="Asset/img/loginO.jpg" class="imgLogin">
@@ -7,6 +8,9 @@
                 <div class="modal-header">
                     <h1 class="text-center">my-pma</h1>
                     <div class="modal-body">
+
+                        <!-- Form -->
+
                         <form class="form col-md-12 center-block" action="index.php?action=checklogin" method="post">
                             <div class="form-group">
                                 <input type="text" class="form-control input-lg" name="_username" required="required" placeholder="Pseudo">

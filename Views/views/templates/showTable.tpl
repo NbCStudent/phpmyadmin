@@ -1,12 +1,23 @@
 {extends file ="./home.tpl"}
 {block name="tableBody"}
+
+    <!-- Show Table Page -->
+
+    <!-- Display the table name -->
+
     <div class="col-md-12 informationTitle">
         <h4>Table : <b>{$tableName}</b></h4>
         <a href="#null"  id="previousPage"><i class="fa fa-arrow-left fa-lg returnButton" aria-hidden="true"> </i></a>
     </div>
+
+    <!-- Table -->
+
     <table>
         <thead>
             <tr>
+
+                <!-- Display the columns name -->
+
                 {foreach $tableResult as $tab key=key}
                     {foreach $tab as $test key=key1}
                         {if {$key} == 0}
@@ -17,6 +28,9 @@
             </tr>
         </thead>
         <tbody>
+
+            <!-- Display the table content -->
+
             {foreach $tableResult as $tab key=key}
                 <tr>
                     {foreach $tab as $test key=key1}

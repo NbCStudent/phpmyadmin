@@ -29,7 +29,9 @@ $(document).ready(function() {
 });
 
 
-/* --------- Images --------- */
+/* --------- Background Images --------- */
+
+/* Login */
 
 function resizeLogin() {
     var $image = $('img.imgLogin');
@@ -55,13 +57,19 @@ function resizeLogin() {
         }); }
 }
 $(document).ready(function() {
-    // Au chargement initial
+    
+    // Initial Loading
+    
     resizeLogin();
-    // En cas de redimensionnement de la fenêtre
+    
+    // When the size of the window is changed
+    
     $(window).resize(function(){
         resizeLogin();
     });
 });
+
+/* Error 404 */
 
 function resizeError() {
     var $image = $('img.imgError');
@@ -87,9 +95,13 @@ function resizeError() {
         }); }
 }
 $(document).ready(function() {
-    // Au chargement initial
+
+    // Initial Loading
+    
     resizeError();
-    // En cas de redimensionnement de la fenêtre
+
+    // When the size of the window is changed
+    
     $(window).resize(function(){
         resizeError();
     });

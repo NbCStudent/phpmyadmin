@@ -1,5 +1,7 @@
 <?php
 
+// Every action related to databases
+
 if (isset($action) && $action == 'showDB' && isset($_GET['db']) && !empty($_GET['db'])) {
     $db = dbConnect("information_schema");
     $result = GetAllDB($db);

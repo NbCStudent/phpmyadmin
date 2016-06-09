@@ -1,5 +1,7 @@
 <?php
 
+// Every key associated to its value
+
 $legalActions = array('home' => 'home',
                     'showDB' => 'bdd',
                     'addDB' => 'bdd',
