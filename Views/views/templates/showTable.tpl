@@ -1,7 +1,8 @@
 {extends file ="./home.tpl"}
 {block name="tableBody"}
     <div class="col-md-12 informationTitle">
-        <h4>Table : <b>{$tableName}</b></h4>
+            <h4>Table : <b>{$tableName}</b></h4>
+            <i class="fa fa-arrow-left fa-lg returnButton" aria-hidden="true"> </i>
     </div>
     <table>
         <thead>

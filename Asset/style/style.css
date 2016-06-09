@@ -1,3 +1,4 @@
+
 /* --------- Whole platform --------- */
 
 * {
@@ -43,6 +44,14 @@ img.imgLogin {
 	font-size: 40px;
 }
 
+img.imgError {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+	opacity: 0.8;
+}
+
 /* --------- Home --------- */
 
 body {
@@ -50,7 +59,7 @@ body {
 }
 
 .interface {
-	margin-top: 1.2%;
+	margin-top: 16px;
 	width: 100%;
 }
 
@@ -63,6 +72,16 @@ body {
 	color: #7272a1;
 }
 
+.deconnectButton:hover, .deconnectButton:focus,
+.deconnectButton:active, .deconnectButton:active:focus {
+	color: #a6a6cf;
+}
+
+.deconnectButton:hover:after {
+	content: "Log out";
+	font-family: 'Raleway';
+}
+
 .logoPhpmyadmin {
 	width: 30%;
 	height: auto;
@@ -72,8 +91,18 @@ body {
 	padding-bottom: 1%;
 }
 
+.logoPhpmyadmin:hover {
+	filter: grayscale(50%);
+	-webkit-filter: grayscale(50%);
+	-moz-filter: grayscale(50%);
+}
+
 .page-header {
 	margin-bottom: 3%;
+}
+
+.userColor {
+	color: #7272a1;
 }
 
 /* --------- Jumbotron --------- */
@@ -133,6 +162,23 @@ body {
 	margin-bottom: 3%;
 }
 
+.returnButton {
+	vertical-align: -80%;
+	position: absolute;
+	right: 20px;
+	top: 23%;
+	color: #7272a1;
+}
+
+.returnButton:hover, .returnButton:focus,
+.returnButton:active, .returnButton:active:focus {
+	color: #a6a6cf;
+}
+
+.returnButton:hover:after {
+	content: "Previous";
+}
+
 .tableView {
 	overflow-x: auto;
 }
@@ -162,34 +208,34 @@ body {
 	padding-bottom: 0.5px;
 	padding-left: 8px;
 	padding-right: 8px;
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #7272a1;
 	border-color: #7272a1;
 }
 
 .btnDisplayTable:hover {
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #8888b2;
 	border-color: #8888b2;
 	outline:none !important;
 }
 
 .btnDisplayTable:focus {
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #8888b2;
 	border-color: #8888b2;
 	outline:none !important;
 }
 
 .btnDisplayTable:active {
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #8888b2;
 	border-color: #8888b2;
 	outline:none !important;
 }
 
 .btnDisplayTable:active:focus {
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #8888b2;
 	border-color: #8888b2;
 	outline:none !important;
@@ -206,28 +252,28 @@ body {
 }
 
 .btnEraseTable:hover {
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #fbb243;
 	border-color: #fbb243;
 	outline:none !important;
 }
 
 .btnEraseTable:focus {
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #fbb243;
 	border-color: #fbb243;
 	outline:none !important;
 }
 
 .btnEraseTable:active {
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #fbb243;
 	border-color: #fbb243;
 	outline:none !important;
 }
 
 .btnEraseTable:active:focus {
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #fbb243;
 	border-color: #fbb243;
 	outline:none !important;
@@ -246,34 +292,34 @@ body {
 /* --------- add DB --------- */
 
 .btnConfirm {
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #7272a1;
 	border-color: #7272a1;
 }
 
 .btnConfirm:hover {
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #8888b2;
 	border-color: #8888b2;
 	outline:none !important;
 }
 
 .btnConfirm:focus {
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #8888b2;
 	border-color: #8888b2;
 	outline:none !important;
 }
 
 .btnConfirm:active {
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #8888b2;
 	border-color: #8888b2;
 	outline:none !important;
 }
 
 .btnConfirm:active:focus {
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #8888b2;
 	border-color: #8888b2;
 	outline:none !important;
@@ -286,28 +332,28 @@ body {
 }
 
 .btnErase:hover {
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #fbb243;
 	border-color: #fbb243;
 	outline:none !important;
 }
 
 .btnErase:focus {
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #fbb243;
 	border-color: #fbb243;
 	outline:none !important;
 }
 
 .btnErase:active {
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #fbb243;
 	border-color: #fbb243;
 	outline:none !important;
 }
 
 .btnErase:active:focus {
-	color: #ffffff;
+	color: #f9f9fb;
 	background-color: #fbb243;
 	border-color: #fbb243;
 	outline:none !important;

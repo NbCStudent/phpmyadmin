@@ -23,7 +23,27 @@
                 <div class="modal-body">
                     <!--<p>Confirmation suppression:&nbsp;</p>-->
                     <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
-                    <a href="index.php?action=deleteBDD&db_name={$dbname}" class="btn btnConfirm">Confirmer</a>
+
+                    <a href="index.php?action=deleteBDD&db_name={$dbname}" class="btn btnConfirm">Confirm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Confirmation Drop Table -->
+    <div id="alert_drop_table_comfirm" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content modalColor">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Do you really want to erase <b>{$dbname}</b> ?</h4>
+                </div>
+                <div class="modal-body">
+                    <!--<p>Confirmation suppression:&nbsp;</p>-->
+                    <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
+                    <a href="#" class="btn btnConfirm" onclick="displayData('');">Confirm</a>
+                    <div data-name="Jack" data-lastname="black">My name is</div>
                 </div>
             </div>
         </div>
@@ -81,7 +101,8 @@
                         <td class="td1">{$col.TABLE_NAME}</td>
                         <td class="td1"><a href="index.php?action=showTable&dbname={$dbname}&tableName={$col.TABLE_NAME}"
                                            class="btn btn-default btnDisplayTable">Display</a></td>
-                        <td class="td1"><a href="index.php?action=deleteTable&tableName={$col.TABLE_NAME}&dbname={$dbname}" class="btn btn-default btnEraseTable">Erase</a></td>
+                        <td class="td1"><span class="btn btn-default btnEraseTable" data-toggle="modal"
+                                              data-target="#alert_drop_table_comfirm">Erase</span></td>
                         <td class="td1">{$col.TABLE_ROWS}</td>
                         <td class="td1">{$col.TABLE_TYPE}</td>
                         <td class="td1">{$col.TABLE_COLLATION}</td>
@@ -116,4 +137,20 @@
                 <button type="submit" class="btn btnConfirm">Confirm</button>
             </div>
         </form>
+<!--
+        <table border="0" cellspacing="5" cellpadding="5">
+            <tr>
+                <td>
+                    <a href="#" class="reviewLink">View Reviews</a>
+                    <div class="displayData">
+                        <span class="title">Book Title 2</span>
+                        <span class="isbn">516AHGN1515</span>
+                        <span class="pubdata">1999-05-08</span>
+                        <span class="price">$25.00</span>
+                    </div>
+                </td>
+                <td>Book Title 2</td>
+            </tr>
+        </table>
+        -->
 {/block}
