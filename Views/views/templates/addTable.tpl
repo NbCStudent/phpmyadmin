@@ -1,5 +1,8 @@
 {extends file ="./home.tpl"}
 {block name="tableBody"}
+
+    <!-- Add Table Page -->
+
     <div class="col-md-6 titleAddTable">
         <h3>Database : {$dbname}</h3>
     </div>
@@ -7,6 +10,9 @@
         <h3>Table : {$tableName}</h3>
     </div>
     <div class="col-md-12">
+
+        <!-- Form -->
+
         <form action="index.php?action=checkaddTable" method="post">
             <div class="col-md-4">
                 <label for="newColumn">Column :</label>

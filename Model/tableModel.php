@@ -1,5 +1,7 @@
 <?php
 
+// Every functions related to tables
+
 function showTable($db,$tableName,$dbName)
 {
     $sql = $db->query("SELECT * FROM $tableName");
