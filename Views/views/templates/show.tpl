@@ -18,7 +18,7 @@
             <!-- Modal content-->
             <div class="modal-content modalColor">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close crossButton" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Do you really want to erase <b>{$dbname}</b> ?</h4>
                 </div>
                 <div class="modal-footer">
