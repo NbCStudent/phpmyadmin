@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-09 13:38:57
+/* Smarty version 3.1.29, created on 2016-06-09 15:43:59
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/show.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57595551ce9cd5_25242327',
+  'unifunc' => 'content_5759729f7e8038_00688358',
   'file_dependency' => 
   array (
     '34435ec0758a1885f19bc84983d1ce9b17917fc2' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/show.tpl',
-      1 => 1465472335,
+      1 => 1465479836,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:./home.tpl' => 1,
   ),
 ),false)) {
-function content_57595551ce9cd5_25242327 ($_smarty_tpl) {
+function content_5759729f7e8038_00688358 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_61384385357595551cbb350_57506192',
+  0 => 'block_15483117385759729f7ac426_92925652',
   1 => false,
   3 => 0,
   2 => 0,
@@ -37,12 +37,13 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:./home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'tableBody'}  file:Views/views/templates/show.tpl */
-function block_61384385357595551cbb350_57506192($_smarty_tpl, $_blockParentStack) {
+function block_15483117385759729f7ac426_92925652($_smarty_tpl, $_blockParentStack) {
 ?>
 
     <div class="col-md-12 informationTitle">
         <h4>Database : <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
 </b></h4>
+        <a href="#null"  id="previousPage"><i class="fa fa-arrow-left fa-lg returnButton" aria-hidden="true"> </i></a>
     </div>
     <div class="col-md-3 informationButton">
         <button id="aff_stat" class="btn btnConfirm" data-toggle="modal" data-target="#alert_aff_stat_bdd">Display statistics</button>

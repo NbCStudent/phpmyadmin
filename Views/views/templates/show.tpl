@@ -2,6 +2,7 @@
 {block name="tableBody"}
     <div class="col-md-12 informationTitle">
         <h4>Database : <b>{$dbname}</b></h4>
+        <a href="#null"  id="previousPage"><i class="fa fa-arrow-left fa-lg returnButton" aria-hidden="true"> </i></a>
     </div>
     <div class="col-md-3 informationButton">
         <button id="aff_stat" class="btn btnConfirm" data-toggle="modal" data-target="#alert_aff_stat_bdd">Display statistics</button>
