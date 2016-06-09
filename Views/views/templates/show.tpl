@@ -9,11 +9,9 @@
     <div class="col-md-3 informationButton">
         <button id="aff_stat" class="btn btnConfirm" data-toggle="modal" data-target="#alert_rename_bdd">Rename</button>
     </div>
-    <div class="col-md-9">
-        <button id="btn_drop" class="btn btn-danger btnErase" data-toggle="modal" data-target="#alert_drop_bdd_comfirm">
-            &nbsp;Erase</button>
-    </div>
+    <button id="btn_drop" class="btn btn-danger btnErase btnEraseDB" data-toggle="modal" data-target="#alert_drop_bdd_comfirm">&nbsp;Erase</button>
     <br>
+
     <!-- Modal Confirmation Drop BDD -->
     <div id="alert_drop_bdd_comfirm" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -46,7 +44,6 @@
                     <!--<p>Confirmation suppression:&nbsp;</p>-->
                     <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
                     <a href="#" class="btn btnConfirm" onclick="displayData('');">Confirm</a>
-                    <div data-name="Jack" data-lastname="black">My name is</div>
                 </div>
             </div>
         </div>
@@ -59,16 +56,19 @@
             <div class="modal-content modalColor">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Rename DATABASE: <b>{$dbname}</b> ?</h4>
+                    <h4 class="modal-title">Do you really want to rename <b>{$dbname}</b> ?</h4>
                 </div>
                 <div class="modal-body">
-                    <form action="index.php?action=renameDB" method="post">
-                      <input type="hidden" value="{$dbname}" name="olddb">
-                      <label for="newdb">New name:</label>
-                      <input type="text" name="newdb">
-                      <input type="submit" class="btn btnConfirm" value="Confirm">
-                  </form>
+                    <form class="form-group" action="index.php?action=renameDB" method="post">
+                        <input type="hidden" value="{$dbname}" name="olddb">
+                        <label for="newdb">New name :</label>
+                        <input type="text" name="newdb" class="form-control" placeholder="Name it">
+                    </form>
+                </div>
+                <div class="modal-footer">
                     <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
+
+                    <a href="index.php?action=deleteBDD&db_name={$dbname}" class="btn btnConfirm" type="submit" value="Confirm">Confirm</a>
                 </div>
             </div>
         </div>

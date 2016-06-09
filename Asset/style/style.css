@@ -179,6 +179,13 @@ body {
 	content: "Previous";
 }
 
+.btnEraseDB {
+	vertical-align: -80%;
+	position: absolute;
+	right: 20px;
+	top: 58px;
+}
+
 .tableView {
 	overflow-x: auto;
 }

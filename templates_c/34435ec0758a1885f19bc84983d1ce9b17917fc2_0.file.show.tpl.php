@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-09 11:15:38
+/* Smarty version 3.1.29, created on 2016-06-09 13:06:12
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/show.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_575933ba08d495_32313669',
+  'unifunc' => 'content_57594da4e61019_34771805',
   'file_dependency' => 
   array (
     '34435ec0758a1885f19bc84983d1ce9b17917fc2' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/show.tpl',
-      1 => 1465463734,
+      1 => 1465470371,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:./home.tpl' => 1,
   ),
 ),false)) {
-function content_575933ba08d495_32313669 ($_smarty_tpl) {
+function content_57594da4e61019_34771805 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_1936754249575933ba05d1b1_64715355',
+  0 => 'block_103349332257594da4e2b736_95064315',
   1 => false,
   3 => 0,
   2 => 0,
@@ -37,7 +37,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:./home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'tableBody'}  file:Views/views/templates/show.tpl */
-function block_1936754249575933ba05d1b1_64715355($_smarty_tpl, $_blockParentStack) {
+function block_103349332257594da4e2b736_95064315($_smarty_tpl, $_blockParentStack) {
 ?>
 
     <div class="col-md-12 informationTitle">
@@ -47,11 +47,12 @@ function block_1936754249575933ba05d1b1_64715355($_smarty_tpl, $_blockParentStac
     <div class="col-md-3 informationButton">
         <button id="aff_stat" class="btn btnConfirm" data-toggle="modal" data-target="#alert_aff_stat_bdd">Display statistics</button>
     </div>
-    <div class="col-md-9">
-        <button id="btn_drop" class="btn btn-danger btnErase" data-toggle="modal" data-target="#alert_drop_bdd_comfirm">
-            &nbsp;Erase</button>
+    <div class="col-md-3 informationButton">
+        <button id="aff_stat" class="btn btnConfirm" data-toggle="modal" data-target="#alert_rename_bdd">Rename</button>
     </div>
+    <button id="btn_drop" class="btn btn-danger btnErase btnEraseDB" data-toggle="modal" data-target="#alert_drop_bdd_comfirm">&nbsp;Erase</button>
     <br>
+
     <!-- Modal Confirmation Drop BDD -->
     <div id="alert_drop_bdd_comfirm" class="modal fade" role="dialog">
         <div class="modal-dialog">
@@ -87,7 +88,34 @@ function block_1936754249575933ba05d1b1_64715355($_smarty_tpl, $_blockParentStac
                     <!--<p>Confirmation suppression:&nbsp;</p>-->
                     <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
                     <a href="#" class="btn btnConfirm" onclick="displayData('');">Confirm</a>
-                    <div data-name="Jack" data-lastname="black">My name is</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Rename BDD -->
+    <div id="alert_rename_bdd" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content modalColor">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Do you really want to rename <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+</b> ?</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-group" action="index.php?action=renameDB" method="post">
+                        <input type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+" name="olddb">
+                        <label for="newdb">New name :</label>
+                        <input type="text" name="newdb" class="form-control" placeholder="Name it">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
+
+                    <a href="index.php?action=deleteBDD&db_name=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+" class="btn btnConfirm" type="submit" value="Confirm">Confirm</a>
                 </div>
             </div>
         </div>

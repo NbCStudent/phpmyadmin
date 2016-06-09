@@ -7,6 +7,15 @@ $(document).ready(function() {
     });
 });
 
+/* --------- Previous Page --------- */
+
+$(document).ready(function() {
+    document.getElementById('previousPage').onclick = function(e) {
+        e.preventDefault();
+        history.back();
+    };
+});
+
 /* --------- Modals --------- */
 
 $(document).ready(function() {
