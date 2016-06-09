@@ -1,5 +1,6 @@
+/* --------- Design of the project --------- */
 
-/* --------- Whole platform --------- */
+/* --------- Entire platform --------- */
 
 * {
     font-family: 'Raleway';
@@ -307,7 +308,7 @@ body {
 	color: #7272a1;
 }
 
-/* --------- add DB --------- */
+/* --------- Add Database --------- */
 
 .btnConfirm {
 	color: #f9f9fb;
@@ -377,7 +378,7 @@ body {
 	outline:none !important;
 }
 
-/* --------- add Table --------- */
+/* --------- Add Table --------- */
 
 .titleAddTable {
 	margin-bottom: 2%;

@@ -1,5 +1,7 @@
 <?php
 
+// Every action related to tables
+
 include "./Model/tableModel.php";
 
 if (isset($action) && $action == 'showTable' && !empty($_GET['tableName']) && !empty($_GET['dbname'])) {

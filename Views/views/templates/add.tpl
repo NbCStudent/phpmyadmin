@@ -1,5 +1,10 @@
 {extends file ="./home.tpl"}
 {block name="tableBody"}
+
+    <!-- Add Database Page -->
+
+    <!-- Form -->
+
     <form action="index.php?action=checkAddDB" method="post">
         <div class="col-md-12">
             <label for="newDB">New database :</label>

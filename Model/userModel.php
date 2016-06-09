@@ -1,5 +1,7 @@
 <?php
 
+// Function to check the user login to access the platform
+
 function checklogin($db,$login,$pass)
 {
   $sql = $db->query("SELECT User,Password FROM user WHERE User = '".$login."' AND Password = PASSWORD('".$pass."')");

@@ -1,5 +1,7 @@
 <?php
 
+// Every action related to the user's login to access the platform
+
   include "./Model/userModel.php";
 
 if(isset($action) && $action == "login")
