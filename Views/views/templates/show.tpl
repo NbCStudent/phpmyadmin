@@ -6,6 +6,9 @@
     <div class="col-md-3 informationButton">
         <button id="aff_stat" class="btn btnConfirm" data-toggle="modal" data-target="#alert_aff_stat_bdd">Display statistics</button>
     </div>
+    <div class="col-md-3 informationButton">
+        <button id="aff_stat" class="btn btnConfirm" data-toggle="modal" data-target="#alert_rename_bdd">Rename</button>
+    </div>
     <div class="col-md-9">
         <button id="btn_drop" class="btn btn-danger btnErase" data-toggle="modal" data-target="#alert_drop_bdd_comfirm">
             &nbsp;Erase</button>
@@ -24,6 +27,28 @@
                     <!--<p>Confirmation suppression:&nbsp;</p>-->
                     <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
                     <a href="index.php?action=deleteBDD&db_name={$dbname}" class="btn btnConfirm">Confirmer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Rename BDD -->
+    <div id="alert_rename_bdd" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content modalColor">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Rename DATABASE: <b>{$dbname}</b> ?</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="index.php?action=renameDB" method="post">
+                      <input type="hidden" value="{$dbname}" name="olddb">
+                      <label for="newdb">New name:</label>
+                      <input type="text" name="newdb">
+                      <input type="submit" class="btn btnConfirm" value="Confirm">
+                  </form>
+                    <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>

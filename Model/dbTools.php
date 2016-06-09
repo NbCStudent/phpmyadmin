@@ -36,3 +36,21 @@ function GetStatsDB($db,$dbname)
   $result = $sql->fetchAll(PDO::FETCH_ASSOC);
   return ($result);
 }
+function renameDB($bdd)
+{
+  if ($bdd['newname'] != $bdd['oldname'])
+  {
+    var_dump($bdd);
+    $db = dbConnect($bdd['oldname']);
+    var_dump($db);
+    //$tables = GetTableDB($db,$bdd['oldname']);
+    var_dump(GetTableDB($db,$bdd['oldname']));
+    die();
+    /*for ($i = 0; $i < count($tables); $i++) {
+      $req = 'RENAME TABLE ' . $info['oldname'] . '.' . $tables[$i] . ' TO ' . $info['newname'] . '.' . $tables[$i];
+      $res = $this->_db->query($req);
+    }
+    $sql = 'DROP DATABASE ' . $info['oldname'];
+    $this->_db->query($sql);*/
+  }
+}

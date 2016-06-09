@@ -11,4 +11,5 @@ $legalActions = array('home' => 'home',
                     'login' => 'user',
                     'checklogin' => 'user',
                     'logout' => 'user',
-                    'checkaddTable' => 'table');
+                    'checkaddTable' => 'table',
+                    'renameDB'=>'bdd');

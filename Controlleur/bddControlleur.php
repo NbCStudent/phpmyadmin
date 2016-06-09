@@ -26,6 +26,13 @@ elseif (isset($action) && $action == 'deleteBDD' && !empty($_GET['db_name'])){
     $Smarty->assign('dbnames',$allDB);
     $template = "home";
 }
+elseif (isset($action) && $action == "renameDB" && !empty($_POST)) {
+  $newname = htmlspecialchars($_POST["newdb"]);
+  $db = array('oldname' => $_POST['olddb'],
+              'newname' => $newname);
+  $result = renameDB($db);
+  var_dump($result);
+}
 else {
   $template = "404";
 }

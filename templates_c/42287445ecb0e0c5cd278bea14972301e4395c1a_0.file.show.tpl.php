@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-08 15:24:54
+/* Smarty version 3.1.29, created on 2016-06-09 11:08:42
   from "/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/show.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57581ca6eb5492_75441748',
+  'unifunc' => 'content_5759321a8e20f8_21434803',
   'file_dependency' => 
   array (
     '42287445ecb0e0c5cd278bea14972301e4395c1a' => 
     array (
       0 => '/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/show.tpl',
-      1 => 1465392080,
+      1 => 1465463321,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:./home.tpl' => 1,
   ),
 ),false)) {
-function content_57581ca6eb5492_75441748 ($_smarty_tpl) {
+function content_5759321a8e20f8_21434803 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_71718415457581ca6e936d7_89471688',
+  0 => 'block_5394256855759321a8be6a8_96906531',
   1 => false,
   3 => 0,
   2 => 0,
@@ -37,7 +37,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:./home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'tableBody'}  file:Views/views/templates/show.tpl */
-function block_71718415457581ca6e936d7_89471688($_smarty_tpl, $_blockParentStack) {
+function block_5394256855759321a8be6a8_96906531($_smarty_tpl, $_blockParentStack) {
 ?>
 
     <div class="col-md-12 informationTitle">
@@ -46,6 +46,9 @@ function block_71718415457581ca6e936d7_89471688($_smarty_tpl, $_blockParentStack
     </div>
     <div class="col-md-3 informationButton">
         <button id="aff_stat" class="btn btnConfirm" data-toggle="modal" data-target="#alert_aff_stat_bdd">Display statistics</button>
+    </div>
+    <div class="col-md-3 informationButton">
+        <button id="aff_stat" class="btn btnConfirm" data-toggle="modal" data-target="#alert_rename_bdd">Rename</button>
     </div>
     <div class="col-md-9">
         <button id="btn_drop" class="btn btn-danger btnErase" data-toggle="modal" data-target="#alert_drop_bdd_comfirm">
@@ -67,6 +70,30 @@ function block_71718415457581ca6e936d7_89471688($_smarty_tpl, $_blockParentStack
                     <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
                     <a href="index.php?action=deleteBDD&db_name=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
 " class="btn btnConfirm">Confirmer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Rename BDD -->
+    <div id="alert_rename_bdd" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content modalColor">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Rename DATABASE: <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+</b> ?</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="index.php?action=renameDB" method="post">
+                      <input type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+" name="olddb">
+                      <label for="newdb">New name:</label>
+                      <input type="text" name="newdb">
+                      <input type="submit" class="btn btnConfirm" value="Confirm">
+                  </form>
+                    <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>
