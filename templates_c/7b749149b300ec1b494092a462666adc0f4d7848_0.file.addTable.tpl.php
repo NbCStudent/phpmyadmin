@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-07 22:29:34
+/* Smarty version 3.1.29, created on 2016-06-08 16:33:34
   from "/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/addTable.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57572eae2806e3_21116025',
+  'unifunc' => 'content_57582cbe3b03c8_93554780',
   'file_dependency' => 
   array (
     '7b749149b300ec1b494092a462666adc0f4d7848' => 
     array (
       0 => '/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/addTable.tpl',
-      1 => 1465306137,
+      1 => 1465396405,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:./home.tpl' => 1,
   ),
 ),false)) {
-function content_57572eae2806e3_21116025 ($_smarty_tpl) {
+function content_57582cbe3b03c8_93554780 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_141801642657572eae279a25_06060649',
+  0 => 'block_66865719957582cbe3a9459_52674823',
   1 => false,
   3 => 0,
   2 => 0,
@@ -37,7 +37,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:./home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'tableBody'}  file:Views/views/templates/addTable.tpl */
-function block_141801642657572eae279a25_06060649($_smarty_tpl, $_blockParentStack) {
+function block_66865719957582cbe3a9459_52674823($_smarty_tpl, $_blockParentStack) {
 ?>
 
     <div class="col-md-6 titleAddTable">
@@ -49,7 +49,7 @@ function block_141801642657572eae279a25_06060649($_smarty_tpl, $_blockParentStac
 </h3>
     </div>
     <div class="col-md-12">
-        <form action="index.php?action=addTable" method="post">
+        <form action="index.php?action=checkaddTable" method="post">
             <div class="col-md-4">
                 <label for="newColumn">Column :</label>
             </div>
@@ -66,7 +66,7 @@ function block_141801642657572eae279a25_06060649($_smarty_tpl, $_blockParentStac
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <select class="form-control" id="sel1">
+                    <select class="form-control" id="sel1" name='type'>
                         <option>Int</option>
                         <option>Varchar</option>
                         <option>Date</option>

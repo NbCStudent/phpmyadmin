@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-08 14:11:38
+/* Smarty version 3.1.29, created on 2016-06-08 15:23:08
   from "/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57580b7ab37804_30418884',
+  'unifunc' => 'content_57581c3c5bdb25_69300060',
   'file_dependency' => 
   array (
     '1dc4f5a59a61af276cb727ec0da60c297bc9b4a3' => 
     array (
       0 => '/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/home.tpl',
-      1 => 1465387668,
+      1 => 1465392187,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57580b7ab37804_30418884 ($_smarty_tpl) {
+function content_57581c3c5bdb25_69300060 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
 ?>
 <div class="container interface">
@@ -28,6 +28,7 @@ $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
             <div class="panel panel-default interfaceColor">
                 <div class="panel-body">
                     <div class="page-header">
+                        <a href="index.php?action=logout" ><p class="pull-right deconnectButton"><i class="fa fa-times fa-2x" aria-hidden="true">Logout</i></p></a>
                         <a href="index.php"><img class="logoPhpmyadmin" src="Asset/img/logoPhpmyadmin2.png" alt="logoPhpmyadmin"></a>
                     </div>
                     <div class="col-md-3">
@@ -35,7 +36,7 @@ $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
                             <h3 class="titleJumbotron">Toolbox</h3>
                             <p class="titleJumbotron">
                                 <a href="index.php"><i class="fa fa-home fa-lg iconJumbotron" aria-hidden="true"></i></a>
-                                <a href="/phpMyAdmin/doc/html/index.html"><i class="fa fa-question fa-lg iconJumbotron" aria-hidden="true"></a></i>
+                                <a href="https://docs.phpmyadmin.net/en/latest/"><i class="fa fa-question fa-lg iconJumbotron" aria-hidden="true"></a></i>
                                 <a href="http://dev.mysql.com/doc/refman/5.5/en/"><i class="fa fa-book fa-lg iconJumbotron" aria-hidden="true"></a></i>
                                 <a href="#" id="page_refresh"><i class="fa fa-repeat fa-lg iconJumbotron" aria-hidden="true"></a></i>
                             </p>
@@ -73,7 +74,7 @@ $_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_item;
                                 <div class="tableView">
                                     <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_196014912257580b7ab32e70_49770966',
+  0 => 'block_92587314657581c3c5b8dc9_59481228',
   1 => false,
   3 => 0,
   2 => 0,
@@ -91,7 +92,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 </div>
 <?php }
 /* {block 'tableBody'}  file:Views/views/templates/home.tpl */
-function block_196014912257580b7ab32e70_49770966($_smarty_tpl, $_blockParentStack) {
+function block_92587314657581c3c5b8dc9_59481228($_smarty_tpl, $_blockParentStack) {
 ?>
 
                                         <h1 class="informationMessage">WELCOME <?php echo $_smarty_tpl->tpl_vars['userName']->value;?>

@@ -11,8 +11,9 @@ function deleteTable($db,$tableName)
     $sql = $db->query("DROP TABLE $tableName");
     return ($sql);
 }
-function addTable($db,$tableName)
+function addTable($db,$tableName,$col,$type)
 {
-    $sql = $db->query("CREATE TABLE $tableName");
+    $sql = $db->query("CREATE TABLE $tableName ($col $type)");
+    var_dump($sql);
     return ($sql);
 }
