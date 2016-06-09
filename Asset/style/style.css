@@ -75,6 +75,7 @@ body {
 .deconnectButton:hover, .deconnectButton:focus,
 .deconnectButton:active, .deconnectButton:active:focus {
 	color: #a6a6cf;
+	text-decoration: none;
 }
 
 .deconnectButton:hover:after {
@@ -177,6 +178,13 @@ body {
 
 .returnButton:hover:after {
 	content: "Previous";
+}
+
+.btnEraseDB {
+	vertical-align: -80%;
+	position: absolute;
+	right: 20px;
+	top: 58px;
 }
 
 .tableView {

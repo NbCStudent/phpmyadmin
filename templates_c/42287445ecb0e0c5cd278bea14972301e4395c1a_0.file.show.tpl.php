@@ -1,17 +1,29 @@
 <?php
+<<<<<<< HEAD
+/* Smarty version 3.1.29, created on 2016-06-09 11:08:42
+=======
 /* Smarty version 3.1.29, created on 2016-06-09 11:38:05
+>>>>>>> fac99621881a25ac8362745b079cee5d62a29781
   from "/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/show.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
+<<<<<<< HEAD
+  'unifunc' => 'content_5759321a8e20f8_21434803',
+=======
   'unifunc' => 'content_575938fdba4371_85056130',
+>>>>>>> fac99621881a25ac8362745b079cee5d62a29781
   'file_dependency' => 
   array (
     '42287445ecb0e0c5cd278bea14972301e4395c1a' => 
     array (
       0 => '/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/show.tpl',
+<<<<<<< HEAD
+      1 => 1465463321,
+=======
       1 => 1465464011,
+>>>>>>> fac99621881a25ac8362745b079cee5d62a29781
       2 => 'file',
     ),
   ),
@@ -20,13 +32,21 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:./home.tpl' => 1,
   ),
 ),false)) {
+<<<<<<< HEAD
+function content_5759321a8e20f8_21434803 ($_smarty_tpl) {
+=======
 function content_575938fdba4371_85056130 ($_smarty_tpl) {
+>>>>>>> fac99621881a25ac8362745b079cee5d62a29781
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
+<<<<<<< HEAD
+  0 => 'block_5394256855759321a8be6a8_96906531',
+=======
   0 => 'block_2018525787575938fdb7b8d5_24710119',
+>>>>>>> fac99621881a25ac8362745b079cee5d62a29781
   1 => false,
   3 => 0,
   2 => 0,
@@ -37,7 +57,11 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:./home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'tableBody'}  file:Views/views/templates/show.tpl */
+<<<<<<< HEAD
+function block_5394256855759321a8be6a8_96906531($_smarty_tpl, $_blockParentStack) {
+=======
 function block_2018525787575938fdb7b8d5_24710119($_smarty_tpl, $_blockParentStack) {
+>>>>>>> fac99621881a25ac8362745b079cee5d62a29781
 ?>
 
     <div class="col-md-12 informationTitle">
@@ -91,6 +115,30 @@ function block_2018525787575938fdb7b8d5_24710119($_smarty_tpl, $_blockParentStac
                     <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
                     <a href="#" class="btn btnConfirm" onclick="displayData('');">Confirm</a>
                     <div data-name="Jack" data-lastname="black">My name is</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Rename BDD -->
+    <div id="alert_rename_bdd" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content modalColor">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Rename DATABASE: <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+</b> ?</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="index.php?action=renameDB" method="post">
+                      <input type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+" name="olddb">
+                      <label for="newdb">New name:</label>
+                      <input type="text" name="newdb">
+                      <input type="submit" class="btn btnConfirm" value="Confirm">
+                  </form>
+                    <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>
@@ -190,8 +238,14 @@ $__foreach_col_0_saved_local_item = $_smarty_tpl->tpl_vars['col'];
 &tableName=<?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_NAME'];?>
 "
                                            class="btn btn-default btnDisplayTable">Display</a></td>
+<<<<<<< HEAD
+                        <td class="td1"><a href="index.php?action=deleteTable&tableName=<?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_NAME'];?>
+&dbname=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+" class="btn btn-default btnEraseTable">Erase</a></td>
+=======
                         <td class="td1"><span class="btn btn-default btnEraseTable" data-toggle="modal"
                                               data-target="#alert_drop_table_comfirm">Erase</span></td>
+>>>>>>> fac99621881a25ac8362745b079cee5d62a29781
                         <td class="td1"><?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_ROWS'];?>
 </td>
                         <td class="td1"><?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_TYPE'];?>

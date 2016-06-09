@@ -51,7 +51,6 @@ elseif (isset($action) && $action == "renameDB" && !empty($_POST)) {
                   'dbnames' => $result,
                   'dbstat' => $statsdb));
   $template = "show";
-
 }
 else {
   $template = "404";
