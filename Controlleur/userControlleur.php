@@ -39,11 +39,11 @@ else {
   $template = "404";
 }
 
-if (isset($action) && $action == "userQuery" && !empty($_POST)) {
+/*if (isset($action) && $action == "userQuery" && !empty($_POST)) {
   if () {
     $db = dbConnect();
     $result = GetAllDB($db);
 
     $template = "textArea";
   }
-}
+}*/
