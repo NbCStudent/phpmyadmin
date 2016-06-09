@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-08 10:09:18
+/* Smarty version 3.1.29, created on 2016-06-09 11:07:54
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/showTable.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5757d2ae04a574_26950745',
+  'unifunc' => 'content_575931eab448e3_73619101',
   'file_dependency' => 
   array (
     '69ff727fd0eb5cba5884ca060f2b5b30c565b490' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/showTable.tpl',
-      1 => 1465373356,
+      1 => 1465463273,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:./home.tpl' => 1,
   ),
 ),false)) {
-function content_5757d2ae04a574_26950745 ($_smarty_tpl) {
+function content_575931eab448e3_73619101 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_20910759335757d2ae007348_13524129',
+  0 => 'block_883248071575931eab12d07_59977392',
   1 => false,
   3 => 0,
   2 => 0,
@@ -35,12 +35,13 @@ $_smarty_tpl->ext->_inheritance->endChild($_smarty_tpl);
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:./home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'tableBody'}  file:Views/views/templates/showTable.tpl */
-function block_20910759335757d2ae007348_13524129($_smarty_tpl, $_blockParentStack) {
+function block_883248071575931eab12d07_59977392($_smarty_tpl, $_blockParentStack) {
 ?>
 
     <div class="col-md-12 informationTitle">
-        <h4>Table : <b><?php echo $_smarty_tpl->tpl_vars['tableName']->value;?>
+            <h4>Table : <b><?php echo $_smarty_tpl->tpl_vars['tableName']->value;?>
 </b></h4>
+            <i class="fa fa-arrow-left fa-lg returnButton" aria-hidden="true"> </i>
     </div>
     <table>
         <thead>
