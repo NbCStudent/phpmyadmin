@@ -2,7 +2,9 @@
 {block name="tableBody"}
     <div class="col-md-12 informationTitle">
             <h4>Table : <b>{$tableName}</b></h4>
-            <i class="fa fa-arrow-left fa-lg returnButton" aria-hidden="true"> </i>
+            <a href="#null" onclick="javascript:history.back();">
+                <i class="fa fa-arrow-left fa-lg returnButton" aria-hidden="true"> </i>
+            </a>
     </div>
     <table>
         <thead>
