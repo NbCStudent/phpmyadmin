@@ -4,7 +4,7 @@
             <div class="panel panel-default interfaceColor">
                 <div class="panel-body">
                     <div class="page-header">
-                        <p class="pull-right deconnectButton"><i class="fa fa-times fa-2x" aria-hidden="true"></i> </p>
+                        <a href="index.php?action=logout" class="pull-right deconnectButton"><i class="fa fa-times fa-2x" aria-hidden="true"></i> </a>
                         <a href="index.php"><img class="logoPhpmyadmin" src="Asset/img/logoPhpmyadmin2.png" alt="logoPhpmyadmin"></a>
                     </div>
                     <div class="col-md-3">

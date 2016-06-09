@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-08 15:23:08
+/* Smarty version 3.1.29, created on 2016-06-09 12:56:03
   from "/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57581c3c5bdb25_69300060',
+  'unifunc' => 'content_57594b434918c0_39161165',
   'file_dependency' => 
   array (
     '1dc4f5a59a61af276cb727ec0da60c297bc9b4a3' => 
     array (
       0 => '/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/home.tpl',
-      1 => 1465392187,
+      1 => 1465469762,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_57581c3c5bdb25_69300060 ($_smarty_tpl) {
+function content_57594b434918c0_39161165 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
 ?>
 <div class="container interface">
@@ -28,7 +28,7 @@ $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
             <div class="panel panel-default interfaceColor">
                 <div class="panel-body">
                     <div class="page-header">
-                        <a href="index.php?action=logout" ><p class="pull-right deconnectButton"><i class="fa fa-times fa-2x" aria-hidden="true">Logout</i></p></a>
+                        <a href="index.php?action=logout" class="pull-right deconnectButton"><i class="fa fa-times fa-2x" aria-hidden="true"></i> </a>
                         <a href="index.php"><img class="logoPhpmyadmin" src="Asset/img/logoPhpmyadmin2.png" alt="logoPhpmyadmin"></a>
                     </div>
                     <div class="col-md-3">
@@ -74,7 +74,7 @@ $_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_item;
                                 <div class="tableView">
                                     <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_92587314657581c3c5b8dc9_59481228',
+  0 => 'block_176315060257594b43488e96_75056929',
   1 => false,
   3 => 0,
   2 => 0,
@@ -91,12 +91,12 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
     </div>
 </div>
 <?php }
-/* {block 'tableBody'}  file:Views/views/templates/home.tpl */
-function block_92587314657581c3c5b8dc9_59481228($_smarty_tpl, $_blockParentStack) {
+/* {block 'tableBody'}  file:./home.tpl */
+function block_176315060257594b43488e96_75056929($_smarty_tpl, $_blockParentStack) {
 ?>
 
-                                        <h1 class="informationMessage">WELCOME <?php echo $_smarty_tpl->tpl_vars['userName']->value;?>
- !<h1>
+                                        <h1 class="informationMessage">Welcome <span class="userColor"><?php echo $_smarty_tpl->tpl_vars['userName']->value;?>
+</span> !<h1>
                                     <?php
 }
 /* {/block 'tableBody'} */
