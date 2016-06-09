@@ -1,7 +1,39 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: theo
- * Date: 30/05/16
- * Time: 13:48
- */
+
+  include "./Model/userModel.php";
+
+if(isset($action) && $action == "login")
+{
+  if ($is_connected == true) {
+    $db = dbConnect();
+    $result = GetAllDB($db);
+    $Smarty->assign(array('dbnames' => $result,
+                    'userName' => $_SESSION['User']));
+    $template = "home";
+  }
+  else {
+    $template = 'login';
+  }
+}
+elseif (isset($action) && $action == "checklogin" && !empty($_POST)) {
+
+  $db = dbConnect("mysql");
+  $Login = checklogin($db,$_POST['_username'],$_POST['_password']);
+  if($Login == true)
+  {
+    $result = GetAllDB($db);
+    $Smarty->assign(array('dbnames' => $result,
+                    'userName' => $_SESSION['User']));
+    $template = "home";
+  }
+  else {
+    $template = "login";
+  }
+}
+elseif (isset($action) && $action == "logout") {
+  logout();
+  $template = "login";
+}
+else {
+  $template = "404";
+}

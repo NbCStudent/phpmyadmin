@@ -1,17 +1,29 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-05-31 14:09:56
+<<<<<<< HEAD
+/* Smarty version 3.1.29, created on 2016-06-08 15:23:08
+=======
+/* Smarty version 3.1.29, created on 2016-06-09 12:56:03
+>>>>>>> fac99621881a25ac8362745b079cee5d62a29781
   from "/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/home.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_574d7f14697495_15183869',
+<<<<<<< HEAD
+  'unifunc' => 'content_57581c3c5bdb25_69300060',
+=======
+  'unifunc' => 'content_57594b434918c0_39161165',
+>>>>>>> fac99621881a25ac8362745b079cee5d62a29781
   'file_dependency' => 
   array (
     '1dc4f5a59a61af276cb727ec0da60c297bc9b4a3' => 
     array (
       0 => '/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/home.tpl',
-      1 => 1464696585,
+<<<<<<< HEAD
+      1 => 1465392187,
+=======
+      1 => 1465469762,
+>>>>>>> fac99621881a25ac8362745b079cee5d62a29781
       2 => 'file',
     ),
   ),
@@ -19,27 +31,37 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_574d7f14697495_15183869 ($_smarty_tpl) {
+<<<<<<< HEAD
+function content_57581c3c5bdb25_69300060 ($_smarty_tpl) {
+=======
+function content_57594b434918c0_39161165 ($_smarty_tpl) {
+>>>>>>> fac99621881a25ac8362745b079cee5d62a29781
+$_smarty_tpl->ext->_inheritance->init($_smarty_tpl, false);
 ?>
 <div class="container interface">
     <div class="row">
         <div class="col-lg-12">
-            <div class="panel panel-default">
+            <div class="panel panel-default interfaceColor">
                 <div class="panel-body">
                     <div class="page-header">
-                        <img class="logoPhpmyadmin" src="Asset/img/logoPhpmyadmin.png" alt="logoPhpmyadmin">
+<<<<<<< HEAD
+                        <a href="index.php?action=logout" ><p class="pull-right deconnectButton"><i class="fa fa-times fa-2x" aria-hidden="true">Logout</i></p></a>
+=======
+                        <a href="index.php?action=logout" class="pull-right deconnectButton"><i class="fa fa-times fa-2x" aria-hidden="true"></i> </a>
+>>>>>>> fac99621881a25ac8362745b079cee5d62a29781
+                        <a href="index.php"><img class="logoPhpmyadmin" src="Asset/img/logoPhpmyadmin2.png" alt="logoPhpmyadmin"></a>
                     </div>
                     <div class="col-md-3">
-                        <div class="jumbotron">
-                            <h3 class="titleJumbotron">Accueil</h3>
+                        <div class="jumbotron jumbotronColor">
+                            <h3 class="titleJumbotron">Toolbox</h3>
                             <p class="titleJumbotron">
-                                <i class="fa fa-home" aria-hidden="true"></i>
-                                <i class="fa fa-question" aria-hidden="true"></i>
-                                <i class="fa fa-book" aria-hidden="true"></i>
-                                <i class="fa fa-repeat" aria-hidden="true"></i>
+                                <a href="index.php"><i class="fa fa-home fa-lg iconJumbotron" aria-hidden="true"></i></a>
+                                <a href="https://docs.phpmyadmin.net/en/latest/"><i class="fa fa-question fa-lg iconJumbotron" aria-hidden="true"></a></i>
+                                <a href="http://dev.mysql.com/doc/refman/5.5/en/"><i class="fa fa-book fa-lg iconJumbotron" aria-hidden="true"></a></i>
+                                <a href="#" id="page_refresh"><i class="fa fa-repeat fa-lg iconJumbotron" aria-hidden="true"></a></i>
                             </p>
                             <p class="bodyJumbotron">
-                                Nouvelle base de données<br>
+                                <a class="linkJumbotron" href="index.php?action=addDB"><b>Create new database</b></a><br>
                                 <?php
 $_from = $_smarty_tpl->tpl_vars['dbnames']->value;
 if (!is_array($_from) && !is_object($_from)) {
@@ -52,9 +74,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['dbname']->value) {
 $_smarty_tpl->tpl_vars['dbname']->_loop = true;
 $__foreach_dbname_0_saved_local_item = $_smarty_tpl->tpl_vars['dbname'];
 ?>
-                                    <a href="index.php?action=showDB&db=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
-"><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
-</a><br>
+                                    <a class="linkJumbotron" href="index.php?action=showDB&db=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+"><b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+</b></a><br>
                                 <?php
 $_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_local_item;
 }
@@ -62,199 +84,27 @@ if ($__foreach_dbname_0_saved_item) {
 $_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_item;
 }
 ?>
-                                <!--etna_test<br>
-                                information<br>
-                                mysql<br>
-                                open_classroom<br>
-                                performance<br>
-                                SCC<br>-->
                             </p>
                         </div>
                     </div>
                     <div class="col-md-9">
-                        <div class="panel panel-default">
+                        <div class="panel panel-default informationColor">
                             <div class="panel-body">
                                 <div class="col-md-12">
-                                    <div class="panel panel-default">
-                                        <div class="panel-body">
-                                            <div class="tableView">
-                                                <table class="table1">
-                                                    <thead class="thead1">
-                                                        <tr class="tr1">
-                                                            <th class="th1"></th>
-                                                            <th class="th1">#</th>
-                                                            <th class="th1">Nom</th>
-                                                            <th class="th1">Type</th>
-                                                            <th class="th1">Interclassement</th>
-                                                            <th class="th1">Attributs</th>
-                                                            <th class="th1">Null</th>
-                                                            <th class="th1">Défaut</th>
-                                                            <th class="th1">Extra</th>
-                                                            <th class="th1">Action</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody class="tbody1">
-                                                        <tr class="tr1">
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                        </tr>
-                                                        <tr class="tr1">
-                                                            <td class="td1">February</td>
-                                                            <td class="td1">$80</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                        </tr>
-                                                        <tr class="tr1">
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                        </tr>
-                                                        <tr class="tr1">
-                                                            <td class="td1">February</td>
-                                                            <td class="td1">$80</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                        </tr>
-                                                        <tr class="tr1">
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                        </tr>
-                                                        <tr class="tr1">
-                                                            <td class="td1">February</td>
-                                                            <td class="td1">$80</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                        </tr>
-                                                    </tbody>
-                                                    <tfoot>
-                                                        <tr class="tr1">
-                                                            <td class="td1">Sum</td>
-                                                            <td class="td1">$180</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                            <td class="td1">January</td>
-                                                            <td class="td1">$100</td>
-                                                        </tr>
-                                                    </tfoot>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="panel panel-default">
-                                        <div class="panel-body">
-                                            <div class="tableView2">
-                                                <table class="table2">
-                                                    <thead class="thead2">
-                                                    <tr class="tr2">
-                                                        <th class="th2"></th>
-                                                        <th class="th2">#</th>
-                                                        <th class="th2">Nom</th>
-                                                        <th class="th2">Type</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody class="tbody2">
-                                                    <tr class="tr2">
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                    </tr>
-                                                    <tr class="tr2">
-                                                        <td class="td2">February</td>
-                                                        <td class="td2">$80</td>
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                    </tr>
-                                                    <tr class="tr2">
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                    </tr>
-                                                    <tr class="tr2">
-                                                        <td class="td2">February</td>
-                                                        <td class="td2">$80</td>
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                    </tr>
-                                                    <tr class="tr2">
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                    </tr>
-                                                    <tr class="tr2">
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                    </tr>
-                                                    <tr class="tr2">
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                    </tr>
-                                                    </tbody>
-                                                    <tfoot class="tfoot2">
-                                                    <tr class="tr2">
-                                                        <td class="td2">Sum</td>
-                                                        <td class="td2">$180</td>
-                                                        <td class="td2">January</td>
-                                                        <td class="td2">$100</td>
-                                                    </tr>
-                                                    </tfoot>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="tableView">
+                                    <?php 
+$_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
+<<<<<<< HEAD
+  0 => 'block_92587314657581c3c5b8dc9_59481228',
+=======
+  0 => 'block_176315060257594b43488e96_75056929',
+>>>>>>> fac99621881a25ac8362745b079cee5d62a29781
+  1 => false,
+  3 => 0,
+  2 => 0,
+));
+?>
+
                                 </div>
                             </div>
                         </div>
@@ -263,5 +113,20 @@ $_smarty_tpl->tpl_vars['dbname'] = $__foreach_dbname_0_saved_item;
             </div>
         </div>
     </div>
-</div><?php }
+</div>
+<?php }
+<<<<<<< HEAD
+/* {block 'tableBody'}  file:Views/views/templates/home.tpl */
+function block_92587314657581c3c5b8dc9_59481228($_smarty_tpl, $_blockParentStack) {
+=======
+/* {block 'tableBody'}  file:./home.tpl */
+function block_176315060257594b43488e96_75056929($_smarty_tpl, $_blockParentStack) {
+>>>>>>> fac99621881a25ac8362745b079cee5d62a29781
+?>
+
+                                        <h1 class="informationMessage">Welcome <span class="userColor"><?php echo $_smarty_tpl->tpl_vars['userName']->value;?>
+</span> !<h1>
+                                    <?php
+}
+/* {/block 'tableBody'} */
 }

@@ -1,55 +1,384 @@
-/* Head */
+
+/* --------- Whole platform --------- */
+
+* {
+    font-family: 'Raleway';
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('//fonts.googleapis.com/css?family=Raleway');
+}
+
+/* --------- Login --------- */
+
+.modalLogin {
+	margin-top: 10%;
+	opacity: 0.8;
+}
+
+img.imgLogin {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+	opacity: 0.8;
+}
+
+/* --------- Error --------- */
+
+.positionError {
+	margin-top: 23%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	position: relative;
+}
+
+.titleError {
+	font-size: 80px;
+}
+
+.paragraphError {
+	font-size: 40px;
+}
+
+img.imgError {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-1;
+	opacity: 0.8;
+}
+
+/* --------- Home --------- */
+
+body {
+	background-color: #f9f9fb;
+}
 
 .interface {
-	margin-top: 2%;
+	margin-top: 16px;
+	width: 100%;
+}
+
+.interfaceColor {
+	background-color: #fff5e6;
+}
+
+.deconnectButton {
+	padding-right: 3%;
+	color: #7272a1;
+}
+
+.deconnectButton:hover, .deconnectButton:focus,
+.deconnectButton:active, .deconnectButton:active:focus {
+	color: #a6a6cf;
+	text-decoration: none;
+}
+
+.deconnectButton:hover:after {
+	content: "Log out";
 }
 
 .logoPhpmyadmin {
-	width: 20%;
+	width: 30%;
 	height: auto;
 	display: block;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+	padding-bottom: 1%;
 }
 
-/* Jumbotron */
+.logoPhpmyadmin:hover {
+	filter: grayscale(50%);
+	-webkit-filter: grayscale(50%);
+	-moz-filter: grayscale(50%);
+}
+
+.page-header {
+	margin-bottom: 3%;
+}
+
+.userColor {
+	color: #7272a1;
+}
+
+/* --------- Jumbotron --------- */
+
+.jumbotronColor {
+	background-color: #eeeef6;
+	border: 1px solid #dddddd;
+}
 
 .titleJumbotron {
 	text-align: center;
 }
 
-.jumbotron p {
-	font-size: 12px;
+.jumbotron h3 {
+	font-size: 30px;
 }
 
-/* Tables */
+.jumbotron p {
+	font-size: 13px;
+}
+
+.linkJumbotron {
+	color: #7272a1;
+}
+
+.linkJumbotron:hover {
+	color: #9999c0;
+	text-decoration: none;
+}
+
+.iconJumbotron {
+	color: #7272a1;
+}
+
+.iconJumbotron:hover {
+	color: #9999c0;
+	text-decoration: none;
+}
+
+/* --------- Tables --------- */
+
+.informationColor {
+	background-color: #f9f9fb;
+}
+
+.informationMessage {
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.informationTitle {
+	margin-bottom: 2%;
+}
+
+.informationButton {
+	margin-bottom: 3%;
+}
+
+.returnButton {
+	vertical-align: -80%;
+	position: absolute;
+	right: 20px;
+	top: 23%;
+	color: #7272a1;
+}
+
+.returnButton:hover, .returnButton:focus,
+.returnButton:active, .returnButton:active:focus {
+	color: #a6a6cf;
+}
+
+.returnButton:hover:after {
+	content: "Previous";
+	font-family: 'Raleway';
+	font-size: 15px;
+}
+
+.btnEraseDB {
+	vertical-align: -80%;
+	position: absolute;
+	right: 20px;
+	top: 58px;
+}
 
 .tableView {
 	overflow-x: auto;
 }
 
-.tableView2 {
-	overflow-x: auto;
+.td1, .th1 {
+	border: 5px solid #f9f9fb;
+	text-align: center;
+	border-radius: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
-.table1, .tbody1, .td1, .table2, .tbody2, .td2 {
-	border: 5px solid white;
+.td1 {
 	background-color: #eeeeee;
-	text-align: center;
+	padding-top: 4px;
+	padding-bottom: 4px;
 }
 
-.thead1, .tr1, .th1, .thead2, .tr2, .th2 {
-	border: 5px solid white;
+.th1 {
 	background-color: #d5d5d5;
-	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
-.table1, .tbody1, .td1 {
-	padding-left: 1%;
-	padding-right: 1%;
+.btnDisplayTable {
+	padding-top: 0.5px;
+	padding-bottom: 0.5px;
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #f9f9fb;
+	background-color: #7272a1;
+	border-color: #7272a1;
 }
 
-.table2, .tbody2, .td2 {
-	padding-left: 8%;
-	padding-right: 8%;
+.btnDisplayTable:hover {
+	color: #f9f9fb;
+	background-color: #8888b2;
+	border-color: #8888b2;
+	outline:none !important;
+}
+
+.btnDisplayTable:focus {
+	color: #f9f9fb;
+	background-color: #8888b2;
+	border-color: #8888b2;
+	outline:none !important;
+}
+
+.btnDisplayTable:active {
+	color: #f9f9fb;
+	background-color: #8888b2;
+	border-color: #8888b2;
+	outline:none !important;
+}
+
+.btnDisplayTable:active:focus {
+	color: #f9f9fb;
+	background-color: #8888b2;
+	border-color: #8888b2;
+	outline:none !important;
+}
+
+.btnEraseTable {
+	padding-top: 0.5px;
+	padding-bottom: 0.5px;
+	padding-left: 8px;
+	padding-right: 8px;
+	color: #f9f9fb;
+	background-color: #ffa011;
+	border-color: #ffa011;
+}
+
+.btnEraseTable:hover {
+	color: #f9f9fb;
+	background-color: #fbb243;
+	border-color: #fbb243;
+	outline:none !important;
+}
+
+.btnEraseTable:focus {
+	color: #f9f9fb;
+	background-color: #fbb243;
+	border-color: #fbb243;
+	outline:none !important;
+}
+
+.btnEraseTable:active {
+	color: #f9f9fb;
+	background-color: #fbb243;
+	border-color: #fbb243;
+	outline:none !important;
+}
+
+.btnEraseTable:active:focus {
+	color: #f9f9fb;
+	background-color: #fbb243;
+	border-color: #fbb243;
+	outline:none !important;
+}
+
+.alert_drop_confirm {
+	display: none;
+}
+
+/* --------- Modals --------- */
+
+.modalColor {
+	background-color: #f9f9fb;
+}
+
+.crossButton {
+	background-color: #8888b2;
+}
+
+.crossButton:hover, .crossButton:focus,
+.crossButton:active, .crossButton:active:focus {
+	color: #7272a1;
+}
+
+/* --------- add DB --------- */
+
+.btnConfirm {
+	color: #f9f9fb;
+	background-color: #7272a1;
+	border-color: #7272a1;
+}
+
+.btnConfirm:hover {
+	color: #f9f9fb;
+	background-color: #8888b2;
+	border-color: #8888b2;
+	outline:none !important;
+}
+
+.btnConfirm:focus {
+	color: #f9f9fb;
+	background-color: #8888b2;
+	border-color: #8888b2;
+	outline:none !important;
+}
+
+.btnConfirm:active {
+	color: #f9f9fb;
+	background-color: #8888b2;
+	border-color: #8888b2;
+	outline:none !important;
+}
+
+.btnConfirm:active:focus {
+	color: #f9f9fb;
+	background-color: #8888b2;
+	border-color: #8888b2;
+	outline:none !important;
+}
+
+.btnErase {
+	color: #f9f9fb;
+	background-color: #ffa011;
+	border-color: #ffa011;
+}
+
+.btnErase:hover {
+	color: #f9f9fb;
+	background-color: #fbb243;
+	border-color: #fbb243;
+	outline:none !important;
+}
+
+.btnErase:focus {
+	color: #f9f9fb;
+	background-color: #fbb243;
+	border-color: #fbb243;
+	outline:none !important;
+}
+
+.btnErase:active {
+	color: #f9f9fb;
+	background-color: #fbb243;
+	border-color: #fbb243;
+	outline:none !important;
+}
+
+.btnErase:active:focus {
+	color: #f9f9fb;
+	background-color: #fbb243;
+	border-color: #fbb243;
+	outline:none !important;
+}
+
+/* --------- add Table --------- */
+
+.titleAddTable {
+	margin-bottom: 2%;
 }

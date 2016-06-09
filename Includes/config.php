@@ -1,16 +1,15 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: theo
- * Date: 30/05/16
- * Time: 13:58
- */
 
 $legalActions = array('home' => 'home',
-                    'showDB' => 'bdd');
-
-$dbConfig = array(
-    'host' => 'localhost',
-    'user' => 'root',
-    'password' => 'root'
-);
+                    'showDB' => 'bdd',
+                    'addDB' => 'bdd',
+                    'checkAddDB' => 'bdd',
+                    'addTable' => 'table',
+                    'deleteBDD' => 'bdd',
+                    'showTable' => 'table',
+                    'deleteTable' => 'table',
+                    'login' => 'user',
+                    'checklogin' => 'user',
+                    'logout' => 'user',
+                    'checkaddTable' => 'table',
+                    'renameDB'=>'bdd');
