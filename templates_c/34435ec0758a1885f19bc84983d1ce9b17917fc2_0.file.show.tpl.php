@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-09 13:06:12
+/* Smarty version 3.1.29, created on 2016-06-09 13:33:02
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/show.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_57594da4e61019_34771805',
+  'unifunc' => 'content_575953eec16b60_17831554',
   'file_dependency' => 
   array (
     '34435ec0758a1885f19bc84983d1ce9b17917fc2' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/show.tpl',
-      1 => 1465470371,
+      1 => 1465471980,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:./home.tpl' => 1,
   ),
 ),false)) {
-function content_57594da4e61019_34771805 ($_smarty_tpl) {
+function content_575953eec16b60_17831554 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_103349332257594da4e2b736_95064315',
+  0 => 'block_1863410195575953eebe0258_81116451',
   1 => false,
   3 => 0,
   2 => 0,
@@ -37,7 +37,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:./home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'tableBody'}  file:Views/views/templates/show.tpl */
-function block_103349332257594da4e2b736_95064315($_smarty_tpl, $_blockParentStack) {
+function block_1863410195575953eebe0258_81116451($_smarty_tpl, $_blockParentStack) {
 ?>
 
     <div class="col-md-12 informationTitle">
@@ -63,7 +63,7 @@ function block_103349332257594da4e2b736_95064315($_smarty_tpl, $_blockParentStac
                     <h4 class="modal-title">Do you really want to erase <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
 </b> ?</h4>
                 </div>
-                <div class="modal-body">
+                <div class="modal-footer">
                     <!--<p>Confirmation suppression:&nbsp;</p>-->
                     <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
 
@@ -105,23 +105,22 @@ function block_103349332257594da4e2b736_95064315($_smarty_tpl, $_blockParentStac
                 </div>
                 <div class="modal-body">
                     <form class="form-group" action="index.php?action=renameDB" method="post">
-                        <input type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+                            <label for="newdb">New name :</label>
+                            <input type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
 " name="olddb">
-                        <label for="newdb">New name :</label>
-                        <input type="text" name="newdb" class="form-control" placeholder="Name it">
+                            <input type="text" name="newdb" class="form-control" placeholder="Name it">
+                        <br>
+                            <input type="submit" class="btn btn-default btnConfirm" type="submit" value="Confirm">
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
-
-                    <a href="index.php?action=deleteBDD&db_name=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
-" class="btn btnConfirm" type="submit" value="Confirm">Confirm</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal Aff stat BDD -->
+    <!-- Modal Display stat DB -->
     <div id="alert_aff_stat_bdd" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -153,7 +152,7 @@ function block_103349332257594da4e2b736_95064315($_smarty_tpl, $_blockParentStac
                     </table>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btnConfirm" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btnErase" data-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>

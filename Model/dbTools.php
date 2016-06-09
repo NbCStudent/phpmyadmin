@@ -2,7 +2,7 @@
 
 function dbConnect($bddname)
 {
-    $dsn = "mysql:host=127.0.0.1;dbname=$bddname;charset=utf8";
+    $dsn = "mysql:host=localhost;dbname=$bddname;charset=utf8";
     $user = 'root';
     $password = 'root';
 
@@ -40,20 +40,6 @@ function renameDB($bdd)
 {
   if ($bdd['newname'] != $bdd['oldname'])
   {
-<<<<<<< HEAD
-    var_dump($bdd);
-    $db = dbConnect($bdd['oldname']);
-    var_dump($db);
-    //$tables = GetTableDB($db,$bdd['oldname']);
-    var_dump(GetTableDB($db,$bdd['oldname']));
-    die();
-    /*for ($i = 0; $i < count($tables); $i++) {
-      $req = 'RENAME TABLE ' . $info['oldname'] . '.' . $tables[$i] . ' TO ' . $info['newname'] . '.' . $tables[$i];
-      $res = $this->_db->query($req);
-    }
-    $sql = 'DROP DATABASE ' . $info['oldname'];
-    $this->_db->query($sql);*/
-=======
     $db = dbConnect("information_schema");
     $newname = $bdd['newname'];
     $sql = $db->query("CREATE DATABASE $newname");
@@ -64,6 +50,5 @@ function renameDB($bdd)
     }
     $sql = 'DROP DATABASE ' . $bdd['oldname'];
     $db->query($sql);
->>>>>>> fac99621881a25ac8362745b079cee5d62a29781
   }
 }

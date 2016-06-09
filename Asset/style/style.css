@@ -75,6 +75,7 @@ body {
 .deconnectButton:hover, .deconnectButton:focus,
 .deconnectButton:active, .deconnectButton:active:focus {
 	color: #a6a6cf;
+	text-decoration: none;
 }
 
 .deconnectButton:hover:after {

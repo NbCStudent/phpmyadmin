@@ -8,13 +8,6 @@
     </div>
     <div class="col-md-3 informationButton">
         <button id="aff_stat" class="btn btnConfirm" data-toggle="modal" data-target="#alert_rename_bdd">Rename</button>
-<<<<<<< HEAD
-=======
-    </div>
-    <div class="col-md-9">
-        <button id="btn_drop" class="btn btn-danger btnErase" data-toggle="modal" data-target="#alert_drop_bdd_comfirm">
-            &nbsp;Erase</button>
->>>>>>> fac99621881a25ac8362745b079cee5d62a29781
     </div>
     <button id="btn_drop" class="btn btn-danger btnErase btnEraseDB" data-toggle="modal" data-target="#alert_drop_bdd_comfirm">&nbsp;Erase</button>
     <br>
@@ -28,7 +21,7 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Do you really want to erase <b>{$dbname}</b> ?</h4>
                 </div>
-                <div class="modal-body">
+                <div class="modal-footer">
                     <!--<p>Confirmation suppression:&nbsp;</p>-->
                     <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
 
@@ -67,43 +60,21 @@
                 </div>
                 <div class="modal-body">
                     <form class="form-group" action="index.php?action=renameDB" method="post">
-                        <input type="hidden" value="{$dbname}" name="olddb">
-                        <label for="newdb">New name :</label>
-                        <input type="text" name="newdb" class="form-control" placeholder="Name it">
+                            <label for="newdb">New name :</label>
+                            <input type="hidden" value="{$dbname}" name="olddb">
+                            <input type="text" name="newdb" class="form-control" placeholder="Name it">
+                        <br>
+                            <input type="submit" class="btn btn-default btnConfirm" type="submit" value="Confirm">
                     </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
-
-                    <a href="index.php?action=deleteBDD&db_name={$dbname}" class="btn btnConfirm" type="submit" value="Confirm">Confirm</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal Rename BDD -->
-    <div id="alert_rename_bdd" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content modalColor">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Rename DATABASE: <b>{$dbname}</b> ?</h4>
-                </div>
-                <div class="modal-body">
-                    <form action="index.php?action=renameDB" method="post">
-                      <input type="hidden" value="{$dbname}" name="olddb">
-                      <label for="newdb">New name:</label>
-                      <input type="text" name="newdb">
-                      <input type="submit" class="btn btnConfirm" value="Confirm">
-                  </form>
-                    <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Aff stat BDD -->
+    <!-- Modal Display stat DB -->
     <div id="alert_aff_stat_bdd" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -131,7 +102,7 @@
                     </table>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btnConfirm" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btnErase" data-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>
