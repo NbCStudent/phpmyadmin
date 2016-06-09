@@ -80,7 +80,6 @@ body {
 
 .deconnectButton:hover:after {
 	content: "Log out";
-	font-family: 'Raleway';
 }
 
 .logoPhpmyadmin {
@@ -178,6 +177,8 @@ body {
 
 .returnButton:hover:after {
 	content: "Previous";
+	font-family: 'Raleway';
+	font-size: 15px;
 }
 
 .btnEraseDB {
