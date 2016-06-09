@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-09 11:08:42
+/* Smarty version 3.1.29, created on 2016-06-09 11:38:05
   from "/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/show.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5759321a8e20f8_21434803',
+  'unifunc' => 'content_575938fdba4371_85056130',
   'file_dependency' => 
   array (
     '42287445ecb0e0c5cd278bea14972301e4395c1a' => 
     array (
       0 => '/var/www/site_perso/my_phpmyadmin/phpmyadmin/Views/views/templates/show.tpl',
-      1 => 1465463321,
+      1 => 1465464011,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:./home.tpl' => 1,
   ),
 ),false)) {
-function content_5759321a8e20f8_21434803 ($_smarty_tpl) {
+function content_575938fdba4371_85056130 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_5394256855759321a8be6a8_96906531',
+  0 => 'block_2018525787575938fdb7b8d5_24710119',
   1 => false,
   3 => 0,
   2 => 0,
@@ -37,7 +37,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:./home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'tableBody'}  file:Views/views/templates/show.tpl */
-function block_5394256855759321a8be6a8_96906531($_smarty_tpl, $_blockParentStack) {
+function block_2018525787575938fdb7b8d5_24710119($_smarty_tpl, $_blockParentStack) {
 ?>
 
     <div class="col-md-12 informationTitle">
@@ -68,8 +68,29 @@ function block_5394256855759321a8be6a8_96906531($_smarty_tpl, $_blockParentStack
                 <div class="modal-body">
                     <!--<p>Confirmation suppression:&nbsp;</p>-->
                     <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
+
                     <a href="index.php?action=deleteBDD&db_name=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
-" class="btn btnConfirm">Confirmer</a>
+" class="btn btnConfirm">Confirm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Confirmation Drop Table -->
+    <div id="alert_drop_table_comfirm" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content modalColor">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Do you really want to erase <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
+</b> ?</h4>
+                </div>
+                <div class="modal-body">
+                    <!--<p>Confirmation suppression:&nbsp;</p>-->
+                    <button type="button" class="btn btn-default btnErase" data-dismiss="modal">Cancel</button>
+                    <a href="#" class="btn btnConfirm" onclick="displayData('');">Confirm</a>
+                    <div data-name="Jack" data-lastname="black">My name is</div>
                 </div>
             </div>
         </div>
@@ -169,9 +190,8 @@ $__foreach_col_0_saved_local_item = $_smarty_tpl->tpl_vars['col'];
 &tableName=<?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_NAME'];?>
 "
                                            class="btn btn-default btnDisplayTable">Display</a></td>
-                        <td class="td1"><a href="index.php?action=deleteTable&tableName=<?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_NAME'];?>
-&dbname=<?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
-" class="btn btn-default btnEraseTable">Erase</a></td>
+                        <td class="td1"><span class="btn btn-default btnEraseTable" data-toggle="modal"
+                                              data-target="#alert_drop_table_comfirm">Erase</span></td>
                         <td class="td1"><?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_ROWS'];?>
 </td>
                         <td class="td1"><?php echo $_smarty_tpl->tpl_vars['col']->value['TABLE_TYPE'];?>
@@ -217,6 +237,22 @@ $_smarty_tpl->tpl_vars['col'] = $__foreach_col_0_saved_item;
                 <button type="submit" class="btn btnConfirm">Confirm</button>
             </div>
         </form>
+<!--
+        <table border="0" cellspacing="5" cellpadding="5">
+            <tr>
+                <td>
+                    <a href="#" class="reviewLink">View Reviews</a>
+                    <div class="displayData">
+                        <span class="title">Book Title 2</span>
+                        <span class="isbn">516AHGN1515</span>
+                        <span class="pubdata">1999-05-08</span>
+                        <span class="price">$25.00</span>
+                    </div>
+                </td>
+                <td>Book Title 2</td>
+            </tr>
+        </table>
+        -->
 <?php
 }
 /* {/block 'tableBody'} */
