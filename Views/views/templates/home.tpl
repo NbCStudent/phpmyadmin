@@ -4,7 +4,7 @@
             <div class="panel panel-default interfaceColor">
                 <div class="panel-body">
                     <div class="page-header">
-                        <a href="index.php?action=logout" ><p class="pull-right deconnectButton"><i class="fa fa-times fa-2x" aria-hidden="true">Logout</i></p></a>
+                        <p class="pull-right deconnectButton"><i class="fa fa-times fa-2x" aria-hidden="true"></i> </p>
                         <a href="index.php"><img class="logoPhpmyadmin" src="Asset/img/logoPhpmyadmin2.png" alt="logoPhpmyadmin"></a>
                     </div>
                     <div class="col-md-3">
@@ -30,7 +30,7 @@
                                 <div class="col-md-12">
                                 <div class="tableView">
                                     {block name="tableBody"}
-                                        <h1 class="informationMessage">WELCOME {$userName} !<h1>
+                                        <h1 class="informationMessage">Welcome <span class="userColor">{$userName}</span> !<h1>
                                     {/block}
                                 </div>
                             </div>
