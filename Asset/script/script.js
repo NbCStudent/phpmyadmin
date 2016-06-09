@@ -1,64 +1,33 @@
 
-/* --------- Refresh Page --------- */
-
 $(document).ready(function() {
+
+    /* --------- Refresh Page --------- */
+
     $('#page_refresh').click(function(){
         location.reload();
     });
-});
 
-/* --------- Previous Page --------- */
+    /* --------- Previous Page --------- */
 
-$(document).ready(function() {
-    document.getElementById('previousPage').onclick = function(e) {
+    $('#previousPage').click(function(e) {
         e.preventDefault();
         history.back();
-    };
-});
+    });
 
-/* --------- Modals --------- */
+    /* --------- Modals --------- */
+        /* Erase DB */
 
-$(document).ready(function() {
     $('#alert_drop_bdd_comfirm').on('shown.bs.modal', function () {
         $('#alert_drop_bdd_comfirm').focus()
     });
+
+        /* Erase Table */
+
     $('#alert_drop_table_comfirm').on('shown.bs.modal', function () {
         $('#alert_drop_table_comfirm').focus()
     });
 });
 
-/* --------- Erase Table --------- */
-
-
-
-/*$(document).ready(function() {
-    function displayData(isbn) {
-        // there's a call to jQuery AJAX here
-        $.ajax({
-            type: "POST",
-            contentType: "application/json; charset=utf-8",
-            url: "index.php?action=deleteTable&tableName={$variable}&dbname={$dbname}",
-            data: "{" + isbn"}",
-            dataType: "json",
-            success: function(msg) {
-                DisplayReviews(msg.d);
-            }
-        });
-        return false;
-    }
-
-    function DisplayReviews(data) {
-        // data normally formatted here and passed to formattedData variable
-        var formattedData = FormatData(data);
-        $('#reviewScreen').html(formattedData);
-    }
-
-    function FormatData(data) {
-        // function reformats data... code removed for space..
-        return data;
-    }
-
-});*/
 
 /* --------- Images --------- */
 

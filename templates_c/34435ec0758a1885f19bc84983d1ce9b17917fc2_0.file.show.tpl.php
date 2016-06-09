@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2016-06-09 13:33:02
+/* Smarty version 3.1.29, created on 2016-06-09 13:38:57
   from "/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/show.tpl" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_575953eec16b60_17831554',
+  'unifunc' => 'content_57595551ce9cd5_25242327',
   'file_dependency' => 
   array (
     '34435ec0758a1885f19bc84983d1ce9b17917fc2' => 
     array (
       0 => '/Applications/MAMP/htdocs/TWEB-phpmyadmin/phpmyadmin/Views/views/templates/show.tpl',
-      1 => 1465471980,
+      1 => 1465472335,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,13 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:./home.tpl' => 1,
   ),
 ),false)) {
-function content_575953eec16b60_17831554 ($_smarty_tpl) {
+function content_57595551ce9cd5_25242327 ($_smarty_tpl) {
 $_smarty_tpl->ext->_inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
 $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", array (
-  0 => 'block_1863410195575953eebe0258_81116451',
+  0 => 'block_61384385357595551cbb350_57506192',
   1 => false,
   3 => 0,
   2 => 0,
@@ -37,7 +37,7 @@ $_smarty_tpl->ext->_inheritance->processBlock($_smarty_tpl, 0, "tableBody", arra
 $_smarty_tpl->smarty->ext->_subtemplate->render($_smarty_tpl, "file:./home.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'tableBody'}  file:Views/views/templates/show.tpl */
-function block_1863410195575953eebe0258_81116451($_smarty_tpl, $_blockParentStack) {
+function block_61384385357595551cbb350_57506192($_smarty_tpl, $_blockParentStack) {
 ?>
 
     <div class="col-md-12 informationTitle">
@@ -59,7 +59,7 @@ function block_1863410195575953eebe0258_81116451($_smarty_tpl, $_blockParentStac
             <!-- Modal content-->
             <div class="modal-content modalColor">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close crossButton" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Do you really want to erase <b><?php echo $_smarty_tpl->tpl_vars['dbname']->value;?>
 </b> ?</h4>
                 </div>
