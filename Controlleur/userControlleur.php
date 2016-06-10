@@ -35,15 +35,16 @@ elseif (isset($action) && $action == "logout") {
   logout();
   $template = "login";
 }
-else {
-  $template = "404";
-}
-
-if (isset($action) && $action == "userQuery" && !empty($_POST)) {
-  if () {
+elseif (isset($action) && $action == "userQuery" && !empty($_POST)) {
+  /*if () {
     $db = dbConnect();
     $result = GetAllDB($db);
-
+    $query = $_POST['query'];
+    userQuery($query);
+    $Smarty->assign(array('userQuery' => $result));
     $template = "textArea";
-  }
+  }*/
+}
+else {
+  $template = "404";
 }

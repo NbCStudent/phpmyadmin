@@ -20,7 +20,9 @@ function logout()
 	session_destroy();
 }
 
-function userQuery()
+function userQuery($query)
 {
-  
+  $sql = $db->query(".$query.");
+  $result = $sql->fetch(PDO::FETCH_ASSOC);
+  return ($result);
 }
