@@ -31,6 +31,8 @@
                                 {foreach $dbnames as $dbname}
                                     <a class="linkJumbotron" href="index.php?action=showDB&db={$dbname}"><b>{$dbname}</b></a><br>
                                 {/foreach}
+
+                                <a class="linkJumbotron" href="index.php?action=userQuery"><b>Text Area</b></a>
                             </p>
                         </div>
                     </div>
